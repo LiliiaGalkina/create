@@ -3,9 +3,9 @@ import style from "./button.module.scss";
 import type { buttonProps } from "../../types";
 
 
-const Button: React.FC<buttonProps> = ({textButton, width}) => {
+const Button: React.FC<buttonProps> = ({textButton, classDop}) => {
     return (
-        <button className={style.button} style={{width: width}}>{textButton}</button>
+        <button  className={`${style.button} ${classDop ? style[classDop] : ''}`} >{textButton}</button>
     )
 }
 

@@ -16,3 +16,25 @@
     transform: scale(1.05);
   }
 }
+
+.headerbutton {
+    width: 19.9rem;
+}
+
+@media (max-width: 1024px) {
+  .headerbutton {
+    width: 14rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerbutton {
+    margin-right: 5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .headerbutton {
+    display: none;
+  }
+}

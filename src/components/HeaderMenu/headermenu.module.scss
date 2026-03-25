@@ -1,5 +1,79 @@
+@use "../../variables" as *;
+
 .list {
   display: flex;
   align-items: center;
   gap: 4rem;
+}
+
+@media (max-width: 1024px) {
+  .list {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .list {
+    display: none;
+  }
+  .listactive {
+    position: absolute;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    display: block;
+    overflow: auto;
+    background-color: $colorBlue;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10rem;
+    text-align: center;
+    transition: all 1s ease;
+  }
+  .menuItem {
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+  }
+  .burger {
+    @include burger(2.6rem, 2rem);
+
+    &::before,
+    &::after {
+      background-color: $colorBlue;
+    }
+    &::before {
+      top: 0.8rem;
+    }
+    &::after {
+      bottom: 0.8rem;
+    }
+  }
+  .burgeractive {
+    @include burger(3.6rem, 2rem);
+    border: none;
+    z-index: 8;
+    span {
+      background-color: transparent;
+    }
+    &::before {
+      width: 100%;
+      height: 0.2rem;
+      background-color: $colorWhite;
+      transform: rotate(45deg);
+    }
+    &::after {
+      width: 100%;
+      height: 0.2rem;
+      background-color: $colorWhite;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .burger {
+    top: 1rem;
+  }
 }

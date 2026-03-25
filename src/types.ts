@@ -1,6 +1,6 @@
 export type buttonProps = {
     textButton: string;
-    width: string;
+    classDop: string;
 }
 
 export type menuProps = {
