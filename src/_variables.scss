@@ -1,0 +1,25 @@
+//variables
+$colorWhite: #FFFFFF;
+$colorBlue: #7772F1;
+$colorBlack: #1E212C;
+$colorGrey: #424551;
+$colorMiddleGrey: #787A80;
+$colorLightGrey: #9A9CA5;
+$backgroungGradientDark: radial-gradient(circle, $colorBlack, #232441, $colorBlack);
+
+
+//mixins
+@mixin title($fontsize: 4.6rem, $fontColor: $colorBlack){
+    font-size: $fontsize;
+    line-height: 130%;
+    font-weight: 900;
+    color: $fontColor;
+}
+
+@mixin subtitle($fontsize: 2.8rem, $fontColor: $colorBlack) {
+    font-size: $fontsize;
+    line-height: 150%;
+    font-weight: 700;
+    color: $fontColor;
+}
+

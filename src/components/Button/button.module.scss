@@ -1,0 +1,18 @@
+@use "../../variables" as *;
+
+.button {
+  height: 5.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  line-height: 325%;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  background-color: $colorBlue;
+  color: $colorWhite;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
