@@ -1,0 +1,25 @@
+.imageBlock {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+}
+
+.fon {
+    position: relative;
+    transform: translateX(17rem);
+    z-index: 1;
+}
+
+.mainImg {
+    position: absolute;
+    bottom: 20rem;
+    right: 15rem;
+    z-index: 2;
+}
+
+.decor {
+    position: absolute;
+    bottom: 38%;
+    left: 15rem;
+    z-index: 2;
+}

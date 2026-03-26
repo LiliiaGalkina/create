@@ -63,3 +63,24 @@ export const menuItemsFooter = [
     name: "Payed Traffic",
   },
 ];
+
+export const heroItems = [
+  {
+    id: 1,
+    img: "./image/home/ic-speaker.svg",
+    alt: "speaker icon",
+    title: "SEO Content Strategy",
+  },
+  {
+    id: 2,
+    img: "./image/home/ic-chart.svg",
+    alt: "chart icon",
+    title: "Content Marketing",
+  },
+  {
+    id: 3,
+    img: "./image/home/ic-computer.svg",
+    alt: "computer icon",
+    title: "Website & Social Media Marketing",
+  },
+];

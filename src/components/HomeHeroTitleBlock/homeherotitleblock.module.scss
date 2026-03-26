@@ -1,0 +1,21 @@
+@use "../../variables" as *;
+
+.titleBlock {
+    position: relative;
+    max-width: 81rem;
+}
+
+.title {
+    @include title(7.2rem, $colorWhite);
+    margin-bottom: 6rem;
+    span {
+        color: $colorBlue;
+    }
+}
+
+.decor {
+    position: absolute;
+    top: 0.5rem;
+    left: -10rem;
+}
+

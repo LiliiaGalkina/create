@@ -21,6 +21,16 @@
     width: 19.9rem;
 }
 
+.heroButton {
+  width: 21.9rem;
+  background-color: transparent;
+  border: 0.1rem solid $colorWhite;
+  &:hover {
+    background-color: $colorBlue;
+    transform: none;
+  }
+}
+
 @media (max-width: 1024px) {
   .headerbutton {
     width: 14rem;

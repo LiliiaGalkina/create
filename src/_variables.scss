@@ -5,12 +5,7 @@ $colorBlack: #1e212c;
 $colorGrey: #424551;
 $colorMiddleGrey: #787a80;
 $colorLightGrey: #9a9ca5;
-$backgroungGradientDark: radial-gradient(
-  circle,
-  $colorBlack,
-  #232441,
-  $colorBlack
-);
+
 
 //mixins
 @mixin title($fontsize: 4.6rem, $fontColor: $colorBlack) {
