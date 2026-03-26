@@ -1,0 +1,97 @@
+@use "../../variables" as *;
+
+.footer {
+  background-color: $colorBlack;
+  color: $colorWhite;
+}
+
+.footerUP {
+  padding: 8rem 0 6rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem 2rem;
+  border-bottom: 0.1rem solid $colorLightGrey;
+}
+
+.info {
+  max-width: 27rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.text {
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+.footerMiddle {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gototop {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.6rem;
+  span {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+}
+
+.button {
+  border-radius: 0.4rem;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.footerDown {
+  padding: 1.6rem 0;
+  background-color: $colorGrey;
+}
+
+.copyright {
+  display: flex;
+  gap: 0.4rem;
+  span {
+    font-size: 1.2rem;
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 1024px) {
+    .footerUP {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .gototop {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .info {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerUP {
+        justify-content: flex-start;
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+    }
+}

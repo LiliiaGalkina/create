@@ -1,0 +1,21 @@
+.awards {
+    display: flex;
+    gap: 2.4rem;
+}
+
+@media (max-width: 600px) {
+    .awards {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        img {
+            max-width: 9.2rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .awards {
+        justify-content: center;
+    }
+}

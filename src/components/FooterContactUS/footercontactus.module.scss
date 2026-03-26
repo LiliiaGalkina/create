@@ -1,0 +1,27 @@
+@use "../../variables" as *;
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  p {
+    opacity: 0.7;
+  }
+}
+
+.title {
+  @include titleFooter;
+}
+
+
+@media (max-width: 768px) {
+  .content {
+    width: 31%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: auto;
+  }
+}

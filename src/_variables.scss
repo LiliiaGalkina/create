@@ -27,6 +27,11 @@ $backgroungGradientDark: radial-gradient(
   color: $fontColor;
 }
 
+@mixin titleFooter {
+  @include subtitle(1.6rem, $colorWhite);
+  text-transform: uppercase;
+}
+
 @mixin burger($top, $right) {
   display: block;
   padding: 0.8rem;

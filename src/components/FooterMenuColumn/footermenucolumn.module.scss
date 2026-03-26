@@ -1,0 +1,27 @@
+@use "../../variables" as *;
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.title {
+    @include titleFooter;
+}
+
+.link {
+    color: $colorWhite;
+    opacity: 0.7;
+    transition: all 0.5s ease;
+      &:hover {
+        text-decoration: underline;
+        opacity: 1;
+    }
+}

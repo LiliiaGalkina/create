@@ -6,3 +6,9 @@ export type buttonProps = {
 export type menuProps = {
     name: string;
 }
+
+export type menuFooterProps = {
+    title: string;
+    min: number;
+    max: number;
+}
