@@ -1,27 +1,76 @@
 @use "../../variables" as *;
 
 .cards {
-    margin-top: 38.8rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
+  margin-top: 38.8rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .card {
-    padding: 0 9rem;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    border-right: 0.1rem solid $colorLightGrey;
-    &:first-child {
-        padding-left: 0;
-    }
-    &:last-child {
-        padding-right: 0;
-        border-right: none
-    }
+  padding: 0 9rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-right: 0.1rem solid $colorLightGrey;
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+    border-right: none;
+  }
 }
 
 .title {
-    @include subtitle(2rem, $colorWhite);
+  @include subtitle(2rem, $colorWhite);
+}
+
+@media (max-width: 1280px) {
+  .cards {
+    justify-content: center;
+  }
+  .card {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  .card {
+    padding: 0 2rem;
+  }
+  .title {
+    @include subtitle(1.8rem, $colorWhite);
+  }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        margin-top: 95%;
+    }
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .title {
+        @include subtitle(1.6rem, $colorWhite);
+    }
+}
+
+@media (max-width: 600px) {
+     .cards {
+        margin-top: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        padding-top: 4rem;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .card {
+        padding: 0;
+        border-right: none;
+    }
 }

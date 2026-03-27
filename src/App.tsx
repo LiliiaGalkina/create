@@ -2,13 +2,13 @@ import "./reset.scss";
 import "./App.scss";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import HomeHero from "./components/HomeHero/HomeHero";
+import HomePage from "./components/HomePage/HomePage";
 
 function App() {
   return (
     <>
       <Header />
-      <HomeHero/>
+      <HomePage />
       <Footer />
     </>
   );

@@ -1,25 +1,149 @@
 .imageBlock {
-    position: absolute;
-    top: 1rem;
-    right: 0;
+  position: absolute;
+  top: 1rem;
+  right: 0;
 }
 
 .fon {
-    position: relative;
-    transform: translateX(17rem);
-    z-index: 1;
+  position: relative;
+  transform: translateX(17rem);
+  z-index: 1;
 }
 
 .mainImg {
-    position: absolute;
-    bottom: 20rem;
-    right: 15rem;
-    z-index: 2;
+  position: absolute;
+  bottom: 20rem;
+  right: 10rem;
+  z-index: 2;
+}
+
+.clips {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .decor {
-    position: absolute;
-    bottom: 38%;
-    left: 15rem;
-    z-index: 2;
+  position: absolute;
+  bottom: 38%;
+  left: 15rem;
+  z-index: 2;
+}
+
+@media (max-width: 1280px) {
+  .imageBlock {
+    max-width: 90rem;
+  }
+  .mainImg {
+    max-width: 50rem;
+    right: 10rem;
+    top: 15rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  .mainImg {
+    top: 20rem;
+    right: 4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .imageBlock {
+    top: 14rem;
+    max-width: 80rem;
+    height: 30rem;
+    .fon {
+      width: 100%;
+    }
+  }
+  .mainImg {
+    max-width: 40rem;
+    top: 18rem;
+  }
+  .clips {
+    max-width: 14rem;
+  }
+  .decor {
+    bottom: -10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .imageBlock {
+    top: 30rem;
+  }
+  .clips {
+    top: -6rem;
+    max-width: 12rem;
+  }
+
+  .mainImg {
+    max-width: 35rem;
+    top: 6rem;
+  }
+  .decor {
+    bottom: -5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .imageBlock {
+    transform: translateX(-10rem);
+  }
+  .clips {
+    max-width: 10rem;
+    right: -10rem;
+  }
+  .mainImg {
+    top: 3rem;
+    right: -9rem;
+  }
+  .decor {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .clips {
+    max-width: 8rem;
+    right: -14rem;
+  }
+  .mainImg {
+    max-width: 30rem;
+    top: 0;
+  }
+  .decor {
+    bottom: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .imageBlock {
+    top: 33rem;
+    transform: translateX(-14rem);
+  }
+  .mainImg {
+    top: -1rem;
+    right: -10rem;
+  }
+  .clips {
+    max-width: 5rem;
+    top: -5rem;
+  }
+  .decor {
+    bottom: 5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .mainImg {
+    max-width: 25rem;
+    top: -2rem;
+    right: -14rem;
+  }
+  .decor {
+    max-width: 6rem;
+    bottom: 10rem;
+  }
 }

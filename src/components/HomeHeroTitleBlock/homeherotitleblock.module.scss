@@ -1,21 +1,56 @@
 @use "../../variables" as *;
 
 .titleBlock {
-    position: relative;
-    max-width: 81rem;
+  position: relative;
+  max-width: 81rem;
 }
 
 .title {
-    @include title(7.2rem, $colorWhite);
-    margin-bottom: 6rem;
-    span {
-        color: $colorBlue;
-    }
+  @include title(7.2rem, $colorWhite);
+  margin-bottom: 6rem;
+  span {
+    color: $colorBlue;
+  }
 }
 
 .decor {
-    position: absolute;
-    top: 0.5rem;
-    left: -10rem;
+  position: absolute;
+  top: 0.5rem;
+  left: -10rem;
 }
 
+@media (max-width: 1500px) {
+  .title {
+    @include title(6rem, $colorWhite);
+  }
+  .decor {
+    top: -2rem;
+    left: -1rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  .titleBlock {
+    max-width: 60rem;
+  }
+  .title {
+    @include title(5rem, $colorWhite);
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    @include title(4rem, $colorWhite);
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    @include title(3.2rem, $colorWhite);
+    margin-bottom: 3rem;
+  }
+  .decor {
+    max-width: 7rem;
+  }
+}

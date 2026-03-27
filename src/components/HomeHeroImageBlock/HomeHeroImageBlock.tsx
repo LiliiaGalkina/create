@@ -13,7 +13,7 @@ const HomeHeroImageBlock = () => {
           alt="a man is sitting next to laptop"
           className={style.mainImg}
         />
-        <img src="./image/home/hero-shapes.png" alt="two green clips" />
+        <img src="./image/home/hero-shapes.png" alt="two green clips" className={style.clips} />
         <img src="./image/home/hero-lines-down.png" alt="five white lines" className={style.decor}/>
       </div>
     );

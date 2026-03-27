@@ -1,14 +1,38 @@
 @use "../../variables" as *;
 
 .hero {
-    position: relative;
-    height: 100.8rem;
-    padding: 20rem 0 8rem;
-    background-color: $colorBlack;
+  position: relative;
+  min-height: 100.8rem;
+  padding: 20rem 0 8rem;
+  background-color: $colorBlack;
 }
 
 .decor {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 10rem 0 6rem;
+  }
+  .decor {
+    max-width: 40rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 90rem;
+  }
+  .decor {
+    max-width: 30rem;
+  }
+}
+
+@media (max-width: 375px) {
+    .hero {    
+        padding: 8rem 0 6rem;
+    }
 }
