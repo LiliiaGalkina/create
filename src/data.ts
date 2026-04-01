@@ -84,3 +84,30 @@ export const heroItems = [
     title: "Website & Social Media Marketing",
   },
 ];
+
+export const awards = [
+  {
+    id: 1,
+    image: "./image/home/awards1.png",
+    alt: "top SEO Companies 2020 by Clutch award icon",
+    text: "Top SEO Companies 2020 by Clutch",
+  },
+  {
+    id: 2,
+    image: "./image/home/awards2.png",
+    alt: "top Digital Marketing Agency 2019 by UpCity award icon",
+    text: "Top Digital Marketing Agency 2019 by UpCity",
+  },
+  {
+    id: 3,
+    image: "./image/home/awards3.png",
+    alt: "official Member 2020 by Forbes Agency Council award icon",
+    text: "Official Member 2020 by Forbes Agency Council",
+  },
+  {
+    id: 4,
+    image: "./image/home/awards4.png",
+    alt: "top SEO Companies 2020 by Top Developers award icon",
+    text: "Top SEO Companies 2020 by Top Developers",
+  },
+];

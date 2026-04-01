@@ -1,13 +1,11 @@
 .imageBlock {
+  width: 90rem;
+  height: 92rem;
   position: absolute;
   top: 1rem;
   right: 0;
-}
-
-.fon {
-  position: relative;
-  transform: translateX(17rem);
-  z-index: 1;
+  background-image: url("../../../image/home/hero-shape.png");
+  background-size: cover;
 }
 
 .mainImg {
@@ -26,13 +24,13 @@
 .decor {
   position: absolute;
   bottom: 38%;
-  left: 15rem;
+  left: 0;
   z-index: 2;
 }
 
 @media (max-width: 1280px) {
   .imageBlock {
-    max-width: 90rem;
+    width: 80rem;
   }
   .mainImg {
     max-width: 50rem;
@@ -42,108 +40,94 @@
 }
 
 @media (max-width: 1180px) {
+  .imageBlock {
+    width: 75rem;
+  }
   .mainImg {
     top: 20rem;
     right: 4rem;
+  }
+  .clips {
+    max-width: 14rem;
   }
 }
 
 @media (max-width: 1024px) {
   .imageBlock {
-    top: 14rem;
-    max-width: 80rem;
-    height: 30rem;
-    .fon {
-      width: 100%;
-    }
+    top: 6rem;
+    width: 70rem;
+    height: 82rem;
   }
   .mainImg {
-    max-width: 40rem;
-    top: 18rem;
+    top: 16rem;
+    right: 2rem;
   }
   .clips {
-    max-width: 14rem;
-  }
-  .decor {
-    bottom: -10rem;
+    max-width: 12rem;
   }
 }
 
 @media (max-width: 768px) {
   .imageBlock {
-    top: 30rem;
-  }
-  .clips {
-    top: -6rem;
-    max-width: 12rem;
-  }
-
-  .mainImg {
-    max-width: 35rem;
-    top: 6rem;
-  }
-  .decor {
-    bottom: -5rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .imageBlock {
-    transform: translateX(-10rem);
-  }
-  .clips {
-    max-width: 10rem;
-    right: -10rem;
+    top: 10rem;
+    width: 48rem;
+    height: 65rem;
   }
   .mainImg {
-    top: 3rem;
-    right: -9rem;
+    top: 18rem;
+    max-width: 38rem;
+  }
+  .clips {
+    max-width: 9rem;
+    top: -7rem;
   }
   .decor {
-    bottom: 0;
+    bottom: 22rem;
+    left: 2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .clips {
-    max-width: 8rem;
-    right: -14rem;
-  }
   .mainImg {
-    max-width: 30rem;
-    top: 0;
+    max-width: 35rem;
+    top: 20rem;
+    right: 1rem;
+  }
+  .clips {
+    max-width: 7rem;
+    top: 5rem;
   }
   .decor {
-    bottom: 2rem;
+    display: none;
   }
 }
 
 @media (max-width: 375px) {
   .imageBlock {
-    top: 33rem;
-    transform: translateX(-14rem);
+    top: 15rem;
+    width: 37rem;
+    height: 55rem;
   }
   .mainImg {
-    top: -1rem;
-    right: -10rem;
+    top: 15rem;
+    max-width: 30rem;
   }
   .clips {
-    max-width: 5rem;
-    top: -5rem;
-  }
-  .decor {
-    bottom: 5rem;
+    top: 0;
   }
 }
 
 @media (max-width: 320px) {
-  .mainImg {
-    max-width: 25rem;
-    top: -2rem;
-    right: -14rem;
+    .imageBlock {
+    top: 24rem;
+    width: 29rem;
+    height: 45rem;
   }
-  .decor {
-    max-width: 6rem;
-    bottom: 10rem;
+  .mainImg {
+    top: 12rem;
+    max-width: 25rem;
+  }
+  .clips {
+    top: 4rem;
   }
 }

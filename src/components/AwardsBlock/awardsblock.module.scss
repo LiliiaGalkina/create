@@ -1,0 +1,38 @@
+@use "../../variables" as *;
+
+.awardsblock {
+  padding: 12rem 0 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.text {
+  @include subtitle;
+  max-width: 63rem;
+}
+
+@media (max-width: 1200px) {
+  .text {
+    @include subtitle(2.2rem);
+    max-width: 48rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .awardsblock {
+    padding: 5rem 0;
+    flex-direction: column;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .text {
+    @include subtitle(2rem);
+  }
+}

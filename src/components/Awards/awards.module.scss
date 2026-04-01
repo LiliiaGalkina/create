@@ -1,0 +1,53 @@
+.awards {
+    max-width: 49.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.image {
+    max-width: 7.5rem;
+}
+
+.text {
+    max-width: 13.6rem;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 1024px) {
+    .awards {
+        max-width: 100%;
+        gap: 6rem;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .awards {
+        gap: 6rem 4rem;
+    }
+    .image {
+        max-width: 5rem;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .image {
+        max-width: 7.5rem;
+    }
+    .text {
+        font-size: 1.4rem;
+    }
+}

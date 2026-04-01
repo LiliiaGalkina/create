@@ -15,24 +15,29 @@
 
 @media (max-width: 1024px) {
   .hero {
-    padding: 10rem 0 6rem;
+    padding: 10rem 0 4rem;
+     min-height: 82rem;
   }
   .decor {
-    max-width: 40rem;
+    max-width: 35rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .hero {
-    min-height: 90rem;
+    min-height: 70rem;
   }
-  .decor {
-    max-width: 30rem;
-  }
+}
+
+@media (max-width: 480px) {
+ 
 }
 
 @media (max-width: 375px) {
     .hero {    
         padding: 8rem 0 6rem;
+    }
+    .decor {
+      max-width: 28rem;
     }
 }

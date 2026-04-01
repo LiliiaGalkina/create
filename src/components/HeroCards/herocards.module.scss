@@ -45,21 +45,12 @@
 }
 
 @media (max-width: 768px) {
-    .cards {
-        margin-top: 95%;
-    }
     .card {
         flex-direction: column;
         text-align: center;
     }
     .title {
         @include subtitle(1.6rem, $colorWhite);
-    }
-}
-
-@media (max-width: 600px) {
-     .cards {
-        margin-top: 100%;
     }
 }
 
@@ -73,4 +64,10 @@
         padding: 0;
         border-right: none;
     }
+}
+
+@media (max-width: 375px) {
+  .cards {
+    padding-top: 0;
+  }
 }

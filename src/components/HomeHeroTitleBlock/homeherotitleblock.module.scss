@@ -38,6 +38,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .decor {
+    max-width: 9rem;
+  }
+}
+
 @media (max-width: 600px) {
   .title {
     @include title(4rem, $colorWhite);
@@ -52,5 +58,14 @@
   }
   .decor {
     max-width: 7rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .titleBlock {
+    max-width: 28rem;
+  }
+  .title {
+      @include title(2.8rem, $colorWhite);
   }
 }
