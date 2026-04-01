@@ -1,0 +1,23 @@
+@use "../../variables" as *;
+
+.clients {
+    padding: 9rem 0 3.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 810px) {
+    .clients {
+        padding: 5rem 0 3.9rem;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 290px) {
+    .clients {
+        flex-direction: column;
+    }
+}

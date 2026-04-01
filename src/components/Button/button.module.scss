@@ -17,7 +17,7 @@
   }
 }
 
-.headerbutton {
+.headerButton {
     width: 19.9rem;
 }
 
@@ -31,20 +31,24 @@
   }
 }
 
+.agencyButton {
+    width: 16.1rem;
+}
+
 @media (max-width: 1024px) {
-  .headerbutton {
+  .headerButton {
     width: 14rem;
   }
 }
 
 @media (max-width: 768px) {
-  .headerbutton {
+  .headerButton {
     margin-right: 5rem;
   }
 }
 
 @media (max-width: 375px) {
-  .headerbutton {
+  .headerButton {
     display: none;
   }
 }

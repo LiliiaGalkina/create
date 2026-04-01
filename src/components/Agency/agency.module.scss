@@ -1,0 +1,71 @@
+@use "../../variables" as *;
+
+.agency {
+  position: relative;
+  padding: 13rem 0 9rem;
+
+  overflow: hidden;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title {
+  @include title(4.6rem);
+  margin-bottom: 4rem;
+}
+
+.text {
+  margin-bottom: 4.8rem;
+  max-width: 39rem;
+  color: $colorMiddleGrey;
+}
+
+.image {
+  max-width: 70.5rem;
+  border-radius: 0.4rem;
+  img {
+    width: 100%;
+  }
+}
+
+.fon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  .agency {
+    padding: 9rem 0;
+  }
+
+  .items {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .text {
+    max-width: 100%;
+  }
+  .title {
+    @include title(3.8rem);
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .agency {
+    padding: 6rem 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    @include title(3.4rem);
+  }
+}

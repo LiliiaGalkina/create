@@ -111,3 +111,36 @@ export const awards = [
     text: "Top SEO Companies 2020 by Top Developers",
   },
 ];
+
+export const clients = [
+  {
+    id: 1,
+    image: "./image/home/client-logo1.png",
+    alt: "inDepth icon",
+  },
+  {
+    id: 2,
+    image: "./image/home/client-logo2.png",
+    alt: "hegher fit icon",
+  },
+  {
+    id: 3,
+    image: "./image/home/client-logo3.png",
+    alt: "sentinal consulting icon",
+  },
+  {
+    id: 4,
+    image: "./image/home/client-logo4.png",
+    alt: "happy home icon",
+  },
+  {
+    id: 5,
+    image: "./image/home/client-logo5.png",
+    alt: "orSale icon",
+  },
+  {
+    id: 6,
+    image: "./image/home/client-logo7.png",
+    alt: "sunset realty icon",
+  },
+];

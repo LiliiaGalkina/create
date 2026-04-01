@@ -12,7 +12,7 @@ const Header = () => {
             <Logo />
             <HeaderMenu />
           </div>
-          <Button textButton="Talk to a human" classDop="headerbutton"/>
+          <Button textButton="Talk to a human" classDop="headerButton"/>
         </div>
       </div>
     </header>
