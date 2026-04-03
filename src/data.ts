@@ -144,3 +144,30 @@ export const clients = [
     alt: "sunset realty icon",
   },
 ];
+
+export const achievements = [
+  {
+    id: 1,
+    image: "./image/home/circle-progress1.png",
+    alt: "yellow circle progress",
+    text: "Years of experience",
+  },
+  {
+    id: 2,
+    image: "./image/home/circle-progress2.png",
+    alt: "rose circle progress",
+    text: "Awards",
+  },
+  {
+    id: 3,
+    image: "./image/home/circle-progress3.png",
+    alt: "blue circle progress",
+    text: "Projects",
+  },
+  {
+    id: 4,
+    image: "./image/home/circle-progress4.png",
+    alt: "green circle progress",
+    text: "Happy clients",
+  },
+];

@@ -1,0 +1,45 @@
+@use "../../variables" as *;
+
+.achievements {
+  padding: 9rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.achievement {
+  text-align: center;
+}
+
+.image {
+  margin-bottom: 2rem;
+  max-width: 14.8rem;
+  img {
+    width: 100%;
+  }
+}
+
+.text {
+  font-size: 1.4rem;
+  color: $colorGrey;
+}
+
+@media (max-width: 768px) {
+  .achievements {
+    padding: 3rem 0 6rem;
+    gap: 3rem;
+  }
+  .achievement {
+    max-width: 10rem;
+  }
+  .image {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .achievement {
+    max-width: 7rem;
+  }
+}
