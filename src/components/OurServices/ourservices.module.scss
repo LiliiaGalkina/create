@@ -1,0 +1,17 @@
+@use "../../variables" as *;
+
+.ourServices {
+    padding: 9rem 0 18rem;
+    overflow: hidden;
+}
+
+.title {
+    @include sectionTitle;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}

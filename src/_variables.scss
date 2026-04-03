@@ -15,6 +15,12 @@ $colorLightGrey: #9a9ca5;
   color: $fontColor;
 }
 
+@mixin sectionTitle {
+  @include title(4.6rem);
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
 @mixin subtitle($fontsize: 2.8rem, $fontColor: $colorBlack) {
   font-size: $fontsize;
   line-height: 150%;

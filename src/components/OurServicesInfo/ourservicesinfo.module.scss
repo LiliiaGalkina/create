@@ -1,0 +1,30 @@
+@use "../../variables" as *;
+
+.info {
+    max-width: 39rem;
+}
+
+.title {
+    @include subtitle;
+    margin-bottom: 2.4rem;
+}
+
+.list {
+    margin-bottom: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.listitem {
+    padding-left: 2.8rem;
+    background-image: url("../../../public/image/home/mark.png");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+
+.buttons {
+    display: flex;
+    gap: 2.4rem;
+}
+

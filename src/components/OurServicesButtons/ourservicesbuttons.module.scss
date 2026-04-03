@@ -1,0 +1,23 @@
+@use "../../variables" as *;
+
+.items {
+    margin-bottom: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.item {
+    @include subtitle(1.6rem, $colorLightGrey);
+    flex: 0 1 24.6rem;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.active {
+    color: $colorBlue;
+    border: 0.1rem solid $colorBlue;
+    border-radius: 0.4rem;
+}

@@ -1,7 +1,11 @@
 @use "../../variables" as *;
 
 .achievements {
+    position: relative;
   padding: 9rem 0;
+}
+
+.items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -25,9 +29,41 @@
   color: $colorGrey;
 }
 
+.decorLeft {
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    z-index: -1;
+}
+
+.decorRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+@media (max-width: 1280px) {
+    .decorLeft {
+        max-width: 14rem;
+    }
+    .decorRight {
+        max-width: 15rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .decorLeft,
+    .decorRight {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
   .achievements {
     padding: 3rem 0 6rem;
+  }
+  .items {
     gap: 3rem;
   }
   .achievement {

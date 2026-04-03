@@ -18,7 +18,7 @@
 }
 
 .headerButton {
-    width: 19.9rem;
+  width: 19.9rem;
 }
 
 .heroButton {
@@ -32,7 +32,20 @@
 }
 
 .agencyButton {
-    width: 16.1rem;
+  width: 16.1rem;
+}
+
+.ourServicesButtonWhite {
+  width: 13.9rem;
+  height: 4.4rem;
+  background-color: $colorWhite;
+  color: $colorBlue;
+  border: 0.1rem solid $colorBlue;
+}
+
+.ourServicesButtonBlue {
+  width: 16.5rem;
+  height: 4.4rem;
 }
 
 @media (max-width: 1024px) {

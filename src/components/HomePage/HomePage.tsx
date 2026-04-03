@@ -4,21 +4,21 @@ import AwardsBlock from "../AwardsBlock/AwardsBlock";
 import Clients from "../Clients/Clients";
 import Agency from "../Agency/Agency";
 import Achievements from "../Achievements/Achievements";
+import OurServices from "../OurServices/OurServices";
 
 const HomePage = () => {
-    return (
-      <main>
-        <HomeHero />
-        <div className="container">
-          <AwardsBlock />
-          <Clients />
-        </div>
-        <Agency />
-        <div className="container">
-        <Achievements/>
-        </div>
-      </main>
-    );
-}
- 
+  return (
+    <main>
+      <HomeHero />
+      <div className="container">
+        <AwardsBlock />
+        <Clients />
+      </div>
+      <Agency />
+      <Achievements />
+      <OurServices/>
+    </main>
+  );
+};
+
 export default HomePage;
