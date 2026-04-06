@@ -4,7 +4,7 @@
   position: relative;
   display: flex;
   justify-content: center;
- align-items: flex-end;
+  align-items: flex-end;
 }
 
 .fon {
@@ -12,29 +12,94 @@
   top: 0;
   left: 0;
   z-index: -1;
+  max-width: 100%;
 }
 
 .subscribe {
-    position: absolute;
-    bottom: 6rem;
-    right: 3rem;
+  position: absolute;
+  bottom: 6rem;
+  right: 3rem;
+  img {
+    width: 100%;
+  }
 }
 
 .likes {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .like {
-    position: absolute;
-    bottom: 2rem;
-    left: 22rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 22rem;
 }
 
 .followers {
-    position: absolute;
-    top: 0;
-    right: 20rem;
+  position: absolute;
+  top: 0;
+  right: 20rem;
+}
+
+@media (max-width: 1280px) {
+  .mainimg {
+    max-width: 70rem;
+  }
+  .subscribe {
+    max-width: 12rem;
+    right: 5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+    .mainimg {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .followers {
+        max-width: 4rem;
+
+    }
+    .likes {
+        max-width: 4rem;
+        left: 2rem;
+    }
+    .like {
+        max-width: 3rem;
+        left: 16rem;
+        bottom: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .subscribe {
+        max-width: 10rem;
+        bottom: 3rem;
+    }
+    .like {
+        bottom: 2rem;
+        left: 12rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .like {
+        max-width: 2rem;
+        bottom: 0.9rem;
+        left: 7.5rem;
+    }
+    .followers {
+        right: 4rem;
+    }
+    .likes {
+        left: 0;
+    }
+    .subscribe {
+        bottom: 0;
+        right: 3rem;
+    }
 }

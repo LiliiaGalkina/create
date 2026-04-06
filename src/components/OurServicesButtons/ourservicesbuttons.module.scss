@@ -1,23 +1,47 @@
 @use "../../variables" as *;
 
 .items {
-    margin-bottom: 7rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
+  margin-bottom: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
 .item {
-    @include subtitle(1.6rem, $colorLightGrey);
-    flex: 0 1 24.6rem;
-    padding: 1rem;
-    text-align: center;
-    cursor: pointer;
+  @include subtitle(1.6rem, $colorLightGrey);
+  flex: 0 1 24.6rem;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
 }
 
 .active {
-    color: $colorBlue;
-    border: 0.1rem solid $colorBlue;
-    border-radius: 0.4rem;
+  color: $colorBlue;
+  border: 0.1rem solid $colorBlue;
+  border-radius: 0.4rem;
+}
+
+@media (max-width: 1280px) {
+  .item {
+    flex: 0 1 20rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .items {
+    margin-bottom: 5rem;
+    gap: 1rem;
+  }
+  .item {
+    @include subtitle(1.4rem, $colorLightGrey);
+    flex: 0 1 15rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

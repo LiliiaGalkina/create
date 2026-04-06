@@ -18,7 +18,7 @@
 
 .listitem {
     padding-left: 2.8rem;
-    background-image: url("../../../public/image/home/mark.png");
+    background-image: url("../../../image/home/mark.png");
     background-repeat: no-repeat;
     background-position: 0 50%;
 }
@@ -28,3 +28,14 @@
     gap: 2.4rem;
 }
 
+@media (max-width: 1024px) {
+    .info {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        @include subtitle(2.4rem)
+    }
+}
