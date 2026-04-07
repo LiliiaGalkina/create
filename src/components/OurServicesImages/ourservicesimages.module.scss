@@ -54,52 +54,57 @@
 }
 
 @media (max-width: 1024px) {
-    .mainimg {
-        max-width: 100%;
-    }
+  .mainimg {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
-    .followers {
-        max-width: 4rem;
-
-    }
-    .likes {
-        max-width: 4rem;
-        left: 2rem;
-    }
-    .like {
-        max-width: 3rem;
-        left: 16rem;
-        bottom: 3rem;
-    }
+  .followers {
+    max-width: 4rem;
+  }
+  .likes {
+    max-width: 4rem;
+    left: 2rem;
+  }
+  .like {
+    max-width: 3rem;
+    left: 18rem;
+    bottom: 3rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .subscribe {
-        max-width: 10rem;
-        bottom: 3rem;
-    }
-    .like {
-        bottom: 2rem;
-        left: 12rem;
-    }
+  .subscribe {
+    max-width: 10rem;
+    bottom: 2.5rem;
+  }
+  .likes {
+    left: 0;
+  }
+  .like {
+    max-width: 2rem;
+    bottom: 1.5rem;
+    left: 11rem;
+  }
 }
 
 @media (max-width: 375px) {
-    .like {
-        max-width: 2rem;
-        bottom: 0.9rem;
-        left: 7.5rem;
-    }
-    .followers {
-        right: 4rem;
-    }
-    .likes {
-        left: 0;
-    }
-    .subscribe {
-        bottom: 0;
-        right: 3rem;
-    }
+  .like {
+    max-width: 1.5rem;
+    left: 8rem;
+    bottom: 1.2rem;
+  }
+  .followers {
+    max-width: 3rem;
+    right: 5rem;
+  }
+  .likes {
+    max-width: 3rem;
+  }
+  .subscribe {
+    max-width: 8rem;
+    bottom: 1rem;
+    right: 3rem;
+  }
 }
