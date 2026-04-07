@@ -1,0 +1,30 @@
+@use "../../variables" as *;
+
+.getfreeseo {
+    padding: 8rem 0;
+    background-color: $colorBlack;
+    color: $colorWhite;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.itemImg {
+    max-width: 39.7rem;
+    img {
+        width: 100%;
+    }
+}
+
+.info {
+    max-width: 60rem;
+}
+
+.title {
+    @include title(4.6rem, $colorWhite);
+    margin-bottom: 4rem;
+}

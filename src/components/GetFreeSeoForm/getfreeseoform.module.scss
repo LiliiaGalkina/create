@@ -1,0 +1,87 @@
+@use "../../variables" as *;
+
+.items {
+  margin-bottom: 4.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.4rem 3rem;
+}
+
+.inputBlock,
+.inputBlockBig {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.inputBlock {
+  width: 47.5%;
+}
+
+.inputBlockBig {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 1.3rem 1.6rem;
+  border: 0.1rem solid $colorLightGrey;
+  border-radius: 0.4rem;
+  background-color: $colorGrey;
+}
+
+.buttons {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.checkBlock {
+  display: flex;
+  align-items: flex-start;
+}
+
+.checkLabel {
+  display: block;
+  max-width: 28.7rem;
+}
+
+.communication {
+  margin-right: 1.2rem;
+  appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 0.3rem;
+  border: 0.1rem solid $colorBlue;
+  background-color: $colorWhite;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:checked {
+    background-color: $colorBlue;
+    background-image: url("../../../public/image/home/free-seo-form-check.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.button {
+  width: 22rem;
+  height: 5.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  line-height: 325%;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  background-color: $colorBlue;
+  color: $colorWhite;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
