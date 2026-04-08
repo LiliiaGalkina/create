@@ -1,0 +1,59 @@
+@use "../../variables" as *;
+
+.askquestions {
+  padding: 18rem 0 12rem;
+}
+
+.items {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.info {
+  max-width: 60rem;
+}
+
+.img {
+  max-width: 48.8rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.title {
+  @include sectionTitle;
+  text-align: left;
+}
+
+@media (max-width: 1140px) {
+  .info {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .img {
+    max-width: 35rem;
+    top: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .askquestions {
+    padding: 8rem 0;
+  }
+  .items {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .info {
+    max-width: 100%;
+  }
+  .img {
+    position: static;
+    max-width: 100%;
+  }
+}

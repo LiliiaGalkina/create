@@ -6,6 +6,7 @@ import Agency from "../Agency/Agency";
 import Achievements from "../Achievements/Achievements";
 import OurServices from "../OurServices/OurServices";
 import GetFreeSeo from "../GetFreeSeo/GetFreeSeo";
+import AskQuestions from "../AskQuestions/AskQuestions";
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
       <Achievements />
       <OurServices/>
       <GetFreeSeo/>
+      <AskQuestions/>
     </main>
   );
 };

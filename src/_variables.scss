@@ -19,6 +19,14 @@ $colorLightGrey: #9a9ca5;
   @include title(4.6rem);
   margin-bottom: 6rem;
   text-align: center;
+
+  @media (max-width: 1140px) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 3.2rem;
+  }
 }
 
 @mixin subtitle($fontsize: 2.8rem, $fontColor: $colorBlack) {

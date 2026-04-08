@@ -1,0 +1,33 @@
+@use "../../variables" as *;
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.title {
+    @include subtitle(2rem);
+}
+
+.button {
+    border-radius: 50%;
+   background-color: $colorWhite;
+    transform: translateY(0.5rem);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 0 1rem $colorLightGrey;
+    }
+}
+
+.text {
+    padding-top: 1.2rem;
+    color: $colorMiddleGrey;
+}
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 1.8rem;
+    }
+}

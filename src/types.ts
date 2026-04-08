@@ -12,3 +12,9 @@ export type menuFooterProps = {
     min: number;
     max: number;
 }
+
+export type askQuestionsProps = {
+    id: number;
+    title: string;
+    text: string;
+}

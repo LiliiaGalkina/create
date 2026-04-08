@@ -1,0 +1,12 @@
+.items {
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+@media (max-width: 768px) {
+    .items {
+        margin-bottom: 4rem;
+    }
+}

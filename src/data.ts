@@ -171,3 +171,26 @@ export const achievements = [
     text: "Happy clients",
   },
 ];
+
+export const askQuestionsItems = [
+  {
+    id: 1,
+    title: "Aliquet lectus urna viverra in odio?",
+    text: "Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis.",
+  },
+  {
+    id: 2,
+    title: "Orci commodo, viverra orci mollis ut euismod?",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sunt praesentium consequuntur quis, possimus odit! Id doloribus quasi quidem ab labore nemo eos, consequatur aliquam.",
+  },
+  {
+    id: 3,
+    title: "Sagittis vitae facilisi rutrum amet mauris quisque vel convallis?",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sunt praesentium consequuntur quis, possimus odit! Id doloribus quasi quidem ab labore nemo eos, consequatur aliquam.",
+  },
+  {
+    id: 4,
+    title: "In id dolor quis nunc, urna hendrerit pharetra?",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sunt praesentium consequuntur quis, possimus odit! Id doloribus quasi quidem ab labore nemo eos, consequatur aliquam.",
+  },
+];
