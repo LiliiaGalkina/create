@@ -43,8 +43,9 @@
 }
 
 .checkLabel {
-  display: block;
   max-width: 28.7rem;
+  display: inline-block;
+  transform: translateY(-0.5rem);
 }
 
 .communication {
@@ -83,5 +84,28 @@
   transition: all 0.5s ease;
   &:hover {
     transform: scale(1.05);
+  }
+}
+
+@media (max-width: 1041px) {
+  .inputBlock {
+    width: 100%;
+  }
+  .button {
+    width: 15rem;
+  }
+  .checkLabel {
+      max-width: 22rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 445px) {
+  .buttons {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .checkLabel {
+    max-width: 100%;
   }
 }

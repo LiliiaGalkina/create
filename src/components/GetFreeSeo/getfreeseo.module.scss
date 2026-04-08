@@ -28,3 +28,36 @@
     @include title(4.6rem, $colorWhite);
     margin-bottom: 4rem;
 }
+
+@media (max-width: 1041px) {
+    .items {
+        gap: 4rem;
+    }
+    .info {
+        max-width: 60%;
+    }
+    .title {
+        font-size: 3.6rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .getfreeseo {
+        padding: 6rem 0;
+    }
+    .items {
+        flex-direction: column-reverse;
+        gap: 6rem;
+    }
+    .info {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 445px) {
+    .title {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
