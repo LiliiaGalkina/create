@@ -1,0 +1,60 @@
+@use "../../variables" as *;
+
+.sliderItem {
+    padding: 4rem;
+    background-color: $colorWhite;
+    color: $colorBlack;
+    border: 0.1rem solid $borderColorGrey;
+    box-shadow: 0 0.4rem 0.4rem $boxShadowColorSliderItem;
+}
+
+.up {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.8rem;
+    border-bottom: 0.1rem solid $borderColorGrey;
+}
+
+.title {
+    font-size: 1.4rem;
+}
+
+.down {
+    padding-top: 2rem;
+}
+
+.text {
+    margin-bottom: 7.1rem;
+   color: $colorMiddleGrey;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.infoImg {
+    max-width: 4rem;
+}
+
+.infoText {
+    display: flex;
+    flex-direction: column;
+}
+
+.digit {
+    @include subtitle(2rem);
+}
+
+.description {
+    font-size: 1.2rem;
+}

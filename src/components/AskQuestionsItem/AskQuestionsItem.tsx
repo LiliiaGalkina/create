@@ -1,11 +1,12 @@
 import style from "./askquestionsitem.module.scss";
-import plus from "../../../public/image/home/plus.svg";
-import minus from "../../../public/image/home/minus.svg";
 import React, { useState } from "react";
 import type { askQuestionsProps } from "../../types";
 
 const AskQuestionsItem: React.FC<askQuestionsProps> = ({ title, text }) => {
   const [isActive, setIsActive] = useState(false);
+
+  const minus = "./image/home/minus.svg"
+  const plus = "./image/home/plus.svg"
 
   return (
     <div className={style.item}>

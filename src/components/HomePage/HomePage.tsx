@@ -7,6 +7,7 @@ import Achievements from "../Achievements/Achievements";
 import OurServices from "../OurServices/OurServices";
 import GetFreeSeo from "../GetFreeSeo/GetFreeSeo";
 import AskQuestions from "../AskQuestions/AskQuestions";
+import ClientsCase from "../ClientsCase/ClientsCase";
 
 const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage = () => {
       <OurServices/>
       <GetFreeSeo/>
       <AskQuestions/>
+      <ClientsCase/>
     </main>
   );
 };

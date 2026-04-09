@@ -1,0 +1,30 @@
+.swiper {
+padding-bottom: 8rem !important;
+  color:transparent;
+}
+
+.swiper-button-prev {
+    transform: rotate(180deg);
+    width: 4.8rem;
+    height: 4.8rem;
+    position: absolute;
+    bottom: 0;
+    background: url("/image/homepage/sliderfeedback/arrowright.png");
+    background-size: cover;
+    z-index: 5;
+}
+
+.swiper-button-next {
+    transform: rotate(180deg);
+    width: 4.8rem;
+    height: 4.8rem;
+    position: absolute;
+    bottom: 0;
+    left: 6.8rem;
+    background: url("/image/homepage/sliderfeedback/arrowleft.png");
+    background-size: cover;
+}
+
+.swiper-button-disabled {
+    opacity: 0.3;
+}

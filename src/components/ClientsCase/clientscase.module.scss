@@ -1,0 +1,22 @@
+@use "../../variables" as *;
+
+.clientscase {
+    padding: 8rem 0;
+    background-color: $bgWhiteGrey;
+}
+
+.title {
+    @include sectionTitle;
+    text-align-last: left;
+}
+
+.buttonBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.subtitle {
+    @include subtitle;
+}

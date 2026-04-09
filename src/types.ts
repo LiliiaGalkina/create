@@ -18,3 +18,21 @@ export type askQuestionsProps = {
     title: string;
     text: string;
 }
+
+export type clientsCaseSliderProps = {
+  id: number;
+  logoImg: string;
+  logoAlt: string;
+  title: string;
+  text: string;
+  img1: string;
+  alt1: string;
+  digit1: string;
+  description1: string;
+  img2: string;
+  alt2: string;
+  digit2: string;
+  description2: string;
+  fon: boolean;
+  fonImg: string;
+};
