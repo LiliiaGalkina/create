@@ -1,11 +1,15 @@
 @use "../../variables" as *;
 
 .sliderItem {
+    min-height: 39rem;
     padding: 4rem;
     background-color: $colorWhite;
     color: $colorBlack;
     border: 0.1rem solid $borderColorGrey;
     box-shadow: 0 0.4rem 0.4rem $boxShadowColorSliderItem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .up {
@@ -21,12 +25,8 @@
     font-size: 1.4rem;
 }
 
-.down {
-    padding-top: 2rem;
-}
-
 .text {
-    margin-bottom: 7.1rem;
+   padding-top: 2rem;
    color: $colorMiddleGrey;
 }
 
@@ -57,4 +57,32 @@
 
 .description {
     font-size: 1.2rem;
+}
+
+@media (max-width: 1236px) {
+ .sliderItem {
+    padding: 2rem 1rem;
+ }
+
+ .info {
+    gap: 2rem;
+ }
+}
+
+@media (max-width: 1024px) {
+    .sliderItem {
+        padding: 1rem;
+    }
+    .text {
+        font-size: 1.4rem;
+    }
+    .info {
+        justify-content: space-between;
+    }
+    .infoItem {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
 }

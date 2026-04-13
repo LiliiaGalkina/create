@@ -7,7 +7,7 @@
 
 .title {
     @include sectionTitle;
-    text-align-last: left;
+    text-align: left;
 }
 
 .buttonBlock {
@@ -19,4 +19,20 @@
 
 .subtitle {
     @include subtitle;
+}
+
+@media (max-width: 768px) {
+    .subtitle {
+        @include subtitle(2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .clientscase {
+        padding: 5rem 0;
+    }
+    .buttonBlock {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }

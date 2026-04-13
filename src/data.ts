@@ -228,7 +228,7 @@ export const clientsCaseSliderItems = [
     digit2: "1,400",
     description2: "Target investors",
     fon: true,
-    fonImg: "public/image/home/clients-case-fon.png",
+    fonImg: "./image/home/clients-case-fon.png",
   },
   {
     id: 3,
@@ -279,7 +279,7 @@ export const clientsCaseSliderItems = [
     digit2: "1,400",
     description2: "Target investors",
     fon: true,
-    fonImg: "public/image/home/clients-case-fon.png",
+    fonImg: "./image/home/clients-case-fon.png",
   },
   {
     id: 6,

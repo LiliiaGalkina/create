@@ -1,1 +1,14 @@
 @use "../../variables" as *;
+
+.slider {
+    position: relative;
+    z-index: 1;
+    min-height: 3.9rem;
+}
+
+.buttonsNavigation {
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    z-index: 20;
+}
