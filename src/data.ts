@@ -299,3 +299,48 @@ export const clientsCaseSliderItems = [
     fonImg: "",
   },
 ];
+
+export const benefits = [
+  {
+    id: 1,
+    image: "./image/home/benefits-ic-speaker.svg",
+    altImg: "speaker icon",
+    title: "Social Advertising Experts",
+    text: "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.",
+  },
+  {
+    id: 2,
+    image: "./image/home/benefits-ic-target.svg",
+    altImg: "target icon",
+    title: "ROI Focused Campaigns",
+    text: "Cursus sit eu viverra suspendisse eu quisque enim est tortor. Mauris ornare convallis nisi diam imperdiet.",
+  },
+  {
+    id: 3,
+    image: "./image/home/benefits-ic-checklist.svg",
+    altImg: "checklist icon",
+    title: "Monthly Reporting",
+    text: "Aenean urna dictum adipiscing nec, cras quisque. Nunc in odio ultricies ornare ornare nunc venenatis mauris.",
+  },
+  {
+    id: 4,
+    image: "./image/home/benefits-ic-chat.svg",
+    altImg: "chat icon",
+    title: "Quality Customer Service",
+    text: "Sed nunc scelerisque ipsum accumsan, proin nunc euismod purus. Dictum tortor, pellentesque vel integer amet.",
+  },
+  {
+    id: 5,
+    image: "./image/home/benefits-ic-view.svg",
+    altImg: "view icon",
+    title: "Complete SEO Transparency",
+    text: "Culpa nostrud commodo ea consequat aliquip reprehenderit. Ve niam velit nostrud aliquip sunt.",
+  },
+  {
+    id: 6,
+    image: "./image/home/benefits-ic-like.svg",
+    altImg: "like icon",
+    title: "We're a True Partner",
+    text: "Quis sed malesuada tincidunt amet, vitae mi justo elementum eu. Dui gravida id elementum dolor sed elementum, risus.",
+  },
+];

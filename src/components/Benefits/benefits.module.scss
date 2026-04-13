@@ -1,0 +1,30 @@
+@use "../../variables" as *;
+
+.benefits {
+    padding: 9rem 0;
+}
+
+.title {
+    @include sectionTitle;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.benefitsItems {
+    max-width: 39rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.mainImg {
+    max-width: 37.3rem;
+    img {
+        width: 100%;
+    }
+}

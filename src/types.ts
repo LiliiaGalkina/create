@@ -36,3 +36,11 @@ export type clientsCaseSliderProps = {
   fon: boolean;
   fonImg: string;
 };
+
+export type benefitsProps = {
+    id: number;
+    image: string;
+    altImg: string;
+    title: string;
+    text: string;
+}
