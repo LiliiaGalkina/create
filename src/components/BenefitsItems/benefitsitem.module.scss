@@ -13,6 +13,7 @@
 
 .image {
     margin-bottom: 1.6rem;
+    max-width: 4rem;
 }
 
 .title {
@@ -24,3 +25,23 @@
     font-size: 1.4rem;
     color: $colorMiddleGrey;
 }
+
+@media (max-width: 1260px) {
+    .item {
+        padding: 2rem 1rem;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .item {
+        padding: 1rem;
+    }
+    .image {
+        max-width: 3rem;
+    }
+    .title {
+         @include subtitle(1.6rem);
+    }
+}
+

@@ -1,4 +1,3 @@
-import style from "./homepage.module.scss";
 import HomeHero from "../HomeHero/HomeHero";
 import AwardsBlock from "../AwardsBlock/AwardsBlock";
 import Clients from "../Clients/Clients";

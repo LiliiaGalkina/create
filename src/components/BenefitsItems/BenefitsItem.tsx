@@ -1,7 +1,7 @@
 import type { benefitsProps } from "../../types";
 import style from "./benefitsitem.module.scss";
 
-const BenefitItem:React.FC<benefitsProps> = ({image, altImg, title, text}) => {
+const BenefitsItem:React.FC<benefitsProps> = ({image, altImg, title, text}) => {
     return ( <div className={style.item}>
         <img src={image} alt={altImg} className={style.image} />
         <h3 className={style.title}>{title}</h3>
@@ -9,4 +9,4 @@ const BenefitItem:React.FC<benefitsProps> = ({image, altImg, title, text}) => {
     </div> );
 }
  
-export default BenefitItem;
+export default BenefitsItem;

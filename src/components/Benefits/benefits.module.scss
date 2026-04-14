@@ -9,22 +9,46 @@
 }
 
 .items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 4rem;
-}
-
-.benefitsItems {
-    max-width: 39rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
+    position: relative;
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 2.4rem 39rem;
 }
 
 .mainImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     max-width: 37.3rem;
     img {
         width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .items {
+        gap: 2rem 31rem;
+    }
+    .mainImg {
+        max-width: 30rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits {
+        padding: 6rem 0;
+    }
+    .items {
+        gap: 2rem;
+    }
+    .mainImg {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .items {
+        grid-template-columns: 1fr;
     }
 }
