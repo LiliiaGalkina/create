@@ -1,0 +1,45 @@
+@use "../../variables" as *;
+
+.item {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.1rem solid $borderColorBlue;
+  box-shadow: 0 1.2rem 1rem $boxShadowColorSliderItem;
+}
+
+.up {
+  margin-bottom: 2.4rem;
+  width: 100%;
+  padding-bottom: 1.6rem;
+  border-bottom: 0.1rem solid $borderColorGrey;
+  text-align: center;
+}
+
+.title {
+  @include subtitle;
+  margin-bottom: 0.8rem;
+}
+
+.price {
+  @include title(4.6rem, $colorBlue);
+  sup {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+.list {
+  margin-bottom: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  li {
+    padding-left: 2.1rem;
+    background-image: url("../../../image/home/pricing-mark.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}

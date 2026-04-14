@@ -344,3 +344,24 @@ export const benefits = [
     text: "Quis sed malesuada tincidunt amet, vitae mi justo elementum eu. Dui gravida id elementum dolor sed elementum, risus.",
   },
 ];
+
+export const pricingPlans = [
+  {
+    id: 1,
+    tarif: "Basic",
+    price: 24,
+    dopclass: "",
+  },
+  {
+    id: 2,
+    tarif: "Optimal",
+    price: 64,
+    dopclass: "black",
+  },
+  {
+    id: 3,
+    tarif: "Premium",
+    price: 98,
+    dopclass: "",
+  },
+];

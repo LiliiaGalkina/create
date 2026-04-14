@@ -44,3 +44,9 @@ export type benefitsProps = {
     title: string;
     text: string;
 }
+
+export type prisingPlansProps = {
+    id: number;
+    tarif: string;
+    price: number;
+}

@@ -8,6 +8,7 @@ import GetFreeSeo from "../GetFreeSeo/GetFreeSeo";
 import AskQuestions from "../AskQuestions/AskQuestions";
 import ClientsCase from "../ClientsCase/ClientsCase";
 import Benefits from "../Benefits/Benefits";
+import PricingPlans from "../PricingPlans/PrisingPlans";
 
 const HomePage = () => {
   return (
@@ -25,6 +26,7 @@ const HomePage = () => {
       <ClientsCase />
       <div className="container">
         <Benefits />
+        <PricingPlans/>
       </div>
     </main>
   );
