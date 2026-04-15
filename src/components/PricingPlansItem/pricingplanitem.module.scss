@@ -43,3 +43,29 @@
     background-position: left center;
   }
 }
+
+
+@media (max-width: 768px) {
+  .item {
+    padding: 2rem 1rem;
+    grid-column: span 2;
+    &:last-child {
+      grid-column: 2 / 4;
+    }
+  }
+  .title {
+    @include subtitle(2rem)
+  }
+  .price {
+      @include title(4rem, $colorBlue);
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    grid-column: span 1;
+    &:last-child {
+      grid-column: 1 / 2;
+    }
+  }
+}

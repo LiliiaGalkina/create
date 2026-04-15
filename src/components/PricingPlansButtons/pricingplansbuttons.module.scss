@@ -1,29 +1,43 @@
 @use "../../variables" as *;
 
 .buttons {
-    margin: 0 auto 6rem;
-    width: 39rem;
-    height: 4.6rem;
-    display: flex;
+ margin-bottom: 6rem;
+  height: 4.6rem;
+  display: flex;
+  justify-content: center;
 }
 
 .monthButton,
 .yearButton {
-    @include subtitle(1.6rem);
-    width: 21rem;
-    border-radius: 4rem;
-    border: 0.1rem solid $colorBlue;
+  @include subtitle(1.6rem);
+  width: 21rem;
+  border-radius: 4rem;
+  border: 0.1rem solid $colorBlue;
 }
 
-
-
 .yearButton {
-    background-color: transparent;
-    color: $colorBlue;
-    transform: translateX(-4rem);
+  background-color: transparent;
+  color: $colorBlue;
+  transform: translateX(-4rem);
+  span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 375px) {
+  .monthButton,
+  .yearButton {
+    width: 50%;
+  }
+  .monthButton {
+    transform: translateX(2rem);
+  }
+  .yearButton {
+    transform: translateX(-2rem);
     span {
-        font-size: 1.2rem;
-        font-weight: 400;
-        opacity: 0.6;
+        display: none;
     }
+  }
 }

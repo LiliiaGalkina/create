@@ -8,3 +8,9 @@
 .title {
     @include sectionTitle;
 }
+
+@media (max-width: 480px) {
+    .pricingPlans {
+        padding: 6rem 0;
+    }
+}
