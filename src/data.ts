@@ -365,3 +365,54 @@ export const pricingPlans = [
     dopclass: "",
   },
 ];
+
+export const feedbackSliderItems = [
+  {
+    id: 1,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.",
+    image: "./image/home/slider-foto.png",
+    alt: "clients foto",
+    name: "Courtney Alexander",
+    position: "Position, Company name",
+  },
+  {
+    id: 2,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.",
+    image: "./image/home/slider-foto.png",
+    alt: "clients foto",
+    name: "Courtney Alexander",
+    position: "Position, Company name",
+  },
+  {
+    id: 3,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.",
+    image: "./image/home/slider-foto.png",
+    alt: "clients foto",
+    name: "Courtney Alexander",
+    position: "Position, Company name",
+  },
+  {
+    id: 4,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.",
+    image: "./image/home/slider-foto.png",
+    alt: "clients foto",
+    name: "Courtney Alexander",
+    position: "Position, Company name",
+  },
+  {
+    id: 5,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.",
+    image: "./image/home/slider-foto.png",
+    alt: "clients foto",
+    name: "Courtney Alexander",
+    position: "Position, Company name",
+  },
+  {
+    id: 6,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.",
+    image: "./image/home/slider-foto.png",
+    alt: "clients foto",
+    name: "Courtney Alexander",
+    position: "Position, Company name",
+  },
+];

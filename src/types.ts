@@ -50,3 +50,12 @@ export type prisingPlansProps = {
     tarif: string;
     price: number;
 }
+
+export type feedbackSliderProps = {
+    id: number;
+    text: string;
+    image: string;
+    alt: string;
+    name: string;
+    position: string;
+}

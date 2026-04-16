@@ -1,0 +1,15 @@
+@use "../../variables" as *;
+
+.feedback {
+    padding: 9rem 0;
+}
+
+.title {
+    @include sectionTitle;
+}
+
+@media (max-width: 768px) {
+    .feedback {
+        padding: 4rem 0;
+    }
+}

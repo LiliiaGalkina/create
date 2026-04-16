@@ -9,6 +9,7 @@ import AskQuestions from "../AskQuestions/AskQuestions";
 import ClientsCase from "../ClientsCase/ClientsCase";
 import Benefits from "../Benefits/Benefits";
 import PricingPlans from "../PricingPlans/PrisingPlans";
+import Feedback from "../Feedback/Feedback";
 
 const HomePage = () => {
   return (
@@ -27,6 +28,7 @@ const HomePage = () => {
       <div className="container">
         <Benefits />
         <PricingPlans/>
+        <Feedback/>
       </div>
     </main>
   );

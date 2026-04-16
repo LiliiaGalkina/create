@@ -1,0 +1,95 @@
+@use "../../variables" as *;
+
+.item {
+  margin: 0 auto;
+  max-width: 83%;
+  padding: 6.4rem 10.5rem;
+  position: relative;
+  color: $colorGrey;
+  box-shadow: 0 0.4rem 1rem $boxShadowColorSliderItem;
+  background-color: $colorWhite;
+}
+
+.text {
+  margin-bottom: 2.4rem;
+  font-size: 2rem;
+}
+
+.braces {
+  position: absolute;
+  top: 6.4rem;
+  left: 4.7rem;
+}
+
+.autor {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.foto {
+  max-width: 7.2rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.name {
+  @include subtitle(1.6rem);
+}
+
+.position {
+  font-size: 1.4rem;
+  color: $colorMiddleGrey;
+}
+
+@media (max-width: 1024px) {
+  .item {
+    padding: 4rem 4rem 4rem 8.5rem;
+  }
+  .text {
+    font-size: 1.8rem;
+  }
+  .braces {
+    max-width: 2rem;
+    top: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+    .item {
+    padding: 2rem 2rem 2rem 4.5rem;
+  }
+    .text {
+        font-size: 1.6rem;
+    }
+    .foto {
+        max-width: 6rem;
+    }
+    .braces {
+        top: 2rem;
+        left: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        padding: 2rem;
+    }
+    .braces {
+        display: none;
+    }
+}
+
+@media (max-width: 374px) {
+    .item {
+        max-width: 100%;
+        padding: 2rem 1rem;
+    }
+    .position {
+        font-size: 1.2rem;
+    }
+}

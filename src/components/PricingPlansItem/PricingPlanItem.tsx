@@ -32,7 +32,7 @@ const PricingPlansItem:React.FC<prisingPlansProps> = ({tarif, price}) => {
               backgroundImage:
                 tarif === "Optimal"
                   ? "url(./image/home/pricing-mark-green.svg)"
-                  : "url(public/image/home/pricing-mark.svg)",
+                  : "url(./image/home/pricing-mark.svg)",
             }}
           >
             Advanced Analytics
