@@ -59,3 +59,14 @@ export type feedbackSliderProps = {
     name: string;
     position: string;
 }
+
+export type nomeNewsProps = {
+    id: number;
+    image: string;
+    alt: string;
+    category: string;
+    date: string;
+    autor: string;
+    title: string;
+    text: string;
+}

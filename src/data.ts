@@ -416,3 +416,26 @@ export const feedbackSliderItems = [
     position: "Position, Company name",
   },
 ];
+
+export const homeNews = [
+  {
+    id: 1,
+    image: "./image/home/news1.png",
+    alt: "news picture",
+    category: "SEO",
+    date: "July 5, 2020",
+    autor: "Diane Mccoy",
+    title: "How to Maximize Your ROI Through Scientific SEM?",
+    text: "Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio...",
+  },
+  {
+    id: 2,
+    image: "./image/home/news2.png",
+    alt: "news picture",
+    category: "Marketing",
+    date: "July 5, 2020",
+    autor: "Diane Mccoy",
+    title: "The Basics of Blogging Search Engine Optimization.",
+    text: "Mauris tincidunt sollicitudin tristique odio eget volutpat. Fringilla viverra amet, mi interdum blandit...",
+  },
+];

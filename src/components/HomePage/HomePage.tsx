@@ -10,6 +10,7 @@ import ClientsCase from "../ClientsCase/ClientsCase";
 import Benefits from "../Benefits/Benefits";
 import PricingPlans from "../PricingPlans/PrisingPlans";
 import Feedback from "../Feedback/Feedback";
+import HomeNews from "../HomeNews/HomeNews";
 
 const HomePage = () => {
   return (
@@ -29,6 +30,7 @@ const HomePage = () => {
         <Benefits />
         <PricingPlans/>
         <Feedback/>
+        <HomeNews/>
       </div>
     </main>
   );

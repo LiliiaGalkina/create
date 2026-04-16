@@ -1,0 +1,35 @@
+.news {
+    padding: 9rem 0 18rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+}
+
+.cards {
+    display: flex;
+    gap: 3rem;
+}
+
+
+@media (max-width: 1024px) {
+    .news {
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .news {
+        padding: 4rem 0 10rem;
+    }
+}
+
+@media (max-width: 600px) {
+       .news {
+        padding: 2rem 0 10rem;
+    }
+    .cards {
+        flex-wrap: wrap;
+    }
+}
