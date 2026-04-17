@@ -24,8 +24,9 @@ const PricingPlansButtons = () => {
       <button
         className={style.monthButton}
         style={{
-          backgroundColor: isMonthActive ? "#7772F1" : "transparent",
+          backgroundColor: isMonthActive ? "#7772F1" : "#FFFFFF",
           color: isMonthActive ? "#FFFFFF" : "#7772F1",
+          zIndex: isMonthActive ? 2 : 1
         }}
         onClick={handleMonthSwitchButtons}
       >
@@ -34,8 +35,9 @@ const PricingPlansButtons = () => {
       <button
         className={style.yearButton}
         style={{
-          backgroundColor: isYearActive ? "#7772F1" : "transparent",
+          backgroundColor: isYearActive ? "#7772F1" : "#FFFFFF",
           color: isYearActive ? "#FFFFFF" : "#7772F1",
+          zIndex: isYearActive ? 2 : 1
         }}
         onClick={handleYearSwitchButtons}
         title="not implemented"

@@ -26,11 +26,11 @@ const HomePage = () => {
       <GetFreeSeo />
       <AskQuestions />
       <ClientsCase />
+      <Benefits />
       <div className="container">
-        <Benefits />
-        <PricingPlans/>
-        <Feedback/>
-        <HomeNews/>
+        <PricingPlans />
+        <Feedback />
+        <HomeNews />
       </div>
     </main>
   );
