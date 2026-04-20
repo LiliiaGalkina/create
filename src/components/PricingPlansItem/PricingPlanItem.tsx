@@ -52,7 +52,7 @@ const PricingPlansItem:React.FC<prisingPlansProps> = ({tarif, price}) => {
               backgroundImage:
                 tarif === "Optimal"
                   ? "url(./image/home/pricing-mark-green.svg)"
-                  : "url(public/image/home/pricing-mark.svg)",
+                  : "url(./image/home/pricing-mark.svg)",
             }}
           >
             Corporate Finance
@@ -62,7 +62,7 @@ const PricingPlansItem:React.FC<prisingPlansProps> = ({tarif, price}) => {
               backgroundImage:
                 tarif === "Optimal"
                   ? "url(./image/home/pricing-mark-green.svg)"
-                  : "url(public/image/home/pricing-mark.svg)",
+                  : "url(./image/home/pricing-mark.svg)",
             }}
           >
             One Way Link Building
@@ -72,7 +72,7 @@ const PricingPlansItem:React.FC<prisingPlansProps> = ({tarif, price}) => {
               backgroundImage:
                 tarif === "Optimal"
                   ? "url(./image/home/pricing-mark-green.svg)"
-                  : "url(public/image/home/pricing-mark.svg)",
+                  : "url(./image/home/pricing-mark.svg)",
             }}
           >
             Social Media Marketing
@@ -84,7 +84,7 @@ const PricingPlansItem:React.FC<prisingPlansProps> = ({tarif, price}) => {
                   ? "url(./image/home/pricing-cross.svg)"
                   : tarif === "Optimal"
                     ? "url(./image/home/pricing-mark-green.svg)"
-                    : "url(public/image/home/pricing-mark.svg)",
+                    : "url(./image/home/pricing-mark.svg)",
             }}
           >
             Strategy & Marketing
@@ -94,7 +94,7 @@ const PricingPlansItem:React.FC<prisingPlansProps> = ({tarif, price}) => {
               backgroundImage:
                 tarif === "Basic" || tarif === "Optimal"
                   ? "url(./image/home/pricing-cross.svg)"
-                  : "url(public/image/home/pricing-mark.svg)",
+                  : "url(./image/home/pricing-mark.svg)",
             }}
           >
             Information Technology

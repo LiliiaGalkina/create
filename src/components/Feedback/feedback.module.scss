@@ -13,3 +13,12 @@
         padding: 4rem 0;
     }
 }
+
+@media (max-width: 375px) {
+      .feedback {
+        padding: 4rem 0 10rem;
+    }
+    .title {
+        margin-bottom: 4rem;
+    }
+}

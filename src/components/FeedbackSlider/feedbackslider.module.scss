@@ -1,6 +1,14 @@
 .sliderContainer {
     position: relative;
     margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    max-width: 96%;
 }
 
 .decor {
@@ -22,5 +30,17 @@
 @media (max-width: 768px) {
     .decor {
         top: -1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .slider {
+        max-width: 94%;
+    }
+}
+
+@media (max-width: 375px) {
+    .slider {
+        max-width: 100%;
     }
 }

@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 html {
   font-size: 10px;
 }
@@ -12,4 +14,55 @@ body {
   margin: 0 auto;
   max-width: 126rem;
   padding: 0 1.5rem;
+}
+
+.clients-slider-arrow-prev,
+.clients-slider-arrow-next {
+  @include sliderArrow;
+}
+
+.clients-slider-arrow-next {
+  transform: rotate(180deg);
+}
+
+.feedback-slider-arrow-next,
+.feedback-slider-arrow-prev {
+  @include sliderArrow;
+  display: inline-flex;
+  img {
+    width: 2.4rem;
+  }
+}
+
+.feedback-slider-arrow-next {
+  transform: rotate(180deg);
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1024px) {
+  .feedback-slider-arrow-next,
+  .feedback-slider-arrow-prev {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .feedback-slider-arrow-next,
+  .feedback-slider-arrow-prev {
+    position: absolute;
+    bottom: -5rem;
+    z-index: 10;
+  }
+
+  .feedback-slider-arrow-prev {
+    left: 0;
+  }
+
+  .feedback-slider-arrow-next {
+    right: 0;
+  }
 }

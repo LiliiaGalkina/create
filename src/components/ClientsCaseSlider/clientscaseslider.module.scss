@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 
 .slider {
+    margin-bottom: 6rem;
     position: relative;
     z-index: 1;
     min-height: 3.9rem;
@@ -8,7 +9,8 @@
 
 .buttonsNavigation {
     position: absolute;
-    bottom: 2rem;
+    top: -5.8rem;
     right: 0;
     z-index: 20;
+    display: flex;
 }
