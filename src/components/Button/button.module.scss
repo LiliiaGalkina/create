@@ -64,6 +64,12 @@
   width: 18rem;
 }
 
+.servicesHeroBtn {
+  width: 15.4rem;
+  background-color: transparent;
+  border: 0.1rem solid $colorWhite;
+}
+
 @media (max-width: 1024px) {
   .headerButton {
     width: 14rem;

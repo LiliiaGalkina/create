@@ -1,0 +1,6 @@
+@use "../../variables" as *;
+
+.title {
+    @include title(7.2rem, $colorWhite);
+    margin-bottom: 2.4rem;
+}

@@ -1,0 +1,23 @@
+@use "../../variables" as *;
+
+.crumbs {
+  margin-bottom: 4.25rem;
+  display: flex;
+  gap: 0.8rem;
+  color: $colorWhite;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.text {
+  font-size: 1.4rem;
+}

@@ -1,0 +1,67 @@
+@use "../../variables" as *;
+
+.hero {
+    position: relative;
+    min-height: 65.3rem;
+    padding: 15.2rem 0 12rem;
+    display: flex;
+    justify-content: center;
+      background-color: $colorBlack;
+}
+
+.decorDots {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.decorShapesUp {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.decorLittleLinesLeft {
+    position: absolute;
+    bottom: 13.2rem;
+    left: 25.6rem;
+}
+
+.decorLinesUp {
+    position: absolute;
+    top: 0;
+    right: 28rem;
+}
+
+.decorManyShapesDown {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.decorLittleLinesRight {
+    position: absolute;
+    top: 13.4rem;
+    right: 9.1rem;
+}
+
+.titleBlock {
+    max-width: 81rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    margin-bottom: 6rem;
+    font-size: 2rem;
+    color: $colorWhite;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}

@@ -71,3 +71,11 @@ export type nomeNewsProps = {
     title: string;
     text: string;
 }
+
+export type crumbsProps = {
+    name: string;
+}
+
+export type heroTitleProps = {
+    title: string;
+}
