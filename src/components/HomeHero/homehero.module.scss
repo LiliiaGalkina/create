@@ -3,7 +3,7 @@
 .hero {
   position: relative;
   min-height: 100.8rem;
-  padding: 20rem 0 8rem;
+  padding: 27.2rem 0 8rem;
   background-color: $colorBlack;
 }
 
@@ -15,7 +15,7 @@
 
 @media (max-width: 1024px) {
   .hero {
-    padding: 10rem 0 4rem;
+    padding: 20rem 0 4rem;
      min-height: 82rem;
   }
   .decor {
@@ -29,13 +29,16 @@
   }
 }
 
-@media (max-width: 480px) {
- 
+@media (max-width: 600px) {
+  .hero {
+    padding: 16rem 0 4rem;
+
+  }
 }
 
 @media (max-width: 375px) {
     .hero {    
-        padding: 8rem 0 6rem;
+        padding: 12rem 0 6rem;
     }
     .decor {
       max-width: 28rem;

@@ -2,7 +2,7 @@
   width: 90rem;
   height: 92rem;
   position: absolute;
-  top: 1rem;
+  top: 11.34rem;
   right: 0;
   background-image: url("../../../image/home/hero-shape.png");
   background-size: cover;
@@ -54,7 +54,7 @@
 
 @media (max-width: 1024px) {
   .imageBlock {
-    top: 6rem;
+    top: 14rem;
     width: 70rem;
     height: 82rem;
   }
@@ -69,7 +69,7 @@
 
 @media (max-width: 768px) {
   .imageBlock {
-    top: 10rem;
+    top: 22rem;
     width: 48rem;
     height: 65rem;
   }
@@ -87,15 +87,24 @@
   }
 }
 
+@media (max-width: 600px) {
+  .mainImg {
+    top: 13rem;
+  }
+}
+
 @media (max-width: 480px) {
+  .imageBlock {
+    top: 24rem;
+  }
   .mainImg {
     max-width: 35rem;
-    top: 20rem;
+    top: 13rem;
     right: 1rem;
   }
   .clips {
     max-width: 7rem;
-    top: 5rem;
+    top: 0;
   }
   .decor {
     display: none;
@@ -104,12 +113,12 @@
 
 @media (max-width: 375px) {
   .imageBlock {
-    top: 15rem;
+    top: 26rem;
     width: 37rem;
     height: 55rem;
   }
   .mainImg {
-    top: 15rem;
+    top: 14rem;
     max-width: 30rem;
   }
   .clips {
@@ -119,15 +128,15 @@
 
 @media (max-width: 320px) {
     .imageBlock {
-    top: 24rem;
+    top: 30rem;
     width: 29rem;
     height: 45rem;
   }
   .mainImg {
-    top: 12rem;
+    top: 10rem;
     max-width: 25rem;
   }
   .clips {
-    top: 4rem;
+    top: -1rem;
   }
 }

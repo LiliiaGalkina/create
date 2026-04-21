@@ -2,15 +2,16 @@ import "./reset.scss";
 import "./App.scss";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import HomePage from "./components/HomePage/HomePage";
+import AppRouter from "./AppRouter";
+import { HashRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <HomePage />
+      <AppRouter/>
       <Footer />
-    </>
+      </Router>
   );
 }
 

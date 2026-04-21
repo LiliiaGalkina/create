@@ -7,7 +7,7 @@ const HeroCards = () => {
             {
                 heroItems.map((item) => (
                     <div className={style.card} key={item.id}>
-                        <img src={item.img} alt={item.alt} />
+                        <img src={item.img} alt={item.alt} className={style.image}/>
                         <p className={style.title}>{item.title}</p>
                     </div>
                 ))

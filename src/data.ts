@@ -2,22 +2,27 @@ export const menuItems = [
   {
     id: 1,
     name: "Services",
+    link: "/services"
   },
   {
     id: 2,
     name: "Case Studies",
+    link: "/casestudies"
   },
   {
     id: 3,
     name: "About Us",
+    link: "/about"
   },
   {
     id: 4,
     name: "Blog",
+    link: "/blog"
   },
   {
     id: 5,
     name: "Contacts",
+    link: "/contacts"
   },
 ];
 

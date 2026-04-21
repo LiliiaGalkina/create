@@ -1,8 +1,13 @@
 @use "../../variables" as *;
 
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 2rem 0;
-    background-color: $colorBlack;
+    background-color: transparent;
+    z-index: 15;
 }
 
 .items {
@@ -10,6 +15,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+
 }
 
 .navigation {
