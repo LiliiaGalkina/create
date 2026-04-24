@@ -1,67 +1,163 @@
 @use "../../variables" as *;
 
 .hero {
-    position: relative;
-    min-height: 65.3rem;
-    padding: 15.2rem 0 12rem;
-    display: flex;
-    justify-content: center;
-      background-color: $colorBlack;
+  position: relative;
+  min-height: 65.3rem;
+  padding: 15.2rem 0 12rem;
+  display: flex;
+  justify-content: center;
+  background-color: $colorBlack;
 }
 
 .decorDots {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .decorShapesUp {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .decorLittleLinesLeft {
-    position: absolute;
-    bottom: 13.2rem;
-    left: 25.6rem;
+  position: absolute;
+  bottom: 13.2rem;
+  left: 25.6rem;
 }
 
 .decorLinesUp {
-    position: absolute;
-    top: 0;
-    right: 28rem;
+  position: absolute;
+  top: 0;
+  right: 28rem;
 }
 
 .decorManyShapesDown {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .decorLittleLinesRight {
-    position: absolute;
-    top: 13.4rem;
-    right: 9.1rem;
+  position: absolute;
+  top: 13.4rem;
+  right: 9.1rem;
 }
 
 .titleBlock {
-    max-width: 81rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 81rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .text {
-    margin-bottom: 6rem;
-    font-size: 2rem;
-    color: $colorWhite;
-    opacity: 0.6;
-    text-align: center;
+  margin-bottom: 6rem;
+  font-size: 2rem;
+  color: $colorWhite;
+  opacity: 0.6;
+  text-align: center;
 }
 
 .info {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+@media (max-width: 1260px) {
+  .decorShapesUp {
+    max-width: 15rem;
+  }
+  .decorLinesUp {
+    max-width: 30rem;
+  }
+  .decorManyShapesDown {
+    max-width: 25rem;
+  }
+  .decorLittleLinesLeft {
+    max-width: 10rem;
+    left: 22rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .decorLittleLinesLeft {
+    left: 7rem;
+  }
+  .titleBlock {
+    max-width: 70rem;
+  }
+  .text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .decorLinesUp {
+    right: 10rem;
+  }
+  .decorLittleLinesLeft {
+    left: 0;
+  }
+  .titleBlock {
+    max-width: 58rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 15.2rem 0 10rem;
+    overflow: hidden;
+  }
+  .decorDots {
+    transform: translateX(-30%);
+  }
+  .decorLittleLinesLeft {
+    max-width: 8rem;
+    bottom: 5rem;
+  }
+  .decorLittleLinesRight {
+    max-width: 8rem;
+    right: 2rem;
+  }
+  .titleBlock {
+    max-width: 46rem;
+  }
+}
+
+@media (max-width: 480px) {
+    .decorShapesUp {
+        max-width: 12rem;
+    }
+    .decorLinesUp {
+        max-width: 25rem;
+        right: 5rem;
+    }
+    .decorDots {
+        transform: translateX(-35%);
+    }
+}
+
+@media (max-width: 375px) {
+    .decorShapesUp {
+        max-width: 10rem;
+    }
+    .decorLinesUp {
+        right: 1.5rem;
+    }
+    .decorLittleLinesRight,
+    .decorLittleLinesLeft {
+        max-width: 6rem;
+    }
+    .decorLittleLinesRight {
+        top: 12rem;
+    }
+    .decorManyShapesDown {
+        max-width: 20rem;
+    }
+    .info {
+       flex-direction: column;
+    }
 }

@@ -4,3 +4,22 @@
     @include title(7.2rem, $colorWhite);
     margin-bottom: 2.4rem;
 }
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 480px) {
+     .title {
+        font-size: 5.2rem;
+    }
+}
+
+@media (max-width: 375px) {
+      .title {
+        font-size: 4.6rem;
+        text-align: center;
+    }
+}

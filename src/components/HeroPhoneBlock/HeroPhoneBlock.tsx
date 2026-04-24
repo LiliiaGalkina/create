@@ -3,7 +3,7 @@ import style from "./herophoneblock.module.scss";
 const HeroPhoneBlock = () => {
     return (
       <div className={style.phoneBlock}>
-        <div className={style.phone}>
+        <div className={style.phoneimg}>
           <img src="./image/services/hero-phone.svg" alt="phone icon" />
         </div>
         <div className={style.info}>
