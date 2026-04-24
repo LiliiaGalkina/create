@@ -79,3 +79,13 @@ export type crumbsProps = {
 export type heroTitleProps = {
     title: string;
 }
+
+export type servicesBlockInfoProps = {
+    id: number;
+    title: string;
+    text: string;
+}
+
+export type servicesBlockNumberProps = {
+    num: number;
+}
