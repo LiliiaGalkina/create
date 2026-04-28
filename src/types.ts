@@ -89,3 +89,9 @@ export type servicesBlockInfoProps = {
 export type servicesBlockNumberProps = {
     num: number;
 }
+
+export type servicesBlockImageProps = {
+    mainImage: string;
+    fonImage: string;
+    classDop: string;
+}

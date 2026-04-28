@@ -1,0 +1,38 @@
+.imgBlock {
+  position: relative;
+  max-width: 71.2rem;
+}
+
+.mainImg {
+  width: 100%;
+}
+
+.fon {
+  position: absolute;
+  z-index: -1;
+  filter: blur(0.1rem);
+}
+
+.marketing {
+  max-width: 55rem;
+  top: 0;
+  left: 2rem;
+}
+
+.optimization {
+  max-width: 53rem;
+  left: 1rem;
+  top: 0;
+}
+
+.research {
+  max-width: 62rem;
+  top: 3rem;
+  left: -1rem;
+}
+
+.content {
+    max-width: 56rem;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,12 @@
+.blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem;
+}

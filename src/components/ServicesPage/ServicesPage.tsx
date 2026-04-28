@@ -1,39 +1,71 @@
 import ServicesHero from "../ServicesHero/ServicesHero";
 import ServicesBlockWrapper from "../ServicesBlockWrapper/ServicesBlockWrapper";
 import ServiceBlockInfo from "../ServiceBlockInfo/ServiceBlockInfo";
-import ServicesBlockImageMarketing from "../ServicesBlockImageMarketing/ServicesBlockImageMarketing";
-import ServicesBlockImageOptimisation from "../ServicesBlockImageOptimisation/ServicesBlockImageOptimisation";
 import style from "./servicespage.module.scss";
 import { servicesBlockInfo } from "../../data";
+import ServiceBlockImage from "../ServiceBlockImage/ServiceBlockImage";
 
 const ServicesPage = () => {
   return (
     <main>
       <ServicesHero />
-      <ServicesBlockWrapper>
-        {
-          <div>
-            <div className={style.items}>
-              <ServiceBlockInfo {...servicesBlockInfo[0]} />
-            </div>
+      <div className={style.blocks}>
+        <ServicesBlockWrapper>
+          {
             <div>
-              <ServicesBlockImageMarketing />
+              <div className={style.items}>
+                <ServiceBlockInfo {...servicesBlockInfo[0]} />
+                <ServiceBlockImage
+                  mainImage="./image/services/marketing-mainimg.png"
+                  fonImage="./image/services/marketing-fon.png"
+                  classDop="marketing"
+                />
+              </div>
             </div>
-          </div>
-        }
-      </ServicesBlockWrapper>
-      <ServicesBlockWrapper>
-        {
-          <div>
+          }
+        </ServicesBlockWrapper>
+        <ServicesBlockWrapper>
+          {
             <div>
-              <ServicesBlockImageOptimisation />
+              <div className={style.items}>
+                <ServiceBlockImage
+                  mainImage="./image/services/optimization-mainimg.png"
+                  fonImage="./image/services/optimization-fon.png"
+                  classDop="optimization"
+                />
+                <ServiceBlockInfo {...servicesBlockInfo[1]} />
+              </div>
             </div>
-            <div className={style.items}>
-              <ServiceBlockInfo {...servicesBlockInfo[1]} />
+          }
+        </ServicesBlockWrapper>
+        <ServicesBlockWrapper>
+          {
+            <div>
+              <div className={style.items}>
+                <ServiceBlockInfo {...servicesBlockInfo[2]} />
+                <ServiceBlockImage
+                  mainImage="./image/services/research-mainimg.png"
+                  fonImage="./image/services/research-fon.png"
+                  classDop="research"
+                />
+              </div>
             </div>
-          </div>
-        }
-      </ServicesBlockWrapper>
+          }
+        </ServicesBlockWrapper>
+        <ServicesBlockWrapper>
+          {
+            <div>
+              <div className={style.items}>
+                <ServiceBlockImage
+                  mainImage="./image/services/content-mainimg.png"
+                  fonImage="./image/services/content-fon.png" classDop="content"
+                />
+                <ServiceBlockInfo {...servicesBlockInfo[3]} />
+              </div>
+            </div>
+          }
+        </ServicesBlockWrapper>
+      </div>
     </main>
   );
 };

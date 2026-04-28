@@ -70,6 +70,17 @@
   border: 0.1rem solid $colorWhite;
 }
 
+.serviceBlockBtnWhite {
+  width: 13.9rem;
+  background-color: $colorWhite;
+  border: 0.1rem solid $colorBlue;
+  color: $colorBlue;
+}
+
+.serviceBlockBtn {
+  width: 16.5rem;
+}
+
 @media (max-width: 1024px) {
   .headerButton {
     width: 14rem;
