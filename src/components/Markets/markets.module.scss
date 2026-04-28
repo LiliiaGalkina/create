@@ -1,0 +1,16 @@
+@use "../../variables" as *;
+
+.markets {
+    padding: 18rem 0 12rem;
+}
+
+.title {
+    @include sectionTitle;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 4rem;
+}

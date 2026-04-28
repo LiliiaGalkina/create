@@ -95,3 +95,11 @@ export type servicesBlockImageProps = {
     fonImage: string;
     classDop: string;
 }
+
+export type marketsProps = {
+    id: number;
+    image: string;
+    alt: string;
+    title: string;
+    text: string;
+}

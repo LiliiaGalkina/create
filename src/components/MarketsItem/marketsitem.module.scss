@@ -1,0 +1,20 @@
+@use "../../variables" as *;
+
+.card {
+    max-width: 24rem;
+    text-align: center;
+}
+
+.icon {
+    margin-bottom: 2.4rem;
+    max-width: 4.8rem;
+}
+
+.title {
+    @include subtitle(2rem);
+    margin-bottom: 0.8rem;
+}
+
+.text {
+    color: $colorMiddleGrey;
+}

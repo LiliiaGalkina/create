@@ -4,6 +4,11 @@ import ServiceBlockInfo from "../ServiceBlockInfo/ServiceBlockInfo";
 import style from "./servicespage.module.scss";
 import { servicesBlockInfo } from "../../data";
 import ServiceBlockImage from "../ServiceBlockImage/ServiceBlockImage";
+import GetFreeSeo from "../GetFreeSeo/GetFreeSeo";
+import Markets from "../Markets/Markets";
+import ClientsCase from "../ClientsCase/ClientsCase";
+import HomeNews from "../HomeNews/HomeNews";
+import Clients from "../Clients/Clients";
 
 const ServicesPage = () => {
   return (
@@ -58,13 +63,21 @@ const ServicesPage = () => {
               <div className={style.items}>
                 <ServiceBlockImage
                   mainImage="./image/services/content-mainimg.png"
-                  fonImage="./image/services/content-fon.png" classDop="content"
+                  fonImage="./image/services/content-fon.png"
+                  classDop="content"
                 />
                 <ServiceBlockInfo {...servicesBlockInfo[3]} />
               </div>
             </div>
           }
         </ServicesBlockWrapper>
+      </div>
+      <GetFreeSeo />
+      <Markets />
+      <ClientsCase />
+      <div className="container">
+        <Clients/>
+        <HomeNews />
       </div>
     </main>
   );

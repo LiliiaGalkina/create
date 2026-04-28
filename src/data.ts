@@ -472,3 +472,34 @@ export const servicesBlockInfo = [
     text: "Tortor vitae orci hendrerit lobortis eu. Metus aliquam sem tellus ut fringilla purus nisl, consectetur netus. Velit ac feugiat ut mattis dis nullam ultrices amet. Lacus eu neque arcu arcu curabitur at sapien. Id sed aliquet id sit nibh ornare massa scelerisque.",
   },
 ];
+
+export const markets = [
+  {
+    id: 1,
+    image: "./image/services/markets-ic-cart.svg",
+    alt: "cart icon",
+    title: "E-commerce Websites",
+    text: "Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.",
+  },
+  {
+    id: 2,
+    image: "./image/services/markets-ic-website.svg",
+    alt: "website icon",
+    title: "Content-rich Websites",
+    text: "Culpa nostrud commodo ea consequat reprehenderit aliquip.",
+  },
+  {
+    id: 3,
+    image: "./image/services/markets-ic-suitcase.svg",
+    alt: "suitcase icon",
+    title: "B2B /B2C Services",
+    text: "Viverra scelerisque consequat net. Adipisicing esse consequat.",
+  },
+  {
+    id: 4,
+    image: "./image/services/markets-ic-startup.svg",
+    alt: "startup icon",
+    title: "Startup Projects",
+    text: "Aute eiusmod dolore dolore deserunt veniam ad deserunt.",
+  },
+];
