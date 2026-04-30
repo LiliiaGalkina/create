@@ -18,3 +18,20 @@
 .text {
     color: $colorMiddleGrey;
 }
+
+@media (max-width: 1024px) {
+    .card {
+        max-width: 100%;
+    }
+    .icon {
+        max-width: 4rem;
+    }
+    .title {
+        @include subtitle(1.6rem);
+    }
+    .text {
+        font-size: 1.4rem;
+    }
+}
+
+

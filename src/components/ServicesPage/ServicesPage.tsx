@@ -69,6 +69,7 @@ const ServicesPage = () => {
         <Clients />
         <HomeNews />
       </div>
+      *
     </main>
   );
 };
