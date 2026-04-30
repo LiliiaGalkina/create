@@ -6,7 +6,10 @@
   min-height: 65.3rem;
   padding: 15.2rem 0 12rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: $colorBlack;
   background-image: url("./image/hero-decor-dots.png");
   background-position: left;
@@ -45,14 +48,11 @@
 }
 
 .titleBlock {
+  margin-bottom: 6rem;
   max-width: 81rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .text {
-  margin-bottom: 6rem;
   font-size: 2rem;
   color: $colorWhite;
   opacity: 0.6;
@@ -108,7 +108,6 @@
 @media (max-width: 600px) {
   .hero {
     padding: 15.2rem 0 10rem;
-    overflow: hidden;
     background-position: right;
   }
   .decorLittleLinesLeft {

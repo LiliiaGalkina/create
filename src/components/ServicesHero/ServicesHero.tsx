@@ -43,11 +43,11 @@ const ServicesHero = () => {
             readily available, we create one, specifically to suit your
             business.
           </p>
+        </div>
           <div className={style.info}>
             <Button textButton="Start now" classDop="servicesHeroBtn"/>
             <HeroPhoneBlock/>
           </div>
-        </div>
       </section>
     );
 }
