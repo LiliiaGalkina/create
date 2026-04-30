@@ -2,15 +2,10 @@ import type React from "react";
 import style from "./serviceblockimage.module.scss";
 import type { servicesBlockImageProps } from "../../types";
 
-const ServiceBlockImage: React.FC<servicesBlockImageProps> = ({mainImage, fonImage, classDop}) => {
+const ServiceBlockImage: React.FC<servicesBlockImageProps> = ({mainImage, classDop}) => {
     return (
-      <div className={style.imgBlock}>
+      <div className={`${style.imgBlock} ${style[classDop]}`}>
         <img src={mainImage} alt="graphics" className={style.mainImg} />
-        <img
-          src={fonImage}
-          alt="grey abstractive"
-          className={`${style.fon} ${style[classDop]}`}
-        />
       </div>
     );
 }

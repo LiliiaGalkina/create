@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 
 .info {
-    max-width: 57.5rem;
+    width: 50%;
 }
 
 .title {
@@ -17,4 +17,10 @@
 .buttons {
     display: flex;
     gap: 2.4rem;
+}
+
+@media (max-width: 1024px) {
+    .info {
+        width: 100%;
+    }
 }

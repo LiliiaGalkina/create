@@ -1,38 +1,43 @@
 .imgBlock {
   position: relative;
-  max-width: 71.2rem;
+  width: 50%;
 }
 
 .mainImg {
   width: 100%;
 }
 
-.fon {
-  position: absolute;
-  z-index: -1;
-  filter: blur(0.1rem);
-}
-
 .marketing {
-  max-width: 55rem;
-  top: 0;
-  left: 2rem;
+  background-image: url("./image/services/marketing-fon.png");
+    background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .optimization {
-  max-width: 53rem;
-  left: 1rem;
-  top: 0;
+  background-image: url("./image/services/optimization-fon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .research {
-  max-width: 62rem;
-  top: 3rem;
-  left: -1rem;
+  background-image: url("./image/services/research-fon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .content {
-    max-width: 56rem;
-    top: 0;
-    left: 0;
+  background-image: url("./image/services/content-fon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+@media (max-width: 1024px) {
+  .imgBlock {
+    width: 100%;
+  }
+  .marketing {
+    position: relative;
+    width: 100%;
+  }
 }

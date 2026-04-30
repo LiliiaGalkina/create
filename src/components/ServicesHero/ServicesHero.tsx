@@ -7,11 +7,7 @@ import HeroPhoneBlock from "../HeroPhoneBlock/HeroPhoneBlock";
 const ServicesHero = () => {
     return (
       <section className={style.hero}>
-        <img
-          src="./image/hero-decor-dots.png"
-          alt="decor white dots in a circle"
-          className={style.decorDots}
-        />
+   
         <img
           src="./image/hero-decor-shapes-up-to.png"
           alt="decor two green shapes"

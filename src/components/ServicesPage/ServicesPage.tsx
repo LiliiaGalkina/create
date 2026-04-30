@@ -14,69 +14,59 @@ const ServicesPage = () => {
   return (
     <main>
       <ServicesHero />
-      <div className={style.blocks}>
-        <ServicesBlockWrapper>
-          {
-            <div>
+      <div className="container">
+        <div className={style.blocks}>
+          <ServicesBlockWrapper>
+            {
               <div className={style.items}>
                 <ServiceBlockInfo {...servicesBlockInfo[0]} />
                 <ServiceBlockImage
                   mainImage="./image/services/marketing-mainimg.png"
-                  fonImage="./image/services/marketing-fon.png"
                   classDop="marketing"
                 />
               </div>
-            </div>
-          }
-        </ServicesBlockWrapper>
-        <ServicesBlockWrapper>
-          {
-            <div>
-              <div className={style.items}>
+            }
+          </ServicesBlockWrapper>
+          <ServicesBlockWrapper>
+            {
+              <div className={style.itemsrevers}>
                 <ServiceBlockImage
                   mainImage="./image/services/optimization-mainimg.png"
-                  fonImage="./image/services/optimization-fon.png"
                   classDop="optimization"
                 />
                 <ServiceBlockInfo {...servicesBlockInfo[1]} />
               </div>
-            </div>
-          }
-        </ServicesBlockWrapper>
-        <ServicesBlockWrapper>
-          {
-            <div>
+            }
+          </ServicesBlockWrapper>
+          <ServicesBlockWrapper>
+            {
               <div className={style.items}>
                 <ServiceBlockInfo {...servicesBlockInfo[2]} />
                 <ServiceBlockImage
                   mainImage="./image/services/research-mainimg.png"
-                  fonImage="./image/services/research-fon.png"
                   classDop="research"
                 />
               </div>
-            </div>
-          }
-        </ServicesBlockWrapper>
-        <ServicesBlockWrapper>
-          {
-            <div>
-              <div className={style.items}>
+            }
+          </ServicesBlockWrapper>
+          <ServicesBlockWrapper>
+            {
+              <div className={style.itemsrevers}>
                 <ServiceBlockImage
                   mainImage="./image/services/content-mainimg.png"
-                  fonImage="./image/services/content-fon.png"
                   classDop="content"
                 />
                 <ServiceBlockInfo {...servicesBlockInfo[3]} />
               </div>
-            </div>
-          }
-        </ServicesBlockWrapper>
+            }
+          </ServicesBlockWrapper>
+        </div>
       </div>
       <GetFreeSeo />
       <Markets />
       <ClientsCase />
       <div className="container">
-        <Clients/>
+        <Clients />
         <HomeNews />
       </div>
     </main>

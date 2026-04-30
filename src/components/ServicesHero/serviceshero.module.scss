@@ -8,12 +8,10 @@
   display: flex;
   justify-content: center;
   background-color: $colorBlack;
-}
-
-.decorDots {
-  position: absolute;
-  top: 0;
-  left: 0;
+  background-image: url("./image/hero-decor-dots.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .decorShapesUp {
@@ -111,13 +109,12 @@
   .hero {
     padding: 15.2rem 0 10rem;
     overflow: hidden;
-  }
-  .decorDots {
-    transform: translateX(-30%);
+    background-position: right;
   }
   .decorLittleLinesLeft {
     max-width: 8rem;
     bottom: 5rem;
+    left: 1rem;
   }
   .decorLittleLinesRight {
     max-width: 8rem;
@@ -129,36 +126,39 @@
 }
 
 @media (max-width: 480px) {
-    .decorShapesUp {
-        max-width: 12rem;
-    }
-    .decorLinesUp {
-        max-width: 25rem;
-        right: 5rem;
-    }
-    .decorDots {
-        transform: translateX(-35%);
-    }
+  .hero {
+    margin-bottom: 7rem;
+  }
+  .titleBlock {
+    max-width: 35rem;
+  }
+  .decorShapesUp {
+    max-width: 12rem;
+  }
+  .decorLinesUp {
+    max-width: 25rem;
+    right: 5rem;
+  }
 }
 
 @media (max-width: 375px) {
-    .decorShapesUp {
-        max-width: 10rem;
-    }
-    .decorLinesUp {
-        right: 1.5rem;
-    }
-    .decorLittleLinesRight,
-    .decorLittleLinesLeft {
-        max-width: 6rem;
-    }
-    .decorLittleLinesRight {
-        top: 12rem;
-    }
-    .decorManyShapesDown {
-        max-width: 20rem;
-    }
-    .info {
-       flex-direction: column;
-    }
+  .decorShapesUp {
+    max-width: 10rem;
+  }
+  .decorLinesUp {
+    right: 1.5rem;
+  }
+  .decorLittleLinesRight,
+  .decorLittleLinesLeft {
+    max-width: 6rem;
+  }
+  .decorLittleLinesRight {
+    top: 12rem;
+  }
+  .decorManyShapesDown {
+    max-width: 20rem;
+  }
+  .info {
+    flex-direction: column;
+  }
 }

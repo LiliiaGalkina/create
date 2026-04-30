@@ -4,11 +4,7 @@ import type { JSX } from "react";
 type PropsElement = { children: JSX.Element };
 
 const ServicesBlockWrapper = ({ children }: PropsElement) => {
-  return (
-    <section className={style.block}>
-      <div className="container">{children}</div>
-    </section>
-  );
+  return <section className={style.block}>{children}</section>;
 };
 
 export default ServicesBlockWrapper;

@@ -92,7 +92,6 @@ export type servicesBlockNumberProps = {
 
 export type servicesBlockImageProps = {
     mainImage: string;
-    fonImage: string;
     classDop: string;
 }
 
