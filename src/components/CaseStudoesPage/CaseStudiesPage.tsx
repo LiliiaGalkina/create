@@ -1,6 +1,10 @@
+import CaseStudiesHero from "../CaseStudiesHero/CaseStudiesHero";
+
 const CaseStudiesPage = () => {
     return ( 
-        <main></main>
+        <main>
+            <CaseStudiesHero/>
+        </main>
      );
 }
  
