@@ -1,8 +1,8 @@
 import type React from "react";
 import style from "./feedbackslideritem.module.scss";
-import type { feedbackSliderProps } from "../../types";
+import type { IPropsFeedbackSlider } from "../../types";
 
-const FeedBackSliderItem:React.FC<feedbackSliderProps> = ({text, image, alt, name, position}) => {
+const FeedBackSliderItem:React.FC<IPropsFeedbackSlider> = ({text, image, alt, name, position}) => {
     return ( 
         <div className={style.item}>
             <img src="./image/home/slider-braces.svg" alt="blue braces" className={style.braces}/>

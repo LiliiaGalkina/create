@@ -1,9 +1,9 @@
 import type React from "react";
 import style from "./menuitem.module.scss";
-import type { menuProps } from "../../types";
+import type {IPropsMenu} from "../../types";
 import { Link } from "react-router-dom";
 
-const MenuItem: React.FC<menuProps> = ({name, link}) => {
+const MenuItem: React.FC<IPropsMenu> = ({name, link}) => {
     return (
         <Link to={link} className={style.link}>{name}</Link>
     )

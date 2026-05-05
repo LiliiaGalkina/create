@@ -1,9 +1,9 @@
 import type React from "react";
 import style from "./serviceblockinfo.module.scss";
-import type { servicesBlockInfoProps } from "../../types";
+import type { IPropsServicesBlockInfo } from "../../types";
 import Button from "../Button/Button";
 
-const ServiceBlockInfo:React.FC<servicesBlockInfoProps> = ({title, text}) => {
+const ServiceBlockInfo:React.FC<IPropsServicesBlockInfo> = ({title, text}) => {
     return (
       <div className={style.info}>
         <h3 className={style.title}>{title}</h3>

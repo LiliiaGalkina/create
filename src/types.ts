@@ -1,26 +1,26 @@
-export type buttonProps = {
+export interface IPropsButton {
     textButton: string;
     classDop: string;
 }
 
-export type menuProps = {
+export interface IPropsMenu {
     name: string;
     link: string;
 }
 
-export type menuFooterProps = {
+export interface IPropsMenuFooter {
     title: string;
     min: number;
     max: number;
 }
 
-export type askQuestionsProps = {
+export interface IPropsAskQuestions {
     id: number;
     title: string;
     text: string;
 }
 
-export type clientsCaseSliderProps = {
+export interface IPropsClientsCaseSlider {
   id: number;
   logoImg: string;
   logoAlt: string;
@@ -38,7 +38,7 @@ export type clientsCaseSliderProps = {
   fonImg: string;
 };
 
-export type benefitsProps = {
+export interface IPropsBenefits {
     id: number;
     image: string;
     altImg: string;
@@ -46,13 +46,13 @@ export type benefitsProps = {
     text: string;
 }
 
-export type prisingPlansProps = {
+export interface IPropsPrisingPlans {
     id: number;
     tarif: string;
     price: number;
 }
 
-export type feedbackSliderProps = {
+export interface IPropsFeedbackSlider {
     id: number;
     text: string;
     image: string;
@@ -61,7 +61,7 @@ export type feedbackSliderProps = {
     position: string;
 }
 
-export type nomeNewsProps = {
+export interface IPropsHomeNews {
     id: number;
     image: string;
     alt: string;
@@ -72,15 +72,15 @@ export type nomeNewsProps = {
     text: string;
 }
 
-export type crumbsProps = {
+export type TPropsCrumbs = {
     name: string;
 }
 
-export type heroTitleProps = {
+export type TPropsHeroTitle = {
     title: string;
 }
 
-export type servicesBlockInfoProps = {
+export interface IPropsServicesBlockInfo {
     id: number;
     title: string;
     text: string;
@@ -90,15 +90,21 @@ export type servicesBlockNumberProps = {
     num: number;
 }
 
-export type servicesBlockImageProps = {
+export interface IPropsServicesBlockImage {
     mainImage: string;
     classDop: string;
 }
 
-export type marketsProps = {
+export interface IPropsMarkets {
     id: number;
     image: string;
     alt: string;
     title: string;
     text: string;
 }
+
+export type TPropsElement = { 
+    children: React.ReactNode 
+}
+
+

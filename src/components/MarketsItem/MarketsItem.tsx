@@ -1,8 +1,8 @@
 import type React from "react";
 import style from "./marketsitem.module.scss";
-import type { marketsProps } from "../../types";
+import type { IPropsMarkets } from "../../types";
 
-const MarketsItem:React.FC<marketsProps> = ({image, alt, title, text}) => {
+const MarketsItem:React.FC<IPropsMarkets> = ({image, alt, title, text}) => {
     return ( 
         <div className={style.card}>
             <img src={image} alt={alt} className={style.icon}/>

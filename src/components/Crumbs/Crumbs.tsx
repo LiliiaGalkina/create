@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import style from "./crumbs.module.scss";
 import type React from "react";
-import type { crumbsProps } from "../../types";
+import type { TPropsCrumbs } from "../../types";
 
-const Crumbs:React.FC<crumbsProps> = ({name}) => {
+const Crumbs:React.FC<TPropsCrumbs> = ({name}) => {
     return ( 
         <div className={style.crumbs}>
          <Link to={"/"} className={style.home}> <img src="./image/crumbs-home.png" alt="home icon" />

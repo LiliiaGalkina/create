@@ -1,8 +1,8 @@
 import type React from "react";
 import style from "./clientscaseslideritem.module.scss";
-import type { clientsCaseSliderProps } from "../../types";
+import type { IPropsClientsCaseSlider } from "../../types";
 
-const ClientsCaseSliderItem: React.FC<clientsCaseSliderProps> = ({
+const ClientsCaseSliderItem: React.FC<IPropsClientsCaseSlider> = ({
   logoImg,
   logoAlt,
   title,

@@ -1,9 +1,9 @@
 import type React from "react";
 import style from "./pricingplanitem.module.scss";
-import type { prisingPlansProps } from "../../types";
+import type { IPropsPrisingPlans } from "../../types";
 import Button from "../Button/Button";
 
-const PricingPlansItem:React.FC<prisingPlansProps> = ({tarif, price}) => {
+const PricingPlansItem:React.FC<IPropsPrisingPlans> = ({tarif, price}) => {
     return (
       <div
         className={style.item}

@@ -1,8 +1,8 @@
 import type React from "react";
 import style from "./homenewscard.module.scss";
-import type { nomeNewsProps } from "../../types";
+import type { IPropsHomeNews} from "../../types";
 
-const HomeNewsCard: React.FC<nomeNewsProps> = ({image, alt, category, date, autor, title, text}) => {
+const HomeNewsCard: React.FC<IPropsHomeNews> = ({image, alt, category, date, autor, title, text}) => {
   return (
     <div className={style.card}>
       <div className={style.image}>
