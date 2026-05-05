@@ -5,35 +5,12 @@ import Button from "../Button/Button";
 import HeroPhoneBlock from "../HeroPhoneBlock/HeroPhoneBlock";
 import HeroTitleblock from "../HeroTitleBlock/HeroTitleblock";
 import HeroText from "../HeroText/HeroText";
+import HeroPagesDecors from "../HeroPagesDecors/HeroPagesDecors";
 
 const ServicesHero = () => {
   return (
     <section className={style.hero}>
-      <img
-        src="./image/heropages/hero-decor-shapes-up-to.png"
-        alt="decor two green shapes"
-        className={style.decorShapesUp}
-      />
-      <img
-        src="./image/heropages/hero-decor-littlelines-left.png"
-        alt="decor many white lines"
-        className={style.decorLittleLinesLeft}
-      />
-      <img
-        src="./image/heropages/hero-decor-lines-up.png"
-        alt="decor three curved green lines"
-        className={style.decorLinesUp}
-      />
-      <img
-        src="./image/heropages/hero-decor-down-shapes-many.png"
-        alt="decor many shapes"
-        className={style.decorManyShapesDown}
-      />
-      <img
-        src="./image/heropages/hero-decor-littlelines-right.png"
-        alt="decor many white lines"
-        className={style.decorLittleLinesRight}
-      />
+     <HeroPagesDecors/>
       <HeroTitleblock>
         <Crumbs name="Services" />
         <HeroTitle title="Our services" />
