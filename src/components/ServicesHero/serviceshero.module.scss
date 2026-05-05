@@ -1,62 +1,27 @@
 @use "../../variables" as *;
 
 .hero {
-  margin-bottom: 10rem;
-  position: relative;
-  min-height: 65.3rem;
-  padding: 15.2rem 0 12rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: $colorBlack;
-  background-image: url("./image/hero-decor-dots.png");
-  background-position: left;
-  background-repeat: no-repeat;
-  overflow: hidden;
+  @include heroPages;
 }
 
 .decorShapesUp {
-  position: absolute;
-  top: 0;
-  left: 0;
+  @include heroPagesDecor(top, 0, left, 0);
 }
 
 .decorLittleLinesLeft {
-  position: absolute;
-  bottom: 13.2rem;
-  left: 25.6rem;
+  @include heroPagesDecor(bottom, 13.2rem, left, 25.6rem);
 }
 
 .decorLinesUp {
-  position: absolute;
-  top: 0;
-  right: 28rem;
+  @include heroPagesDecor(top, 0, right, 28rem);
 }
 
 .decorManyShapesDown {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  @include heroPagesDecor(bottom, 0, right, 0);
 }
 
 .decorLittleLinesRight {
-  position: absolute;
-  top: 13.4rem;
-  right: 9.1rem;
-}
-
-.titleBlock {
-  margin-bottom: 6rem;
-  max-width: 81rem;
-}
-
-.text {
-  font-size: 2rem;
-  color: $colorWhite;
-  opacity: 0.6;
-  text-align: center;
+  @include heroPagesDecor(top, 13.4rem, right, 9.1rem);
 }
 
 .info {
@@ -85,12 +50,6 @@
   .decorLittleLinesLeft {
     left: 7rem;
   }
-  .titleBlock {
-    max-width: 70rem;
-  }
-  .text {
-    font-size: 1.8rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -100,16 +59,9 @@
   .decorLittleLinesLeft {
     left: 0;
   }
-  .titleBlock {
-    max-width: 58rem;
-  }
 }
 
 @media (max-width: 600px) {
-  .hero {
-    padding: 15.2rem 0 10rem;
-    background-position: right;
-  }
   .decorLittleLinesLeft {
     max-width: 8rem;
     bottom: 5rem;
@@ -119,18 +71,9 @@
     max-width: 8rem;
     right: 2rem;
   }
-  .titleBlock {
-    max-width: 46rem;
-  }
 }
 
 @media (max-width: 480px) {
-  .hero {
-    margin-bottom: 7rem;
-  }
-  .titleBlock {
-    max-width: 35rem;
-  }
   .decorShapesUp {
     max-width: 12rem;
   }

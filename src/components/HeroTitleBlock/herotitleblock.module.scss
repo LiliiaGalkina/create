@@ -1,0 +1,28 @@
+.titleBlock {
+  margin-bottom: 6rem;
+  max-width: 81rem;
+}
+
+@media (max-width: 1024px) {
+  .titleBlock {
+    max-width: 70rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleBlock {
+    max-width: 58rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .titleBlock {
+    max-width: 46rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titleBlock {
+    max-width: 35rem;
+  }
+}

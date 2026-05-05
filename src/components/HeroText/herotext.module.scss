@@ -1,0 +1,14 @@
+@use "../../variables" as *;
+
+.text {
+  font-size: 2rem;
+  color: $colorWhite;
+  opacity: 0.6;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .text {
+    font-size: 1.8rem;
+  }
+}

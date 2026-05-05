@@ -5,13 +5,12 @@ $colorBlack: #1e212c;
 $colorGrey: #424551;
 $colorMiddleGrey: #787a80;
 $colorLightGrey: #9a9ca5;
-$bgWhiteGrey: #F4F5F6;
+$bgWhiteGrey: #f4f5f6;
 $bgMenuBlue: #464392;
-$borderColorGrey: #E5E8ED;
-$boxShadowColorSliderItem: #F8F8F9;
-$borderColorBlue: #7772F166;
-$boxShadowGrafics: #1E212C05;
-
+$borderColorGrey: #e5e8ed;
+$boxShadowColorSliderItem: #f8f8f9;
+$borderColorBlue: #7772f166;
+$boxShadowGrafics: #1e212c05;
 
 //mixins
 @mixin title($fontsize: 4.6rem, $fontColor: $colorBlack) {
@@ -85,4 +84,36 @@ $boxShadowGrafics: #1E212C05;
       filter: brightness(0) saturate(100%) invert(1);
     }
   }
+}
+
+@mixin heroPages {
+  margin-bottom: 10rem;
+  position: relative;
+  min-height: 65.3rem;
+  padding: 15.2rem 0 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $colorBlack;
+  background-image: url("./image/heropages/hero-decor-dots.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  @media (max-width: 600px) {
+    padding: 15.2rem 0 10rem;
+    background-position: right;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 7rem;
+  }
+}
+
+@mixin heroPagesDecor($posY, $valueY, $posX, $valueX) {
+  position: absolute;
+  #{$posY}: $valueY;
+  #{$posX}: $valueX;
 }
