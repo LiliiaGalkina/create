@@ -503,3 +503,30 @@ export const markets = [
     text: "Aute eiusmod dolore dolore deserunt veniam ad deserunt.",
   },
 ];
+
+export const caseCardsFilter = [
+  {
+    id: 1,
+    name: "All case studies",
+  },
+  {
+    id: 2,
+    name: "Social Media",
+  },
+  {
+    id: 3,
+    name: "SEO",
+  },
+  {
+    id: 4,
+    name: "Research",
+  },
+  {
+    id: 5,
+    name: "Content & PR",
+  },
+  {
+    id: 6,
+    name: "Payed Traffic",
+  },
+];

@@ -9,7 +9,13 @@ const CaseStudiesHero = () => {
     return (
       <div className={style.hero}>
         <div className="container">
-          <HeroPagesDecors />
+          <HeroPagesDecors      
+        shapesClass="caseDecorShapesUp"
+        linesLeftClass="servicesDecorLittleLinesLeft"
+        linesUpClass="caseDecorLinesUp"
+        manyShapesClass="servicesDecorManyShapesDown"
+        linesrightClass="caseDecorLittleLinesRight"
+      />
           <HeroTitleblock>
             <Crumbs name="Case Studies" />
             <HeroTitle title="Case Studies" />

@@ -1,0 +1,19 @@
+@use "../../variables" as *;
+
+.filter {
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    @include subtitle(1.6rem, $colorLightGrey);
+    padding: 1rem 4.8rem;
+    border-radius: 0.4rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 0 1rem $colorLightGrey;
+    }
+}

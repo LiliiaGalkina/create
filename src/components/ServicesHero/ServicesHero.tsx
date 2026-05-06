@@ -10,7 +10,13 @@ import HeroPagesDecors from "../HeroPagesDecors/HeroPagesDecors";
 const ServicesHero = () => {
   return (
     <section className={style.hero}>
-     <HeroPagesDecors/>
+      <HeroPagesDecors
+        shapesClass="servicesDecorShapesUp"
+        linesLeftClass="servicesDecorLittleLinesLeft"
+        linesUpClass="servicesDecorLinesUp"
+        manyShapesClass="servicesDecorManyShapesDown"
+        linesrightClass="servicesDecorLittleLinesRight"
+      />
       <HeroTitleblock>
         <Crumbs name="Services" />
         <HeroTitle title="Our services" />

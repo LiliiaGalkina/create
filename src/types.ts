@@ -107,4 +107,12 @@ export type TPropsElement = {
     children: React.ReactNode 
 }
 
+export interface IPropsHeroDecor {
+    shapesClass: string;
+    linesLeftClass: string;
+    linesUpClass: string;
+    manyShapesClass: string;
+    linesrightClass: string;
+}
+
 

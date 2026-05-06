@@ -1,0 +1,144 @@
+@use "../../variables" as *;
+
+.servicesDecorShapesUp {
+  @include heroPagesDecor(top, 0, left, 0);
+}
+
+.servicesDecorLittleLinesLeft {
+  @include heroPagesDecor(bottom, 13.2rem, left, 25.6rem);
+}
+
+.servicesDecorLinesUp {
+  @include heroPagesDecor(top, 0, right, 28rem);
+}
+
+.servicesDecorManyShapesDown {
+  @include heroPagesDecor(bottom, 0, right, 0);
+}
+
+.servicesDecorLittleLinesRight {
+  @include heroPagesDecor(top, 13.4rem, right, 9.1rem);
+}
+
+.caseDecorShapesUp {
+  @include heroPagesDecor(top, -8.7rem, left, 17.6rem);
+  transform: rotate(90deg);
+}
+
+.caseDecorLinesUp {
+  @include heroPagesDecor(top, 0, right, 0);
+  transform: rotateY(180deg);
+}
+
+.caseDecorLittleLinesRight {
+  @include heroPagesDecor(bottom, 8.6rem, right, 39.4rem);
+}
+
+@media (max-width: 1260px) {
+  .servicesDecorShapesUp {
+    max-width: 15rem;
+  }
+  .servicesDecorLinesUp {
+    max-width: 30rem;
+  }
+  .servicesDecorManyShapesDown {
+    max-width: 25rem;
+  }
+  .servicesDecorLittleLinesLeft {
+    max-width: 10rem;
+    left: 22rem;
+  }
+  .caseDecorShapesUp {
+    left: 3rem;
+    max-width: 20rem;
+  }
+  .caseDecorLittleLinesRight {
+    right: 30rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .servicesDecorLittleLinesLeft {
+    left: 7rem;
+  }
+  .caseDecorLinesUp {
+    right: -10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicesDecorLinesUp {
+    right: 10rem;
+  }
+  .servicesDecorLittleLinesLeft {
+    left: 0;
+  }
+  .caseDecorLinesUp {
+    right: 0rem;
+    max-width: 40rem;
+  }
+  .caseDecorShapesUp {
+    left: 2rem;
+    max-width: 18rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .servicesDecorLittleLinesLeft {
+    max-width: 8rem;
+    bottom: 5rem;
+    left: 1rem;
+  }
+  .servicesDecorLittleLinesRight {
+    max-width: 8rem;
+    right: 2rem;
+  }
+  .caseDecorLittleLinesRight {
+    max-width: 8rem;
+    right: 20rem;
+  }
+  .caseDecorShapesUp {
+    max-width: 15rem;
+  }
+  .caseDecorLinesUp {
+    right: -6rem;
+    max-width: 35rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .servicesDecorShapesUp {
+    max-width: 12rem;
+  }
+  .servicesDecorLinesUp {
+    max-width: 25rem;
+    right: 5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .servicesDecorShapesUp {
+    max-width: 10rem;
+  }
+  .servicesDecorLinesUp {
+    right: 1.5rem;
+  }
+  .servicesDecorLittleLinesRight,
+  .servicesDecorLittleLinesLeft,
+  .caseDecorLittleLinesRight {
+    max-width: 6rem;
+  }
+  .servicesDecorLittleLinesRight {
+    top: 12rem;
+  }
+  .servicesDecorManyShapesDown {
+    max-width: 20rem;
+  }
+  .caseDecorShapesUp {
+    max-width: 12rem;
+  }
+  .caseDecorLinesUp {
+    max-width: 27rem;
+    right: -7rem;
+  }
+}
