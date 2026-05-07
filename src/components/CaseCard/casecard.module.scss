@@ -1,0 +1,74 @@
+@use "../../variables" as *;
+
+.card {
+    position: relative;
+    border-radius: 0.4rem;
+    border: 0.1rem solid $borderColorGrey;
+    box-shadow: 0 0.4rem 0.4rem $boxShadowGrafics;
+}
+
+.image {
+    width: 100%;
+}
+
+.label {
+    position: absolute;
+    top: 2.8rem;
+    left: 4rem;
+}
+
+.title {
+    font-size: 1.4rem;
+    color: $colorWhite;
+}
+
+.body {
+    padding: 2.4rem 4rem;
+}
+
+.up {
+    padding-bottom: 2.4rem;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    border-bottom: 0.1rem solid $borderColorGrey;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.digit {
+    @include subtitle(2rem);
+}
+
+.desc {
+    font-size: 1.2rem;
+}
+
+.down {
+    padding-top: 2rem;
+}
+
+.text {
+    margin-bottom: 2rem;
+    color: $colorMiddleGrey;
+}
+
+.link {
+    @include subtitle(1.6rem);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.5s ease;
+    &:hover {
+        color: $colorBlue;
+    }
+}
