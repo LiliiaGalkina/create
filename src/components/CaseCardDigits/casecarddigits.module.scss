@@ -1,0 +1,36 @@
+@use "../../variables" as *;
+
+
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.digit {
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+.desc {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 320px) {
+    .item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .circle {
+        max-width: 4rem;
+    }
+    .digit {
+        font-size: 1.8rem;
+    }
+}

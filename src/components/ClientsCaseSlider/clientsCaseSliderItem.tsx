@@ -1,29 +1,25 @@
 import type React from "react";
 import style from "./clientscaseslideritem.module.scss";
 import type { IPropsClientsCaseSlider } from "../../types";
+import CaseCardDigits from "../CaseCardDigits/CaseCardDigits";
 
 const ClientsCaseSliderItem: React.FC<IPropsClientsCaseSlider> = ({
   logoImg,
   logoAlt,
   title,
   text,
-  img1,
-  alt1,
+  circle1,
   digit1,
   description1,
-  img2,
-  alt2,
+  circle2,
   digit2,
   description2,
-  fon,
-  fonImg,
+  fon
 }) => {
   return (
     <div
-      className={style.sliderItem}
+      className={fon ? style.sliderItemFon : style.sliderItem}
       style={{
-        background: fon ? `#00000080 url(${fonImg})` : "",
-        color: fon ? "#FFFFFF" : "",
         backgroundBlendMode: fon ? "darken" : "",
       }}
     >
@@ -36,32 +32,15 @@ const ClientsCaseSliderItem: React.FC<IPropsClientsCaseSlider> = ({
           {text}
         </p>
       </div>
-
       <div className={style.info}>
-        <div className={style.infoItem}>
-          <img src={img1} alt={alt1} className={style.infoImg} />
-          <p className={style.infoText}>
-            <span
-              className={style.digit}
-              style={{ color: fon ? "#FFFFFF" : "" }}
-            >
-              {digit1}
-            </span>
-            <span className={style.description}>{description1}</span>
-          </p>
-        </div>
-        <div className={style.infoItem}>
-          <img src={img2} alt={alt2} className={style.infoImg} />
-          <p className={style.infoText}>
-            <span
-              className={style.digit}
-              style={{ color: fon ? "#FFFFFF" : "" }}
-            >
-              {digit2}
-            </span>
-            <span className={style.description}>{description2}</span>
-          </p>
-        </div>
+        <CaseCardDigits
+          circle1={circle1}
+          digit1={digit1}
+          description1={description1}
+          circle2={circle2}
+          digit2={digit2}
+          description2={description2}
+        />
       </div>
     </div>
   );

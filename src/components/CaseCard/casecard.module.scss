@@ -1,74 +1,73 @@
 @use "../../variables" as *;
 
 .card {
-    position: relative;
-    border-radius: 0.4rem;
-    border: 0.1rem solid $borderColorGrey;
-    box-shadow: 0 0.4rem 0.4rem $boxShadowGrafics;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.4rem;
+  border: 0.1rem solid $borderColorGrey;
+  box-shadow: 0 0.4rem 0.4rem $boxShadowGrafics;
 }
 
 .image {
-    width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  flex: 0 0 20rem;
 }
 
-.label {
-    position: absolute;
-    top: 2.8rem;
-    left: 4rem;
-}
-
-.title {
-    font-size: 1.4rem;
-    color: $colorWhite;
-}
-
-.body {
-    padding: 2.4rem 4rem;
+.cardbody {
+  flex: 1 1 auto;
+  padding: 2.4rem 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .up {
-    padding-bottom: 2.4rem;
-    display: flex;
-    align-items: center;
-    gap: 3.2rem;
-    border-bottom: 0.1rem solid $borderColorGrey;
-}
-
-.item {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-}
-
-.digit {
-    @include subtitle(2rem);
-}
-
-.desc {
-    font-size: 1.2rem;
+  padding-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  border-bottom: 0.1rem solid $borderColorGrey;
 }
 
 .down {
-    padding-top: 2rem;
+  flex: 1 1 auto;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .text {
-    margin-bottom: 2rem;
-    color: $colorMiddleGrey;
+  flex: 1 1 auto;
+  margin-bottom: 2rem;
+  color: $colorMiddleGrey;
 }
 
 .link {
-    @include subtitle(1.6rem);
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    transition: all 0.5s ease;
-    &:hover {
-        color: $colorBlue;
-    }
+  @include subtitle(1.6rem);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: all 0.5s ease;
+  &:hover {
+    color: $colorBlue;
+  }
+}
+
+@media (max-width: 1024px) {
+  .image {
+    flex: 1 1 22rem;
+  }
+  .cardbody {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+   .image {
+    flex: 1 1 20rem;
+  }
+  .up {
+    justify-content: space-between;
+  }
 }

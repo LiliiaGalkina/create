@@ -7,8 +7,8 @@ import ClientsCaseSliderItem from "./clientsCaseSliderItem";
 import useResponsiveEvent from "../../useResponsiveEvent";
 
 const ClientsCaseSlider = () => {
-  const isTabletScreen = useResponsiveEvent(769);
-  const isMobileScreen = useResponsiveEvent(481);
+  const isTabletScreen = useResponsiveEvent(1024);
+  const isMobileScreen = useResponsiveEvent(667);
 
   let sliderLength = isMobileScreen ? 1 : isTabletScreen ? 2 : 3;
   let sliderSpace = isTabletScreen ? 15 : 29;

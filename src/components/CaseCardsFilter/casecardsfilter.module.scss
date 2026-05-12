@@ -17,3 +17,17 @@
         box-shadow: 0 0 1rem $colorLightGrey;
     }
 }
+
+@media (max-width: 1100px) {
+    .item {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,22 @@
+@use "../../variables" as *;
+
+.label {
+  position: absolute;
+  top: 2.8rem;
+  left: 4rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: $colorWhite;
+}
+
+@media (max-width: 1024px) {
+  .label {
+    top: 1rem;
+    left: 2rem;
+  }
+  .logo {
+    max-width: 10rem;
+  }
+}

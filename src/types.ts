@@ -26,16 +26,13 @@ export interface IPropsClientsCaseSlider {
   logoAlt: string;
   title: string;
   text: string;
-  img1: string;
-  alt1: string;
+  circle1: string;
   digit1: string;
   description1: string;
-  img2: string;
-  alt2: string;
+  circle2?: string | undefined;
   digit2: string;
   description2: string;
   fon: boolean;
-  fonImg: string;
 }
 
 export interface IPropsBenefits {
@@ -129,4 +126,19 @@ export interface IPropsCaseCards {
   description1: string;
   description2: string;
   text: string
+}
+
+export interface IPropsCaseCardInfo {
+  circle1: string;
+  circle2?: string | undefined;
+  digit1: string;
+  digit2: string;
+  description1: string;
+  description2: string;
+}
+
+export interface IPropsCaseCardLabel {
+  imglogo: string;
+  altlogo: string;
+  title: string;
 }
