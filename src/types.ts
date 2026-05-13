@@ -142,3 +142,7 @@ export interface IPropsCaseCardLabel {
   altlogo: string;
   title: string;
 }
+
+export type TPropsCards = {
+  cards: IPropsCaseCards [];
+}

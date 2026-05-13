@@ -1,6 +1,7 @@
 import CaseCards from "../CaseCards/CaseCards";
 import CaseCardsFilter from "../CaseCardsFilter/CaseCardsFilter";
 import CaseStudiesHero from "../CaseStudiesHero/CaseStudiesHero";
+import { caseCards } from "../../data";
 
 const CaseStudiesPage = () => {
     return ( 
@@ -8,7 +9,7 @@ const CaseStudiesPage = () => {
             <CaseStudiesHero/>
             <div className="container">
                 <CaseCardsFilter/>
-                <CaseCards/>
+                <CaseCards cards={caseCards}/>
             </div>
         </main>
      );
