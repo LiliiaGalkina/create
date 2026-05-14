@@ -528,7 +528,7 @@ export const caseCards = [
     description1: "Engagement",
     description2: "Deliverability",
     text: "Createx SEO Agency helped JNational Inc. increase their MQL to SQL conversion rate by 300%.",
-    category: "SEO",
+    category: 6,
   },
   {
     id: 2,
@@ -544,7 +544,7 @@ export const caseCards = [
     description1: "Growth in sales",
     description2: "Target investors",
     text: "With an advanced A/B testing and usability analysis, Createx SEO Agency helps Del Mar see a 400% increase in conversion rate.",
-    category: "Content & PR",
+    category: 6,
   },
   {
     id: 3,
@@ -560,7 +560,7 @@ export const caseCards = [
     description1: "Open Rate",
     description2: "Target investors",
     text: "With an advanced A/B testing and usability analysis, Createx SEO Agency helps Lovato see a 200% increase in conversion rate.",
-    category: "Research",
+    category: 4,
   },
   {
     id: 4,
@@ -576,7 +576,7 @@ export const caseCards = [
     description1: "Open Rate",
     description2: "Growth in sales",
     text: "We helped Sunset company break through a noisy industry and better understand their buyer's journey.",
-    category: "Social Media",
+    category: 2,
   },
   {
     id: 5,
@@ -592,7 +592,7 @@ export const caseCards = [
     description1: "Increase in leads",
     description2: "Prospects",
     text: "We helped Dove company break through a noisy industry and better understand their buyer's journey.",
-    category: "Payed Traffic",
+    category: 6,
   },
   {
     id: 6,
@@ -608,7 +608,7 @@ export const caseCards = [
     description1: "ROI",
     description2: "Increase per month",
     text: "We helped Dove company break through a noisy industry and better understand their buyer's journey.",
-    category: "Payed Traffic",
+    category: 6,
   },
   {
     id: 7,
@@ -624,7 +624,7 @@ export const caseCards = [
     description1: "Engagement",
     description2: "Deliverability",
     text: "Createx SEO Agency helped JNational Inc. increase their MQL to SQL conversion rate by 300%.",
-    category: "SEO",
+    category: 3,
   },
   {
     id: 8,
@@ -640,7 +640,7 @@ export const caseCards = [
     description1: "Growth in sales",
     description2: "Target investors",
     text: "With an advanced A/B testing and usability analysis, Createx SEO Agency helps Del Mar see a 400% increase in conversion rate.",
-    category: "Content & PR",
+    category: 5,
   },
   {
     id: 9,
@@ -656,7 +656,7 @@ export const caseCards = [
     description1: "Open Rate",
     description2: "Target investors",
     text: "With an advanced A/B testing and usability analysis, Createx SEO Agency helps Lovato see a 200% increase in conversion rate.",
-    category: "Research",
+    category: 5,
   },
   {
     id: 10,
@@ -672,7 +672,7 @@ export const caseCards = [
     description1: "Open Rate",
     description2: "Growth in sales",
     text: "We helped Sunset company break through a noisy industry and better understand their buyer's journey.",
-    category: "Social Media",
+    category: 2,
   },
   {
     id: 11,
@@ -688,7 +688,7 @@ export const caseCards = [
     description1: "Increase in leads",
     description2: "Prospects",
     text: "We helped Dove company break through a noisy industry and better understand their buyer's journey.",
-    category: "Payed Traffic",
+    category: 6,
   },
   {
     id: 12,
@@ -704,7 +704,7 @@ export const caseCards = [
     description1: "ROI",
     description2: "Increase per month",
     text: "We helped Dove company break through a noisy industry and better understand their buyer's journey.",
-    category: "Payed Traffic",
+    category: 6,
   },
   {
     id: 13,
@@ -720,7 +720,7 @@ export const caseCards = [
     description1: "Engagement",
     description2: "Deliverability",
     text: "Createx SEO Agency helped JNational Inc. increase their MQL to SQL conversion rate by 300%.",
-    category: "SEO",
+    category: 3,
   },
   {
     id: 14,
@@ -736,7 +736,7 @@ export const caseCards = [
     description1: "Growth in sales",
     description2: "Target investors",
     text: "With an advanced A/B testing and usability analysis, Createx SEO Agency helps Del Mar see a 400% increase in conversion rate.",
-    category: "Content & PR",
+    category: 5,
   },
   {
     id: 15,
@@ -752,7 +752,7 @@ export const caseCards = [
     description1: "Open Rate",
     description2: "Target investors",
     text: "With an advanced A/B testing and usability analysis, Createx SEO Agency helps Lovato see a 200% increase in conversion rate.",
-    category: "Research",
+    category: 4,
   },
   {
     id: 16,
@@ -768,7 +768,7 @@ export const caseCards = [
     description1: "Open Rate",
     description2: "Growth in sales",
     text: "We helped Sunset company break through a noisy industry and better understand their buyer's journey.",
-    category: "Social Media",
+    category: 2,
   },
   {
     id: 17,
@@ -784,7 +784,7 @@ export const caseCards = [
     description1: "Increase in leads",
     description2: "Prospects",
     text: "We helped Dove company break through a noisy industry and better understand their buyer's journey.",
-    category: "Payed Traffic",
+    category: 6,
   },
   {
     id: 18,
@@ -800,6 +800,6 @@ export const caseCards = [
     description1: "ROI",
     description2: "Increase per month",
     text: "We helped Dove company break through a noisy industry and better understand their buyer's journey.",
-    category: "Payed Traffic",
+    category: 5,
   },
 ];

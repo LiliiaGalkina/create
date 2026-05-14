@@ -2,18 +2,12 @@ import style from "./casecards.module.scss";
 import CaseCard from "../CaseCard/CaseCard";
 import type React from "react";
 import type { TPropsCards } from "../../types";
-import { useState } from "react";
 
-const CaseCards: React.FC<TPropsCards> = ({ cards }) => {
-  const [count, setCount] = useState(6);
+
+const CaseCards: React.FC<TPropsCards> = ({ cards, count, onLoadMore }) => {
   const cardsItems = cards.slice(0, count);
+  const shouldShowButton = cards.length > cardsItems.length;
 
-  const handleclick = () => {
-    if (cards.length > cardsItems.length ) {
-      setCount((prev) => prev + 2);
-    }
-  };
-  
   return (
     <>
       <div className={style.cards}>
@@ -21,8 +15,8 @@ const CaseCards: React.FC<TPropsCards> = ({ cards }) => {
           <CaseCard key={item.id} {...item} />
         ))}
       </div>
-      {cards.length !== count && (
-        <button className={style.btn} onClick={handleclick}>
+      {shouldShowButton && (
+        <button className={style.btn} onClick={onLoadMore}>
           <img
             src="./image/casestudies/arrows-convert.svg"
             alt="arrows convert"

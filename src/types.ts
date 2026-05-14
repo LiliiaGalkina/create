@@ -144,5 +144,12 @@ export interface IPropsCaseCardLabel {
 }
 
 export type TPropsCards = {
-  cards: IPropsCaseCards [];
-}
+  cards: IPropsCaseCards[];
+  count: number;
+  onLoadMore: () => void;
+};
+
+export type TPropsCategory = {
+  category: number | null; 
+  setCategory: (id: number) => void;
+};
