@@ -30,42 +30,52 @@ export const menuItemsFooter = [
   {
     id: 1,
     name: "About Us",
+    link: "/about",
   },
   {
     id: 2,
     name: "Case Studies",
+    link: "/casestudies",
   },
   {
     id: 3,
     name: "Blog",
+    link: "/blog",
   },
   {
     id: 4,
     name: "Careers",
+    link: "/careers",
   },
   {
     id: 5,
     name: "Contacts",
+    link: "/contacts",
   },
   {
     id: 6,
     name: "Social Media",
+    link: "/socialmedia",
   },
   {
     id: 7,
     name: "SEO",
+    link: "/seo",
   },
   {
     id: 8,
     name: "Research",
+    link: "/research",
   },
   {
     id: 9,
     name: "Content & PR",
+    link: "/contentpr"
   },
   {
     id: 10,
     name: "Payed Traffic",
+    link: "payedtraffic"
   },
 ];
 

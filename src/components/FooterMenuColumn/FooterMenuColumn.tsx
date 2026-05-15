@@ -2,6 +2,7 @@ import style from "./footermenucolumn.module.scss";
 import { menuItemsFooter } from "../../data";
 import type React from "react";
 import type {IPropsMenuFooter} from "../../types";
+import { Link } from "react-router-dom";
 
 const FooterMenuColumn:React.FC<IPropsMenuFooter> = ({title, min, max}) => {
     return (
@@ -9,7 +10,7 @@ const FooterMenuColumn:React.FC<IPropsMenuFooter> = ({title, min, max}) => {
             <h3 className={style.title}>{title}</h3>
             <ul className={style.list}>
                 {menuItemsFooter.slice(min, max).map((item) => (
-                    <li key={item.id}><a href="#" className={style.link}>{item.name}</a></li>
+                    <li key={item.id}><Link to={item.link} className={style.link}>{item.name}</Link></li>
                 ))}
             </ul>
         </div>

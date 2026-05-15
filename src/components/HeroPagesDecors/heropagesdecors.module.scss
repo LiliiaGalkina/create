@@ -34,6 +34,32 @@
   @include heroPagesDecor(bottom, 8.6rem, right, 39.4rem);
 }
 
+//heroabout
+.aboutDecorManyShapesDown{
+   @include heroPagesDecor(top, 0, left, -10rem);
+   transform: rotate(180deg);
+}
+
+.aboutDecorLinesUp {
+   @include heroPagesDecor(bottom, -10rem, left, -10rem);
+   transform: rotate(180deg);
+   width: 100rem;
+}
+
+.aboutDecorShapesUp {
+  @include heroPagesDecor(bottom, -9rem, right, 22.7rem);
+  transform: rotateX(180deg);
+}
+
+.aboutDecorLittleLinesLeft {
+   @include heroPagesDecor(top, 12.6rem, right, 5rem);
+   max-width: 12.4rem;
+}
+
+.aboutDecorLittleLinesRight {
+   @include heroPagesDecor(top, 17.3rem, left, 33.9rem);
+}
+
 @media (max-width: 1260px) {
   .servicesDecorShapesUp {
     max-width: 15rem;
