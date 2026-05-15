@@ -1,39 +1,46 @@
 @use "../../variables" as *;
 
 .filter {
-    margin-bottom: 6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .item {
-    @include subtitle(1.6rem, $colorLightGrey);
-    padding: 1rem 4.8rem;
-     border: 0.1rem solid transparent;
-    border-radius: 0.4rem;
-    transition: all 0.5s ease;
-    cursor: pointer;
-    &:hover {
-        box-shadow: 0 0 1rem $colorLightGrey;
-    }
+  @include subtitle(1.6rem, $colorLightGrey);
+  padding: 1rem 4.8rem;
+  border: 0.1rem solid transparent;
+  border-radius: 0.4rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 1rem $colorLightGrey;
+  }
 }
 
 .active {
-    border: 0.1rem solid $colorBlue;
-    color: $colorBlue;
+  border: 0.1rem solid $colorBlue;
+  color: $colorBlue;
 }
 
 @media (max-width: 1100px) {
-    .item {
-        padding: 1rem 2rem;
-    }
+  .item {
+    padding: 1rem 2rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .filter {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
+  .filter {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .item {
+    @include subtitle(1.4rem, $colorLightGrey);
+    padding: 1rem;
+  }
 }

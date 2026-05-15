@@ -3,7 +3,6 @@ import { caseCardsFilter } from "../../data";
 import type React from "react";
 import type { TPropsCategory } from "../../types";
 
-
 const CaseCardsFilter:React.FC<TPropsCategory> = ({category, setCategory}) => {
 
 const handleCategoryClick = (selectedId: number) => {

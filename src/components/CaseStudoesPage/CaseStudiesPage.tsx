@@ -4,6 +4,10 @@ import CaseStudiesHero from "../CaseStudiesHero/CaseStudiesHero";
 import { caseCards } from "../../data";
 import { useState } from "react";
 import { caseCardsFilter } from "../../data";
+import Clients from "../Clients/Clients";
+import style from "./casestudiespage.module.scss";
+import Feedback from "../Feedback/Feedback";
+import HomeNews from "../HomeNews/HomeNews";
 
 const CaseStudiesPage = () => {
   const initialCategoryId = caseCardsFilter[0].id;
@@ -38,6 +42,13 @@ const CaseStudiesPage = () => {
           count={visibleCount}
           onLoadMore={handleLoadMore}
         />
+      </div>
+      <div className={style.greyZone}>
+        <div className="container">
+          <Clients />
+          <Feedback/>
+          <HomeNews/>
+        </div>
       </div>
     </main>
   );
