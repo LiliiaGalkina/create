@@ -1,0 +1,29 @@
+.videoblock {
+    position: relative;
+    margin-bottom: 18rem;
+    max-width: 100%;
+    height: 50rem;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.poster {
+    position: absolute;
+    top: 0;
+    left: 0;
+     filter: brightness(50%) ;
+}
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
