@@ -5,3 +5,10 @@
      background-image: url("./image/heropages/hero-decor-dots-right.png");
     background-position: right;
 }
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 96rem;
+        background-position: right 18rem;
+    }
+}

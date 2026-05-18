@@ -1,5 +1,6 @@
 @use "../../variables" as *;
 
+//heroservices
 .servicesDecorShapesUp {
   @include heroPagesDecor(top, 0, left, 0);
 }
@@ -20,6 +21,7 @@
   @include heroPagesDecor(top, 13.4rem, right, 9.1rem);
 }
 
+//herocasestudies
 .caseDecorShapesUp {
   @include heroPagesDecor(top, -8.7rem, left, 17.6rem);
   transform: rotate(90deg);
@@ -35,15 +37,15 @@
 }
 
 //heroabout
-.aboutDecorManyShapesDown{
-   @include heroPagesDecor(top, 0, left, -10rem);
-   transform: rotate(180deg);
+.aboutDecorManyShapesDown {
+  @include heroPagesDecor(top, 0, left, -10rem);
+  transform: rotate(180deg);
 }
 
 .aboutDecorLinesUp {
-   @include heroPagesDecor(bottom, -10rem, left, -10rem);
-   transform: rotate(180deg);
-   width: 100rem;
+  @include heroPagesDecor(bottom, -10rem, left, 5rem);
+  transform: rotate(180deg);
+  width: 50rem;
 }
 
 .aboutDecorShapesUp {
@@ -52,13 +54,15 @@
 }
 
 .aboutDecorLittleLinesLeft {
-   @include heroPagesDecor(top, 12.6rem, right, 5rem);
-   max-width: 12.4rem;
+  @include heroPagesDecor(top, 12.6rem, right, 5rem);
+  max-width: 12.4rem;
 }
 
 .aboutDecorLittleLinesRight {
-   @include heroPagesDecor(top, 17.3rem, left, 33.9rem);
+  @include heroPagesDecor(top, 17.3rem, left, 33.9rem);
 }
+
+//media
 
 @media (max-width: 1260px) {
   .servicesDecorShapesUp {
@@ -87,25 +91,50 @@
   .servicesDecorLittleLinesLeft {
     left: 7rem;
   }
-  .caseDecorLinesUp {
-    right: -10rem;
+  .aboutDecorShapesUp {
+    @include heroPagesDecor(bottom, -10rem, right, 6.7rem);
+  }
+  .aboutDecorLinesUp {
+    max-width: 40rem;
+  }
+  .aboutDecorLittleLinesLeft {
+    max-width: 8.7rem;
+  }
+  .aboutDecorLittleLinesRight {
+    @include heroPagesDecor(top, 12.3rem, left, 33.9rem);
+  }
+  .aboutDecorManyShapesDown {
+    @include heroPagesDecor(top, 0, left, 0);
+    max-width: 30rem;
   }
 }
 
 @media (max-width: 768px) {
   .servicesDecorLinesUp {
     right: 10rem;
+    top: -5rem;
   }
   .servicesDecorLittleLinesLeft {
     left: 0;
   }
   .caseDecorLinesUp {
-    right: 0rem;
-    max-width: 40rem;
+    right: 5rem;
+    max-width: 35rem;
   }
   .caseDecorShapesUp {
     left: 2rem;
     max-width: 18rem;
+  }
+  .aboutDecorShapesUp {
+    @include heroPagesDecor(bottom, -10rem, right, 1rem);
+    max-width: 20rem;
+  }
+  .aboutDecorLinesUp {
+    @include heroPagesDecor(bottom, -8rem, left, 0);
+    max-width: 30rem;
+  }
+  .aboutDecorManyShapesDown {
+    max-width: 25rem;
   }
 }
 
@@ -126,9 +155,15 @@
   .caseDecorShapesUp {
     max-width: 15rem;
   }
-  .caseDecorLinesUp {
-    right: -6rem;
-    max-width: 35rem;
+  .aboutDecorLittleLinesLeft {
+    max-width: 6rem;
+  }
+  .aboutDecorLittleLinesRight {
+    @include heroPagesDecor(top, 10.3rem, left, 25.9rem);
+    max-width: 6rem;
+  }
+  .aboutDecorShapesUp {
+    max-width: 18rem;
   }
 }
 
@@ -140,6 +175,20 @@
     max-width: 25rem;
     right: 5rem;
   }
+  .caseDecorLinesUp {
+    max-width: 20rem;
+    right: 0;
+  }
+  .aboutDecorLittleLinesLeft {
+    @include heroPagesDecor(top, 10.6rem, right, 5rem);
+  }
+  .aboutDecorLittleLinesRight {
+    @include heroPagesDecor(top, 14.3rem, left, 25.9rem);
+  }
+  .aboutDecorLinesUp {
+    @include heroPagesDecor(bottom, -8rem, left, -5rem);
+    max-width: 28rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -147,7 +196,8 @@
     max-width: 10rem;
   }
   .servicesDecorLinesUp {
-    right: 1.5rem;
+    max-width: 20rem;
+    right: 0;
   }
   .servicesDecorLittleLinesRight,
   .servicesDecorLittleLinesLeft,
@@ -164,7 +214,16 @@
     max-width: 12rem;
   }
   .caseDecorLinesUp {
-    max-width: 27rem;
-    right: -7rem;
+   top: -5rem;
+   right: -5rem;
+  }
+  .aboutDecorLittleLinesRight {
+    @include heroPagesDecor(top, 14.3rem, left, 20.9rem);
+  }
+  .aboutDecorLinesUp {
+    max-width: 25rem;
+  }
+  .aboutDecorShapesUp {
+    max-width: 15rem;
   }
 }
