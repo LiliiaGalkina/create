@@ -6,8 +6,8 @@ const AboutUsPage = () => {
   return (
     <main>
       <AboutHero />
+      <Achievements />
       <div className="container">
-        <Achievements />
         <AboutVideo />
       </div>
     </main>
