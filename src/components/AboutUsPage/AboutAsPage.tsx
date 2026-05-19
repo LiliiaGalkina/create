@@ -1,6 +1,7 @@
 import AboutHero from "../AboutHero/AboutHero";
 import Achievements from "../Achievements/Achievements";
 import AboutVideo from "../AboutVideo/AboutVideo";
+import AboutCoreValues from "../AboutCoreValues/AboutCoreValues";
 
 const AboutUsPage = () => {
   return (
@@ -9,6 +10,7 @@ const AboutUsPage = () => {
       <Achievements />
       <div className="container">
         <AboutVideo />
+        <AboutCoreValues/>
       </div>
     </main>
   );

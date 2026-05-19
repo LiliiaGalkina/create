@@ -1,0 +1,26 @@
+@use "../../variables" as *;
+
+.coreValues {
+    margin-bottom: 18rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 4rem;
+}
+
+.title {
+    @include sectionTitle;
+    flex: 0 1 30%;
+}
+
+.content {
+    flex: 0 1 60%;
+}
+
+@media (max-width: 1024px) {
+    .coreValues {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+

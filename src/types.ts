@@ -153,3 +153,13 @@ export type TPropsCategory = {
   category: number | null; 
   setCategory: (id: number) => void;
 };
+
+// About Us
+
+export interface IPropsCoreValuesItems {
+  id: number;
+  image: string;
+  alt: string;
+  title: string;
+  text: string;
+}

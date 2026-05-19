@@ -813,3 +813,36 @@ export const caseCards = [
     category: 5,
   },
 ];
+
+//About Us
+
+export const coreValuesItems = [
+  {
+    id: 1,
+    image: "./image/about/core-ic-like.svg",
+    alt: "like icon",
+    title: "Respect",
+    text: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.",
+  },
+  {
+    id: 2,
+    image: "./image/about/core-ic-view.svg",
+    alt: "view icon",
+    title: "Transparency",
+    text: "Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim purus.",
+  },
+  {
+    id: 3,
+    image: "./image/about/core-ic-checklist.svg",
+    alt: "checklist icon",
+    title: "Commitment",
+    text: "Fusce parturient diam magna ullamcorper morbi semper massa ac facilisisViverra scelerisque consequat.",
+  },
+  {
+    id: 4,
+    image: "./image/about/core-ic-management.svg",
+    alt: "management icon",
+    title: "Cooperation",
+    text: "Porttitor diam consectetur aliquam vitae urna, pharetra, at ipsum. Pretium placerat turpis sed viverra consequat.",
+  },
+];
