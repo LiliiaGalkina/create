@@ -1,0 +1,78 @@
+@use "../../variables" as *;
+
+.items {
+  position: relative;
+  margin-bottom: 24.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.twoImages {
+  flex: 0 1 22%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.upImage {
+  transform: translateY(-7.5rem);
+  flex: 0 1 31%;
+}
+
+.oneImage {
+  flex: 0 1 39%;
+}
+
+.image {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .items {
+    margin-bottom: 14rem;
+    flex-wrap: wrap;
+  }
+  .twoImages {
+    flex: 0 1 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .imgwrapper {
+      flex: 0 1 47%;
+      overflow: hidden;
+     text-align: center;
+    }
+  }
+  .upImage {
+    flex: 0 1 46%;
+    transform: translateY(0);
+  }
+  .oneImage {
+    flex: 0 1 46%;
+  }
+}
+
+@media (max-width: 480px) {
+  .upImage,
+  .oneImage {
+    flex: 0 1 45%;
+  }
+}
+
+@media (max-width: 375px) {
+  .items {
+    flex-direction: column;
+  }
+  .twoImages {
+    flex-direction: column;
+    .imgwrapper {
+      flex: 0 1 100%;
+    }
+  }
+  .upImage,
+  .oneImage {
+    flex: 0 1 100%;
+  }
+}

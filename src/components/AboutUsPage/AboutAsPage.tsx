@@ -2,6 +2,7 @@ import AboutHero from "../AboutHero/AboutHero";
 import Achievements from "../Achievements/Achievements";
 import AboutVideo from "../AboutVideo/AboutVideo";
 import AboutCoreValues from "../AboutCoreValues/AboutCoreValues";
+import AboutSeoAgency from "../AboutSeoAgency/AboutseoAgency";
 
 const AboutUsPage = () => {
   return (
@@ -11,6 +12,7 @@ const AboutUsPage = () => {
       <div className="container">
         <AboutVideo />
         <AboutCoreValues/>
+        <AboutSeoAgency/>
       </div>
     </main>
   );
