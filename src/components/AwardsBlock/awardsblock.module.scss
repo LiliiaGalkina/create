@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .text {
@@ -21,14 +21,21 @@
 }
 
 @media (max-width: 1024px) {
+  .text {
+     @include subtitle(2rem);
+    max-width: 35rem;
+  }
+}
+
+@media (max-width: 870px) {
   .awardsblock {
-    padding: 5rem 0;
+     padding: 9rem 0 2rem;
     flex-direction: column;
   }
-
   .text {
     max-width: 100%;
   }
+
 }
 
 @media (max-width: 600px) {

@@ -1,10 +1,10 @@
 .awards {
-    max-width: 49.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  gap: 6rem 4rem;
 }
 
 .card {
@@ -22,18 +22,14 @@
     font-size: 1.4rem;
 }
 
-@media (max-width: 1024px) {
+
+@media (max-width: 870px) {
     .awards {
-        max-width: 100%;
-        gap: 6rem;
-        justify-content: center;
+        width: 100%;
     }
 }
 
 @media (max-width: 600px) {
-    .awards {
-        gap: 6rem 4rem;
-    }
     .image {
         max-width: 5rem;
     }
@@ -44,6 +40,10 @@
 }
 
 @media (max-width: 480px) {
+    .awards {
+        grid-template-columns: 1fr;
+    }
+
     .image {
         max-width: 7.5rem;
     }
