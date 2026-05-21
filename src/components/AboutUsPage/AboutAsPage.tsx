@@ -5,6 +5,7 @@ import AboutCoreValues from "../AboutCoreValues/AboutCoreValues";
 import AboutAwards from "../AboutAwards/AboutAwards";
 import AboutSeoAgency from "../AboutSeoAgency/AboutSeoAgency";
 import AboutFreeAnalysisForm from "../AboutFreeAnalysisForm/AboutFreeAnalisysForm";
+import AboutClients from "../AboutClients/AboutClients";
 
 const AboutUsPage = () => {
   return (
@@ -17,6 +18,7 @@ const AboutUsPage = () => {
         <AboutSeoAgency />
         <AboutAwards />
         <AboutFreeAnalysisForm/>
+        <AboutClients/>
       </div>
     </main>
   );

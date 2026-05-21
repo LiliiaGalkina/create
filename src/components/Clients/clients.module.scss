@@ -1,23 +1,31 @@
 @use "../../variables" as *;
 
 .clients {
-    padding: 9rem 0 3.9rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin-bottom: 3.9rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     align-items: center;
     gap: 2rem;
 }
 
-@media (max-width: 810px) {
+@media (max-width: 900px) {
+ .client {
+    max-width: 10rem;
+    img {
+        width: 100%;
+    }
+ }
+}
+
+@media (max-width: 768px) {
     .clients {
-        padding: 5rem 0 3.9rem;
-        justify-content: center;
+         grid-template-columns: repeat(3, 1fr);
+         justify-items: center;
     }
 }
 
-@media (max-width: 290px) {
+@media (max-width: 375px) {
     .clients {
-        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
     }
 }

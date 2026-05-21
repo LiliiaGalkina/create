@@ -1,0 +1,9 @@
+@use "../../variables" as *;
+
+.clients {
+    margin-bottom: 18rem;
+}
+
+.title {
+    @include sectionTitle;
+}

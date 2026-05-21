@@ -163,3 +163,7 @@ export interface IPropsCoreValuesItems {
   title: string;
   text: string;
 }
+
+export type TPropsclientsCount = {
+  clientsCount: number;
+};

@@ -1,3 +1,4 @@
+//header
 export const menuItems = [
   {
     id: 1,
@@ -26,6 +27,7 @@ export const menuItems = [
   },
 ];
 
+//footer
 export const menuItemsFooter = [
   {
     id: 1,
@@ -79,6 +81,7 @@ export const menuItemsFooter = [
   },
 ];
 
+//home
 export const heroItems = [
   {
     id: 1,
@@ -156,7 +159,42 @@ export const clients = [
   {
     id: 6,
     image: "./image/home/client-logo7.png",
+    alt: "Atlantis Health icon",
+  },
+  {
+    id: 7,
+    image: "./image/home/client-logo6.png",
     alt: "sunset realty icon",
+  },
+  {
+    id: 7,
+    image: "./image/home/client-logo7.png",
+    alt: "Atlantis Health icon",
+  },
+  {
+    id: 8,
+    image: "./image/home/client-logo8.png",
+    alt: "del Mar icon",
+  },
+  {
+    id: 9,
+    image: "./image/home/client-logo9.png",
+    alt: "CompleteHealth icon",
+  },
+  {
+    id: 10,
+    image: "./image/home/client-logo10.png",
+    alt: "National icon",
+  },
+  {
+    id: 11,
+    image: "./image/home/client-logo11.png",
+    alt: "Ultimate gym icon",
+  },
+  {
+    id: 12,
+    image: "./image/home/client-logo12.png",
+    alt: "United strategy icon",
   },
 ];
 
@@ -213,7 +251,7 @@ export const askQuestionsItems = [
 export const clientsCaseSliderItems = [
   {
     id: 1,
-    logoImg: "./image/home/client-logo6.png",
+    logoImg: "./image/home/client-logo.png",
     logoAlt: "National logo",
     title: "Charity organisation",
     text: "Createx SEO Agency helped National Inc. increase their MQL to SQL conversion rate by 300%.",
@@ -255,7 +293,7 @@ export const clientsCaseSliderItems = [
   },
   {
     id: 4,
-    logoImg: "./image/home/client-logo6.png",
+    logoImg: "./image/home/client-logo.png",
     logoAlt: "National logo",
     title: "Charity organisation",
     text: "Createx SEO Agency helped National Inc. increase their MQL to SQL conversion rate by 300%.",

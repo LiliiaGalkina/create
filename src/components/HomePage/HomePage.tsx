@@ -18,7 +18,7 @@ const HomePage = () => {
       <HomeHero />
       <div className="container">
         <AwardsBlock />
-        <Clients />
+        <Clients clientsCount={6}/>
       </div>
       <Agency />
       <Achievements />

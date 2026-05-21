@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 
 .awardsblock {
+  margin-bottom: 9rem;
   padding: 12rem 0 9rem;
   display: flex;
   justify-content: space-between;
@@ -21,6 +22,9 @@
 }
 
 @media (max-width: 1024px) {
+  .awardsblock {
+    margin-bottom: 4rem;
+  }
   .text {
      @include subtitle(2rem);
     max-width: 35rem;
@@ -29,7 +33,6 @@
 
 @media (max-width: 870px) {
   .awardsblock {
-     padding: 9rem 0 2rem;
     flex-direction: column;
   }
   .text {
