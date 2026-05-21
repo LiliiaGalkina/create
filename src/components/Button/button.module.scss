@@ -81,6 +81,13 @@
   width: 16.5rem;
 }
 
+.aboutFormBtn {
+  background-color: $colorBlack;
+  width: 17.8rem;
+  font-size: 1.4rem;
+  height: auto;
+}
+
 @media (max-width: 1024px) {
   .headerButton {
     width: 14rem;
