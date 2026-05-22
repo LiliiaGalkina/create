@@ -1,0 +1,57 @@
+@use "../../variables" as *;
+
+.careers {
+  padding: 6rem 0;
+  background-color: $bgWhiteGrey;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.itemImg {
+  max-width: 44.96rem;
+  img {
+    width: 100%;
+  }
+}
+
+.itemInfo {
+  max-width: 60rem;
+}
+
+.title {
+  @include sectionTitle;
+  text-align: left;
+}
+
+.text {
+  margin-bottom: 6rem;
+  font-size: 2rem;
+  color: $colorGrey;
+}
+
+@media (max-width: 1024px) {
+  .itemInfo {
+    max-width: 45rem;
+  }
+}
+
+@media (max-width: 830px) {
+  .itemInfo {
+    max-width: 40rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .items {
+    flex-direction: column-reverse;
+    gap: 6rem;
+  }
+  .itemInfo {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+@use "../../variables" as *;
+
+.title {
+    @include sectionTitle;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-items: center;
+    gap: 6rem 3rem;
+}
+

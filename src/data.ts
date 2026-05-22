@@ -884,3 +884,62 @@ export const coreValuesItems = [
     text: "Porttitor diam consectetur aliquam vitae urna, pharetra, at ipsum. Pretium placerat turpis sed viverra consequat.",
   },
 ];
+
+export const team = [
+  {
+    id: 1,
+    img: "./image/about/team1.png",
+    alt: "Courtney Alexander foto",
+    name: "Courtney Alexander",
+    position: "Founder and CEO",
+  },
+  {
+    id: 2,
+    img: "./image/about/team2.png",
+    alt: "Johnny Lane foto",
+    name: "Johnny Lane",
+    position: "Director of Client Services",
+  },
+  {
+    id: 3,
+    img: "./image/about/team3.png",
+    alt: "Diane Mccoy foto",
+    name: "Diane Mccoy",
+    position: "Lead Digital PR Strategist",
+  },
+  {
+    id: 4,
+    img: "./image/about/team4.png",
+    alt: "Judith Warren foto",
+    name: "Judith Warren",
+    position: "Cheaf Marketing Officer",
+  },
+  {
+    id: 5,
+    img: "./image/about/team5.png",
+    alt: "Floyd Simmmons foto",
+    name: "Floyd Simmmons",
+    position: "Account Director",
+  },
+  {
+    id: 6,
+    img: "./image/about/team6.png",
+    alt: "Shawn Edwards foto",
+    name: "Shawn Edwards",
+    position: "Director of PPC",
+  },
+  {
+    id: 7,
+    img: "./image/about/team7.png",
+    alt: "Jane Cooper foto",
+    name: "Jane Cooper",
+    position: "Digital Marketing Manager",
+  },
+  {
+    id: 8,
+    img: "./image/about/team8.png",
+    alt: "Soham Alexander foto",
+    name: "Soham Alexander",
+    position: "Director of SEO",
+  },
+];

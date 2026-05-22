@@ -167,3 +167,11 @@ export interface IPropsCoreValuesItems {
 export type TPropsclientsCount = {
   clientsCount: number;
 };
+
+export interface IPropsTeams {
+  id: number;
+  img: string;
+  alt: string;
+  name: string;
+  position: string;
+}

@@ -1,0 +1,19 @@
+@use "../../variables" as *;
+
+.image {
+    max-width: 100%;
+}
+
+.info {
+    padding-top: 1.6rem;
+    text-align: center;
+}
+
+.title{
+    @include subtitle(2rem);
+}
+
+.position {
+    color: $colorMiddleGrey;
+}
+

@@ -7,3 +7,9 @@
 .title {
     @include sectionTitle;
 }
+
+@media (max-width: 480px) {
+    .clients {
+        margin-bottom: 12rem;
+    }
+}
