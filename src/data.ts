@@ -72,12 +72,12 @@ export const menuItemsFooter = [
   {
     id: 9,
     name: "Content & PR",
-    link: "/contentpr"
+    link: "/contentpr",
   },
   {
     id: 10,
     name: "Payed Traffic",
-    link: "payedtraffic"
+    link: "payedtraffic",
   },
 ];
 
@@ -261,7 +261,7 @@ export const clientsCaseSliderItems = [
     circl2: "./image/home/clients-case-green.png",
     digit2: "100%",
     description2: "Deliverability",
-    fon: false
+    fon: false,
   },
   {
     id: 2,
@@ -941,5 +941,42 @@ export const team = [
     alt: "Soham Alexander foto",
     name: "Soham Alexander",
     position: "Director of SEO",
+  },
+];
+
+//contacts
+
+export const contactsHeroCards = [
+  {
+    id: 1,
+    image: "./image/contacts/hero-outline-icon.svg",
+    alt: "outline-icon",
+    title: "Visit us",
+    text1: "2464 Royal Ln. Mesa,",
+    text2: "New Jersey 45463, USA",
+    link: "See on the map",
+  },
+  {
+    id: 2,
+    image: "./image/contacts/hero-phone-icon.svg",
+    alt: "phone-icon",
+    title: "Call us",
+    text1: "(405) 555-0128",
+    text2: "(603) 555-0123",
+  },
+  {
+    id: 3,
+    image: "./image/contacts/hero-chat-icon.svg",
+    alt: "chat-icon",
+    title: "Talk to us",
+    text1: "hello@createx.com",
+  },
+  {
+    id: 4,
+    image: "./image/contacts/hero-clock-icon.svg",
+    alt: "clock-icon",
+    title: "Working Hours",
+    text1: "Mon-Fri: 9 am — 6 pm",
+    text2: "Sat-Sun: days off",
   },
 ];

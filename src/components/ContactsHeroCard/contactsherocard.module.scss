@@ -1,0 +1,29 @@
+@use "../../variables" as *;
+
+.card {
+    display: flex;
+    align-items: start;
+    gap: 1.2rem;
+    color: $colorWhite;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.8rem;
+}
+
+.subtitle {
+    @include subtitle(1.4rem, $colorWhite);
+    opacity: 0.6;
+   
+}
+
+.link {
+    color: $colorBlue;
+    transition: all 0.5s ease;
+    &:hover {
+        text-decoration: underline;
+    }
+}

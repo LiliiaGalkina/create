@@ -106,10 +106,10 @@ export type TPropsElement = {
 
 export interface IPropsHeroDecor {
   shapesClass: string;
-  linesLeftClass: string;
   linesUpClass: string;
-  manyShapesClass: string;
-  linesrightClass: string;
+  linesLeftClass?: string;
+  manyShapesClass?: string;
+  linesrightClass?: string;
 }
 
 export interface IPropsCaseCards {
@@ -125,7 +125,7 @@ export interface IPropsCaseCards {
   digit2: string;
   description1: string;
   description2: string;
-  text: string
+  text: string;
 }
 
 export interface IPropsCaseCardInfo {
@@ -150,7 +150,7 @@ export type TPropsCards = {
 };
 
 export type TPropsCategory = {
-  category: number | null; 
+  category: number | null;
   setCategory: (id: number) => void;
 };
 
@@ -174,4 +174,15 @@ export interface IPropsTeams {
   alt: string;
   name: string;
   position: string;
+}
+
+//contacts
+export interface IPropsContactsHeroCards {
+  id: number;
+  image: string;
+  alt: string;
+  title: string;
+  text1: string;
+  text2?: string;
+  link?: string;
 }

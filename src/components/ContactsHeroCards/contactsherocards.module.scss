@@ -1,0 +1,18 @@
+@use "../../variables" as *;
+
+.cards {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.separator {
+  // Полоска
+  width: 0.1rem;
+  background: $cardsGradientSeparator;
+  opacity: 0.3;
+  align-self: stretch;
+  pointer-events: none;
+}

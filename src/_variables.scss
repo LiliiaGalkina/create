@@ -11,6 +11,14 @@ $borderColorGrey: #e5e8ed;
 $boxShadowColorSliderItem: #f8f8f9;
 $borderColorBlue: #7772f166;
 $boxShadowGrafics: #1e212c05;
+$cardsGradientSeparator: linear-gradient(
+    to bottom,
+    #dadbdd00 0%,
+    #dadbdd80 20%,
+    #dadbdd 60%,
+    #dadbdd80 80%,
+    #dadbdd20 100%
+  );
 
 //mixins
 @mixin title($fontsize: 4.6rem, $fontColor: $colorBlack) {
@@ -92,10 +100,6 @@ $boxShadowGrafics: #1e212c05;
   position: relative;
   min-height: 65.3rem;
   padding: 15.2rem 0 12rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   background-color: $colorBlack;
   background-image: url("./image/heropages/hero-decor-dots.png");
