@@ -3,6 +3,21 @@
 .hero {
   @include heroPages;
   min-height: 58.6rem;
+  padding: 15.2rem 0 8rem;
   background-image: url("./image/heropages/hero-decor-dots-right.png");
   background-position: right;
+
+}
+
+@media (max-width: 1024px) {
+  .hero {
+      background-size: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    background-size: cover;
+  }
 }

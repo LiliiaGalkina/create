@@ -6,7 +6,7 @@ import type { IPropsContactsHeroCards } from "../../types";
 const ContactsHeroCard: React.FC<IPropsContactsHeroCards> = ({image, alt, title, text1, text2, link}) => {
   return (
     <div className={style.card}>
-      <img src={image} alt={alt} />
+      <img src={image} alt={alt}  className={style.image}/>
       <div className={style.info}>
         <h4 className={style.subtitle}>{title}</h4>
         <span className={style.text}>{text1}</span>

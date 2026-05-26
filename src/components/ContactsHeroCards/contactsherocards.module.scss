@@ -1,18 +1,35 @@
 @use "../../variables" as *;
 
 .cards {
-  margin-top: 8rem;
-  display: flex;
-  justify-content: space-between;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  justify-items: center;
   align-items: start;
   gap: 1.5rem;
 }
 
-.separator {
-  // Полоска
-  width: 0.1rem;
-  background: $cardsGradientSeparator;
-  opacity: 0.3;
-  align-self: stretch;
-  pointer-events: none;
+@media (max-width: 1024px) {
+  .cards {
+    width: fit-content;
+    margin: 8rem auto 0;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: flex-start;
+    gap: 4rem 7rem;
+  }
 }
+
+@media (max-width: 600px) {
+  .cards {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+

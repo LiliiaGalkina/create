@@ -70,7 +70,7 @@
 }
 
 .contactsDecorShapesUp {
-@include heroPagesDecor(top, -10rem, right, 22%);
+  @include heroPagesDecor(top, -10rem, right, 22%);
 }
 
 //media
@@ -118,6 +118,9 @@
     @include heroPagesDecor(top, 0, left, 0);
     max-width: 30rem;
   }
+  .contactsDecorLinesUp {
+    width: 45rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -146,6 +149,13 @@
   }
   .aboutDecorManyShapesDown {
     max-width: 25rem;
+  }
+  .contactsDecorShapesUp {
+    @include heroPagesDecor(top, -10rem, right, 12%);
+    max-width: 50rem;
+  }
+  .contactsDecorLinesUp {
+    width: 40rem;
   }
 }
 
@@ -236,5 +246,11 @@
   }
   .aboutDecorShapesUp {
     max-width: 15rem;
+  }
+  .contactsDecorShapesUp {
+    max-width: 20rem;
+  }
+  .contactsDecorLinesUp {
+    width: 35rem;
   }
 }
