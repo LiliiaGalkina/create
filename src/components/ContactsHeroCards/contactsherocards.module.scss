@@ -1,13 +1,19 @@
 @use "../../variables" as *;
 
 .cards {
-  margin-top: 10rem;
+  margin: 10rem auto 0;
+  width: fit-content;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
-  justify-items: center;
   align-items: start;
-  gap: 1.5rem;
+  gap: 4rem;
+}
+
+@media (max-width: 1190px) {
+  .cards {
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -22,7 +28,7 @@
 
 @media (max-width: 600px) {
   .cards {
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 

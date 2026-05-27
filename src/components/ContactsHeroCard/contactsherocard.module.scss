@@ -1,9 +1,24 @@
 @use "../../variables" as *;
-
 .card {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.1rem;
+  align-items: stretch;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.separator {
+  background: $cardsGradientSeparator;
+  width: 0.1rem;
+  height: 100%;
+}
+
+.content{
   display: flex;
   align-items: start;
-  gap: 1.2rem;
+  justify-content: center;
+  gap: 1rem;
   color: $colorWhite;
 }
 
@@ -27,18 +42,36 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
+  .card {
+    gap: 2rem;
+  }
   .info {
     gap: 0;
   }
-}
-
-
-@media (max-width: 600px) {
-  .card {
-    gap: 0.8rem;
-  }
   .image {
     max-width: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    gap: 0;
+  }
+  .separator {
+    width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    gap: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    font-size: 1.6rem;
   }
 }
