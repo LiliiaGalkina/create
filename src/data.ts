@@ -980,3 +980,31 @@ export const contactsHeroCards = [
     text2: "Sat-Sun: days off",
   },
 ];
+
+export const contactsRadioButtons = [
+  {
+    id: 1,
+    value: "service1",
+    name: "Social Media",
+  },
+  {
+    id: 2,
+    value: "service2",
+    name: "SEO",
+  },
+  {
+    id: 3,
+    value: "service3",
+    name: "Research",
+  },
+  {
+    id: 4,
+    value: "service4",
+    name: "Content & PR",
+  },
+  {
+    id: 5,
+    value: "service5",
+    name: "Payed Traffic",
+  },
+];

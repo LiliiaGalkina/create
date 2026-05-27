@@ -1,0 +1,48 @@
+@use "../../variables" as *;
+
+.title {
+  margin-bottom: 1.6rem;
+  color: $colorMiddleGrey;
+}
+
+.radios {
+  display: inline-flex;
+  gap: 1.2rem;
+}
+
+.radioContainer {
+  position: relative;
+  border-radius: 0.4rem;
+  transition: all 0.5s ease;
+  overflow: hidden;
+
+  &.active {
+    .label {
+      background-color: $colorBlue;
+      border-color: $colorBlue;
+      color: $colorWhite;
+    }
+  }
+  &:hover {
+    box-shadow: 0 0 1rem $bgMenuBlue;
+  }
+}
+
+.radio {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  appearance: none;
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+}
+
+.label {
+  @include subtitle(1.4rem, $colorMiddleGrey);
+  display: block;
+  padding: 0.55rem 1.6rem;
+  border: 0.1rem solid $borderColorRadios;
+}

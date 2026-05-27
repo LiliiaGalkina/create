@@ -186,3 +186,24 @@ export interface IPropsContactsHeroCards {
   text2?: string;
   link?: string;
 }
+
+export interface IPropsRadioButton {
+  id: number;
+  value: string;
+  name: string;
+}
+
+// 1. Интерфейс для одной опции из массива данных
+export interface IRadioOption {
+  id: number;
+  value: string;
+  name: string;
+}
+
+// 2. Интерфейс для пропсов компонента ContactsFormService
+// Он принимает объект-опцию и добавляет к нему свойства для управления состоянием.
+export interface IContactsFormServiceProps {
+  item: IRadioOption;
+  isChecked: boolean;
+  onSelect: () => void;
+}
