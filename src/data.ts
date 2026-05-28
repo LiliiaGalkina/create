@@ -1008,3 +1008,48 @@ export const contactsRadioButtons = [
     name: "Payed Traffic",
   },
 ];
+
+export const contactsFormFields = [
+  {
+    id: 1,
+    label: "First Name*",
+    fieldType: "text",
+    text: "Your first name",
+    isRequired: true,
+  },
+  {
+    id: 2,
+    label: "Last Name*",
+    fieldType: "text",
+    text: "Your last name",
+    isRequired: true,
+  },
+  {
+    id: 3,
+    label: "Email*",
+    fieldType: "email",
+    text: "Your working email",
+    isRequired: true,
+  },
+  {
+    id: 4,
+    label: "Phone*",
+    fieldType: "tel",
+    text: "Your phone number",
+    isRequired: true,
+  },
+  {
+    id: 5,
+    label: "Company",
+    fieldType: "text",
+    text: "Your company name",
+    isRequired: false,
+  },
+  {
+    id: 6,
+    label: "Position",
+    fieldType: "text",
+    text: "Your position",
+    isRequired: false,
+  },
+];

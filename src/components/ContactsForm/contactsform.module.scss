@@ -1,0 +1,42 @@
+@use "../../variables" as *;
+
+.items {
+    padding: 10rem 0 18rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.content {
+    max-width: 60.1rem;
+}
+
+.title {
+    @include sectionTitle;
+}
+
+.fields {
+    margin-bottom: 2.4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem 3rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.button {
+    @include button;
+    width: 22.4rem;
+}
+
+.imgItem {
+    max-width: 60.48rem;
+    img {
+        width: 100%;
+    }
+}

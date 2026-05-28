@@ -12,12 +12,12 @@ const ContactsFormServices = () => {
     <div className={style.services}>
       <h4 className={style.title}>Услуги</h4>
       <div className={style.radios}>
-        {contactsRadioButtons.map((option) => (
+        {contactsRadioButtons.map((item) => (
           <ContactsFormService
-            key={option.id}
-            item={option}
-            isChecked={selectedValue === option.id}
-            onSelect={() => setSelectedValue(option.id)}
+            key={item.id}
+            {...item}
+            isChecked={selectedValue === item.id}
+            onSelect={() => setSelectedValue(item.id)}
           />
         ))}
       </div>

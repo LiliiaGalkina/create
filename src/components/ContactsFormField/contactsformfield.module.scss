@@ -1,0 +1,6 @@
+@use "../../variables" as *;
+
+.fieldBlock {
+    @include formFieldBlock;
+}
+

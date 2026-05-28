@@ -1,13 +1,16 @@
 import React from "react";
 import style from "./contactsformservices.module.scss";
-import type { IContactsFormServiceProps } from "../../types";
+import type { IPropsContactsFormService } from "../../types";
 
 
-const ContactsFormService: React.FC<IContactsFormServiceProps> = ({
-  item,
+const ContactsFormService: React.FC<IPropsContactsFormService> = ({
+  id,
+  value,
+  name,
   isChecked,
   onSelect,
 }) => {
+  
   const handleChange = () => {
     if (!isChecked) {
       onSelect();
@@ -17,16 +20,16 @@ const ContactsFormService: React.FC<IContactsFormServiceProps> = ({
   return (
     <div className={`${style.radioContainer} ${isChecked ? style.active : ""}`}>
       <label
-        htmlFor={item.value}
+        htmlFor={value}
         className={style.label}
       >
-        {item.name}
+        {name}
       </label>
       <input
         type="radio"
         name="services"
-        id={item.id.toString()} 
-        value={item.value}
+        id={id.toString()} 
+        value={value}
         checked={isChecked}
         onChange={handleChange}
         className={style.radio}

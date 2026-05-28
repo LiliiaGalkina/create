@@ -11,15 +11,15 @@ $borderColorGrey: #e5e8ed;
 $boxShadowColorSliderItem: #f8f8f9;
 $borderColorBlue: #7772f166;
 $boxShadowGrafics: #1e212c05;
-$borderColorRadios: #D7DADD;
+$borderColorRadios: #d7dadd;
 $cardsGradientSeparator: linear-gradient(
-    to bottom,
-    #dadbdd00 0%,
-    #dadbdd80 20%,
-    #dadbdd 60%,
-    #dadbdd80 80%,
-    #dadbdd20 100%
-  );
+  to bottom,
+  #dadbdd00 0%,
+  #dadbdd80 20%,
+  #dadbdd 60%,
+  #dadbdd80 80%,
+  #dadbdd20 100%
+);
 
 //mixins
 @mixin title($fontsize: 4.6rem, $fontColor: $colorBlack) {
@@ -40,7 +40,6 @@ $cardsGradientSeparator: linear-gradient(
 
   @media (max-width: 1024px) {
     font-size: 3.2rem;
-  
   }
 }
 
@@ -83,6 +82,23 @@ $cardsGradientSeparator: linear-gradient(
   }
 }
 
+@mixin button {
+    height: 5.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  line-height: 325%;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  background-color: $colorBlue;
+  color: $colorWhite;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
 @mixin sliderArrow {
   padding: 1.2rem;
   border-radius: 50%;
@@ -122,4 +138,18 @@ $cardsGradientSeparator: linear-gradient(
   position: absolute;
   #{$posY}: $valueY;
   #{$posX}: $valueX;
+}
+
+@mixin formFieldBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  .field {
+    width: 100%;
+    padding: 1.3rem 1.6rem;
+    background-color: $bgWhiteGrey;
+    border: 0.1rem solid $borderColorRadios;
+    border-radius: 0.4rem;
+}
 }

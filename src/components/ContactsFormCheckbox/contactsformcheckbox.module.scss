@@ -1,0 +1,21 @@
+@use "../../variables" as *;
+
+.block {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.label {
+  display: block;
+  max-width: 28.7rem;
+  font-size: 1.4rem;
+  color: $colorGrey;
+}
+
+.check {
+  width: 1.6rem;
+  height: 1.6rem;
+  position: relative;
+  top: 0.7rem;
+  cursor: pointer;
+}
