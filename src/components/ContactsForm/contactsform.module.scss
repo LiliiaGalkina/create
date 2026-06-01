@@ -1,42 +1,68 @@
 @use "../../variables" as *;
 
 .items {
-    padding: 10rem 0 18rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
+  padding: 10rem 0 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
 .content {
-    max-width: 60.1rem;
+  max-width: 60.1rem;
 }
 
 .title {
-    @include sectionTitle;
+  @include sectionTitle;
 }
 
 .fields {
-    margin-bottom: 2.4rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.4rem 3rem;
+  margin-bottom: 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem 3rem;
 }
 
 .buttons {
-    display: flex;
-    justify-content: space-between;
-    gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
 }
 
 .button {
-    @include button;
-    width: 22.4rem;
+  @include button;
+  width: 22.4rem;
 }
 
 .imgItem {
-    max-width: 60.48rem;
-    img {
-        width: 100%;
+  max-width: 60.48rem;
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .items {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4rem;
+  }
+  .content {
+    max-width: 100%;
+  }
+  .imgItem {
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+    .items {
+        padding: 7rem 0;
+    }
+    .fields {
+        grid-template-columns: 1fr;
+    }
+    .buttons {
+        flex-direction: column;
     }
 }

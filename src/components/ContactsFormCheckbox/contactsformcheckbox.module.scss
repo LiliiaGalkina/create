@@ -16,6 +16,19 @@
   width: 1.6rem;
   height: 1.6rem;
   position: relative;
-  top: 0.7rem;
+  top: 0.6rem;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .block {
+    align-items: center;
+  }
+  .check {
+    top: 0;
+
+  }
+  .label {
+    max-width: 100%;
+  }
 }

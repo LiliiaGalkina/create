@@ -50,3 +50,10 @@
   padding: 0.55rem 1.6rem;
   border: 0.1rem solid $borderColorRadios;
 }
+
+@media (max-width: 1180px) {
+  .radios {
+    flex-wrap: wrap;
+  
+  }
+}
