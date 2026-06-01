@@ -4,6 +4,7 @@ import ServicesPage from "./components/ServicesPage/ServicesPage";
 import CaseStudiesPage from "./components/CaseStudoesPage/CaseStudiesPage";
 import AboutUsPage from "./components/AboutUsPage/AboutAsPage";
 import ContactsPage from "./components/ContactsPage/ContactsPage";
+import BlogPage from "./components/BlogPage/BlogPage";
 
 
 const AppRouter = () => {
@@ -14,6 +15,7 @@ const AppRouter = () => {
       <Route path={"/casestudies"} element={<CaseStudiesPage />} />
       <Route path={"/about"} element={<AboutUsPage />} />
       <Route path={"/contacts"} element={<ContactsPage />} />
+      <Route path={"/blog"} element={<BlogPage/>}/>
     </Routes>
   );
 }

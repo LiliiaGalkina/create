@@ -1,0 +1,8 @@
+@use "../../variables" as *;
+
+.hero {
+  @include heroPages;
+  min-height: 62.3rem;
+  background-image: url("./image/heropages/hero-decor-dots-right.png");
+  background-position: right;
+}
