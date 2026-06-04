@@ -1,0 +1,66 @@
+@use "../../variables" as *;
+
+.post {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.image {
+  width: 100%;
+  height: 36rem;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.4rem;
+  color: $colorMiddleGrey;
+}
+
+.date,
+.autor {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.date {
+  padding: 0 1.2rem;
+  border-left: 0.1rem solid $colorMiddleGrey;
+  border-right: 0.1rem solid $colorMiddleGrey;
+}
+
+.title {
+    @include subtitle(2rem);
+}
+
+.text {
+  color: $colorGrey;
+}
+
+.link {
+    @include subtitle(1.6rem);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.5s ease;
+    span {
+      font-size: 1.8rem;
+    }
+  &:hover {
+    color: $colorBlue;
+  }
+}
+
+

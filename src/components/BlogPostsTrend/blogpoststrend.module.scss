@@ -1,0 +1,48 @@
+@use "../../variables" as *;
+
+.trendBlock {
+    margin-bottom: 6rem;
+}
+
+.title {
+    @include title(2.4rem);
+    margin-bottom: 2.4rem;
+}
+
+.trends {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.trend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.image {
+    max-width: 10rem;
+}
+
+.date {
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.icon {
+    max-width: 1.6rem;
+}
+
+.text {
+    font-size: 1.4rem;
+    line-height: 150%;
+    color: $colorMiddleGrey;
+}
+
+.subtitle {
+    @include subtitle(1.6rem);
+}

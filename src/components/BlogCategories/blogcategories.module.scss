@@ -1,0 +1,26 @@
+@use "../../variables" as *;
+
+.categoriesBlock {
+    margin-bottom: 6rem;
+}
+
+.title {
+    @include subtitle(2.4rem);
+    margin-bottom: 2.4rem;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    @include subtitle(1.6rem);
+    cursor: pointer;
+}

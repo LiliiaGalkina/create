@@ -202,3 +202,36 @@ export interface IPropsContactsFormField {
   text: string;
   isRequired: boolean;
 }
+
+//blog
+// Базовый интерфейс для любого объекта, у которого есть дата и id 
+//для использования функции сортировки
+//----------------------------------
+export interface IBasePost {
+  id: number;
+  date: string;
+}
+
+// Интерфейс для обычного поста
+export interface IPropsPosts extends IBasePost {
+  img: string;
+  alt: string;
+  category: number;
+  autor: string;
+  title: string;
+  text?: string;
+}
+
+// Интерфейс для трендового поста
+export interface IPropsTrend extends IBasePost {
+  image: string; // вместо img
+  alt: string;
+  title: string;
+}
+
+//----------------------------------------------
+
+export interface IPropsBlogNewPosts {
+  posts: IPropsPosts[];
+}
+

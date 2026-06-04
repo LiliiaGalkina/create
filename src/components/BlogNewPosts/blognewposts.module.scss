@@ -1,0 +1,9 @@
+@use "../../variables" as *;
+
+.newPosts {
+    margin-bottom: 4.8rem;
+    padding-bottom: 4.8rem;
+    display: flex;
+    gap: 3rem;
+    border-bottom: 0.1rem solid $borderColorGrey;
+}

@@ -1,0 +1,27 @@
+@use "../../variables" as *;
+
+.title {
+    @include title(2.4rem);
+    margin-bottom: 2.4rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.tag {
+    padding: 0.55rem 1.6rem;
+    border: 0.1rem solid $borderColorRadios;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    font-size: 1.4rem;
+    color: $colorMiddleGrey;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: $colorBlue;
+        color: $colorWhite;
+    }
+}
