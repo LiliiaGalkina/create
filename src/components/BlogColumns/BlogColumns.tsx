@@ -5,15 +5,18 @@ import BlogPostsTrend from "../BlogPostsTrend/BlogPostsTrend";
 import BlogTags from "../BlogTags/BlogTags";
 import style from "./blogcolumns.module.scss";
 import type { IPropsBlogNewPosts } from "../../types";
+import { useState } from "react";
 
 const BlogColumns: React.FC<IPropsBlogNewPosts> = ({ posts }) => {
+  const [currentCategory, setCurrentCategory] = useState(0);
+
   return (
     <div className={style.columns}>
       <div className={style.posts}>
-        <BlogPosts posts={posts}/>
+        <BlogPosts posts={posts} currentCategory={currentCategory} />
       </div>
       <div className={style.dopInfo}>
-        <BlogCategories />
+        <BlogCategories posts={posts} currentCategory={currentCategory} setCurrentCategory={setCurrentCategory}/>
         <BlogPostsTrend />
         <BlogTags />
       </div>

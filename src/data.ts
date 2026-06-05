@@ -1,3 +1,5 @@
+import type { ICategory } from "./types";
+
 //header
 export const menuItems = [
   {
@@ -1319,7 +1321,11 @@ export const posts = [
   },
 ];
 
-export const postsCategories = [
+export const postsCategories: ICategory[] = [
+  {
+    id: 0,
+    name: "All"
+  },
   {
     id: 1,
     name: "Media & Press",

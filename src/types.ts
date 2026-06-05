@@ -233,5 +233,17 @@ export interface IPropsTrend extends IBasePost {
 
 export interface IPropsBlogNewPosts {
   posts: IPropsPosts[];
+  currentCategory?: number;
+  setCurrentCategory: (arg0: number) => void;
 }
 
+export interface IPropsForBlogPosts {
+  posts: IPropsPosts[];
+  currentCategory?: number; 
+}
+
+export interface ICategory {
+  id: number;
+  name: string;
+  count?: number; 
+}

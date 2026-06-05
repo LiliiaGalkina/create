@@ -1,13 +1,16 @@
 import style from "./blogposts.module.scss";
 import BlogPost from "../BlogPost/BlogPost";
 import type React from "react";
-import type { IPropsBlogNewPosts } from "../../types";
+import type {IPropsForBlogPosts } from "../../types";
+import { useFilteredPosts } from "../../hooks/useFilteredPosts";
 
-const BlogPosts:React.FC<IPropsBlogNewPosts> = ({posts}) => {
+const BlogPosts:React.FC<IPropsForBlogPosts> = ({posts, currentCategory}) => {
+
+  const filteredPosts = useFilteredPosts(posts, currentCategory);
 
   return (
     <div className={style.posts}>
-      {posts.slice(2).map((item) => (
+      {filteredPosts.map((item) => (
         <BlogPost key={item.id} {...item} />
       ))}
     </div>
