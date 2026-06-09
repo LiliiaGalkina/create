@@ -6,10 +6,6 @@ import { sortArrByDate } from "../../helpers";
 const BlogPostsTrend = () => {
 const postsTrendSort = sortArrByDate(postsTrend);
 
-  console.log(postsTrendSort);
-
-
-
   return (
     <section className={style.trendBlock}>
       <h3 className={style.title}>Now Trending</h3>

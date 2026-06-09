@@ -220,6 +220,7 @@ export interface IPropsPosts extends IBasePost {
   autor: string;
   title: string;
   text?: string;
+  dopClass?: string;
 }
 
 // Интерфейс для трендового поста
@@ -234,6 +235,7 @@ export interface IPropsTrend extends IBasePost {
 export interface IPropsBlogNewPosts {
   posts: IPropsPosts[];
   currentCategory?: number;
+  dopClass?: string;
   setCurrentCategory: (arg0: number) => void;
 }
 

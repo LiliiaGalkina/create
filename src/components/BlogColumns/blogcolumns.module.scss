@@ -2,8 +2,35 @@
 
 .columns {
     display: grid;
-    grid-template-columns:  66% 28%;
+    grid-template-columns:  70% 28%;
     justify-content: space-between;
     align-items: start;
     gap: 4rem;
+}
+
+@media (max-width: 1024px) {
+    .columns {
+        grid-template-columns: 1fr;
+    }
+    .dopInfo {
+        order: 1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6rem;
+    }
+    .posts {
+        order: 2;
+    }
+}
+
+@media (max-width: 630px) {
+    .dopInfo {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dopInfo {
+        gap: 5rem;
+    }
 }

@@ -3,13 +3,12 @@ import style from "./blogpost.module.scss";
 import type { IPropsPosts } from "../../types";
 import { postsCategories } from "../../data";
 
-const BlogPost:React.FC<IPropsPosts> = ({img, alt, category, date, autor, title, text}) => {
+const BlogPost:React.FC<IPropsPosts> = ({img, alt, category, date, autor, title, text, dopClass}) => {
   const postCategory = postsCategories.find((item) => item.id === category)?.name;
     
   return (
-      <div className={style.post}>
+      <div className={`${style.post} ${dopClass ? style[dopClass] : ""}`}>
         <img src={img} alt={alt} className={style.image} />
-        <div className={style.content}>
           <div className={style.info}>
             <span className={style.category}>{postCategory}</span>
             <div className={style.date}>
@@ -29,7 +28,6 @@ const BlogPost:React.FC<IPropsPosts> = ({img, alt, category, date, autor, title,
           <a href="#" className={style.link}>
             Read more <span className={style.arrow}> &rarr;</span>
           </a>
-        </div>
       </div>
     );
 }

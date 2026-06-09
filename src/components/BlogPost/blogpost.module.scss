@@ -1,29 +1,36 @@
 @use "../../variables" as *;
 
 .post {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-row: span 5; /* Занимает 3 строки родителя */
+  grid-template-rows: subgrid;
+  gap: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px $borderColorGrey;
+}
+
+.newPost {
+  grid-row: span 4;
 }
 
 .image {
   width: 100%;
   height: 36rem;
   object-fit: cover;
+  object-position: center;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1.6rem;
-}
+
 
 .info {
+  padding: 0 1rem;
   display: flex;
-  align-items: center;
-  gap: 1.2rem;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 1rem;
   font-size: 1.4rem;
   color: $colorMiddleGrey;
 }
@@ -33,34 +40,42 @@
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  white-space: nowrap;
 }
 
 .date {
-  padding: 0 1.2rem;
+  padding: 0 1rem;
   border-left: 0.1rem solid $colorMiddleGrey;
   border-right: 0.1rem solid $colorMiddleGrey;
 }
 
 .title {
-    @include subtitle(2rem);
+  @include subtitle(2rem);
+   padding: 0 1rem;
 }
 
 .text {
+   padding: 0 1rem;
   color: $colorGrey;
 }
 
 .link {
-    @include subtitle(1.6rem);
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    transition: all 0.5s ease;
-    span {
-      font-size: 1.8rem;
-    }
+  @include subtitle(1.6rem);
+   padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: all 0.5s ease;
+  span {
+    font-size: 1.8rem;
+  }
   &:hover {
     color: $colorBlue;
   }
 }
 
-
+@media (max-width: 375px) {
+  .image {
+    height: 28rem;
+  }
+}

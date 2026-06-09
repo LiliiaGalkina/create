@@ -46,3 +46,28 @@
 .subtitle {
     @include subtitle(1.6rem);
 }
+
+@media (max-width: 1024px) {
+    .trendBlock {
+        margin-bottom: 0;
+        flex: 0 1 60%;
+    }
+    .trend {
+        justify-content: start;
+    }
+}
+
+@media (max-width: 630px) {
+    .trendBlock {
+        flex: 0 1 52%;
+    }
+    .subtitle {
+        @include subtitle(1.2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .trendBlock {
+        flex: 0 1 100%;
+    }
+}

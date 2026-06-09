@@ -8,7 +8,7 @@ const BlogNewPosts: React.FC<IPropsBlogNewPosts> = ({ posts }) => {
   return (
     <div className={style.newPosts}>
       {posts.slice(0, 2).map((item) => (
-        <BlogPost key={item.id} {...item} />
+        <BlogPost key={item.id} {...item} dopClass="newPost"/>
       ))}
     </div>
   );

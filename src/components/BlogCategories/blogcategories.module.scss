@@ -1,26 +1,61 @@
 @use "../../variables" as *;
 
 .categoriesBlock {
-    margin-bottom: 6rem;
+  margin-bottom: 6rem;
 }
 
 .title {
-    @include subtitle(2.4rem);
-    margin-bottom: 2.4rem;
+  @include subtitle(2.4rem);
+  margin-bottom: 2.4rem;
 }
 
 .categories {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 .category {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .name {
-    @include subtitle(1.6rem);
-    cursor: pointer;
+  @include subtitle(1.6rem);
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .categoriesBlock {
+    margin-bottom: 0;
+    flex: 0 1 30%;
+  }
+  .categories {
+    gap: 1rem;
+  }
+  .name {
+    @include subtitle(1.8rem);
+  }
+}
+
+@media (max-width: 630px) {
+  .categoriesBlock {
+    flex: 0 1 38%;
+  }
+}
+
+@media (max-width: 480px) {
+  .categoriesBlock {
+    flex: 0 1 60%;
+  }
+}
+
+@media (max-width: 375px) {
+  .categoriesBlock {
+    flex: 0 1 100%;
+  }
 }
