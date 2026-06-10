@@ -13,7 +13,9 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-id-swiper": "^4.0.0",
+    "react-paginate": "^8.3.0",
     "react-router-dom": "^7.14.1",
+    "react-ts-paginations": "^2.0.1",
     "swiper": "^12.1.3"
   },
   "devDependencies": {

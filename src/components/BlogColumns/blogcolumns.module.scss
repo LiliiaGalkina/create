@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 
 .columns {
+    padding-bottom: 12rem;
     display: grid;
     grid-template-columns:  70% 28%;
     justify-content: space-between;
