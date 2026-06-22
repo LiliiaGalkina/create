@@ -3,6 +3,7 @@ import { sortArrByDate } from "../../helpers";
 import BlogColumns from "../BlogColumns/BlogColumns";
 import BlogHero from "../BlogHero/BlogHero";
 import BlogNewPosts from "../BlogNewPosts/BlogNewPosts";
+import BlogSubscribe from "../BlogSubscribe/BlogSubscribe";
 
 const BlogPage = () => {
       const sortedPosts = sortArrByDate(posts);
@@ -13,6 +14,7 @@ const BlogPage = () => {
         <BlogNewPosts posts={sortedPosts} />
         <BlogColumns posts={sortedPosts}/>
       </div>
+      <BlogSubscribe/>
     </main>
   );
 };

@@ -236,7 +236,7 @@ export interface IPropsBlogNewPosts {
   posts: IPropsPosts[];
   currentCategory?: number;
   dopClass?: string;
-  setCurrentCategory: (arg0: number) => void;
+  setCurrentCategory?: (arg0: number) => void;
 }
 
 export interface IPropsForBlogPosts {
