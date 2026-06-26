@@ -8,7 +8,7 @@ import style from "./abouthero.module.scss";
 
 const AboutHero = () => {
   return (
-    <div className={style.hero}>
+    <section className={style.hero}>
       <HeroPagesDecors
         shapesClass="aboutDecorShapesUp"
         linesLeftClass="aboutDecorLittleLinesLeft"
@@ -24,7 +24,7 @@ const AboutHero = () => {
         </HeroTitleblock>
         <HeroCards />
       </div>
-    </div>
+    </section>
   );
 };
 

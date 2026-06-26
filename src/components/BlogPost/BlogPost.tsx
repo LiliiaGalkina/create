@@ -7,7 +7,7 @@ const BlogPost:React.FC<IPropsPosts> = ({img, alt, category, date, autor, title,
   const postCategory = postsCategories.find((item) => item.id === category)?.name;
     
   return (
-      <div className={`${style.post} ${dopClass ? style[dopClass] : ""}`}>
+      <article className={`${style.post} ${dopClass ? style[dopClass] : ""}`}>
         <img src={img} alt={alt} className={style.image} />
           <div className={style.info}>
             <span className={style.category}>{postCategory}</span>
@@ -28,7 +28,7 @@ const BlogPost:React.FC<IPropsPosts> = ({img, alt, category, date, autor, title,
           <a href="#" className={style.link}>
             Read more <span className={style.arrow}> &rarr;</span>
           </a>
-      </div>
+      </article>
     );
 }
  
