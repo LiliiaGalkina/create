@@ -1,15 +1,16 @@
 @use "../../variables" as *;
 
 .clients {
-    margin-bottom: 18rem;
+    margin-bottom: 12rem;
 }
 
 .title {
     @include sectionTitle;
+    margin-bottom: 0;
 }
 
 @media (max-width: 480px) {
     .clients {
-        margin-bottom: 12rem;
+        margin-bottom: 6rem;
     }
 }

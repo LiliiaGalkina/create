@@ -66,7 +66,7 @@ const ServicesPage = () => {
       <Markets />
       <ClientsCase />
       <div className="container">
-        <Clients />
+        <Clients clientsCount={6} />
         <HomeNews />
       </div>
       *

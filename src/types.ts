@@ -73,6 +73,11 @@ export type TPropsCrumbs = {
   name: string;
 };
 
+export type TPropsCrumbsItem = {
+  parent: string;
+  name: string;
+};
+
 export type TPropsHeroTitle = {
   title: string;
 };
