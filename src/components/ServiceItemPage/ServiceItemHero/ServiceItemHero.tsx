@@ -1,11 +1,15 @@
+import type React from "react";
 import CrumbsItem from "../../CrumbsItem/CrumbsItem";
 import HeroPagesDecors from "../../HeroPagesDecors/HeroPagesDecors";
 import HeroText from "../../HeroText/HeroText";
 import HeroTitle from "../../HeroTitle/HeroTitle";
 import HeroTitleblock from "../../HeroTitleBlock/HeroTitleblock";
 import style from "./serviceitemhero.module.scss";
+import type { TPropsServiceItemPage } from "../../../types";
 
-const ServiceItemHero = () => {
+
+
+const ServiceItemHero:React.FC<TPropsServiceItemPage> = ({title, text}) => {
     return (
       <section className={style.hero}>
         <HeroPagesDecors
@@ -17,9 +21,9 @@ const ServiceItemHero = () => {
         />
         <div className="container">
           <HeroTitleblock>
-            <CrumbsItem parent="Services" name="Search Engine Optimization" />
-            <HeroTitle title="Search Engine Optimization" />
-            <HeroText text="Ipsum blandit etiam nunc vitae. Duis lobortis odio vel morbi dui pellentesque enim integer facilisi. Ultrices vitae tempor amet nec euismod non." />
+            <CrumbsItem parent="Services" name={title} />
+            <HeroTitle title={title} />
+            <HeroText text={text} />
           </HeroTitleblock>
         </div>
       </section>

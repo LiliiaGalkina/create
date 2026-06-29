@@ -5,6 +5,7 @@ import CaseStudiesPage from "./components/CaseStudoesPage/CaseStudiesPage";
 import AboutUsPage from "./components/AboutUsPage/AboutAsPage";
 import ContactsPage from "./components/ContactsPage/ContactsPage";
 import BlogPage from "./components/BlogPage/BlogPage";
+import ServiceItemPage from "./components/ServiceItemPage/ServiceItemPage";
 
 
 const AppRouter = () => {
@@ -16,6 +17,7 @@ const AppRouter = () => {
       <Route path={"/about"} element={<AboutUsPage />} />
       <Route path={"/contacts"} element={<ContactsPage />} />
       <Route path={"/blog"} element={<BlogPage/>}/>
+      <Route path={`/service/:elemId`} element={<ServiceItemPage/>}/>
     </Routes>
   );
 }

@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 export interface IPropsButton {
   textButton: string;
   classDop: string;
@@ -254,3 +256,14 @@ export interface ICategory {
   name: string;
   count?: number; 
 }
+
+//ServiceItemPage
+export type TPropsServiceItemPage = {
+  title: string;
+  text: string;
+}
+
+export type TPropsServiceItem = {
+  serviceItem: IPropsServicesBlockInfo;
+  children: JSX.Element;
+};

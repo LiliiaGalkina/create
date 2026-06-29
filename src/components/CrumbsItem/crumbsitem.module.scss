@@ -19,6 +19,16 @@
   }
 }
 
+.parent {
+  font-size: 1.4rem;
+  color: $colorWhite;
+  transition: all 0.5s ease;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .text {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  opacity: 0.6;
 }
