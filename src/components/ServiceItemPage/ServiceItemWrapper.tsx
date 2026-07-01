@@ -4,7 +4,7 @@ import ServiceItemHero from "./ServiceItemHero/ServiceItemHero";
 
 const ServiceItemWrapper: React.FC<TPropsServiceItem> = ({ serviceItem, children }) => {
   return (
-    <div>
+    <>
       {serviceItem && (
         <ServiceItemHero title={serviceItem?.title} text={serviceItem.text} />
       )}
@@ -12,7 +12,7 @@ const ServiceItemWrapper: React.FC<TPropsServiceItem> = ({ serviceItem, children
         <Clients clientsCount={6} />
         {children}
       </div>
-    </div>
+    </>
   );
 };
 

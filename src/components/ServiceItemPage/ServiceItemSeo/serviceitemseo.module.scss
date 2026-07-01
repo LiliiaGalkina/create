@@ -1,0 +1,34 @@
+@use "../../../variables" as *;
+
+.seo {
+    padding: 9rem 0 6rem;
+}
+
+.title {
+    @include sectionTitle;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+}
+
+.card {
+    padding: 4rem;
+    box-shadow: 0 0 1rem $colorLightGrey;
+}
+
+.image {
+    margin-bottom: 2.4rem;
+    max-width: 4.8rem;
+}
+
+.cardTitle {
+    @include subtitle(2rem);
+    margin-bottom: 0.8rem;
+}
+
+.cardText {
+    color: $colorMiddleGrey;
+}

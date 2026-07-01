@@ -1,0 +1,29 @@
+@use "../../../variables" as *;
+
+.info {
+    padding: 5rem 0 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.infoImg {
+   flex: 0 1 70.5rem;
+   img {
+    width: 100%;
+   }
+}
+
+.infoContent {
+    flex: 0 1 39rem;
+}
+
+.infoTitle {
+    @include sectionTitle;
+    text-align: left;
+}
+
+.infoText {
+    color: $colorMiddleGrey;
+}

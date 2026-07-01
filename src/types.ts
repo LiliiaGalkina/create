@@ -264,6 +264,29 @@ export type TPropsServiceItemPage = {
 }
 
 export type TPropsServiceItem = {
-  serviceItem: IPropsServicesBlockInfo;
   children: JSX.Element;
+  serviceItem?: IPropsServicesBlockInfo;
 };
+
+export interface IPropsServiceInfo {
+  id: number;
+  img: string;
+  imgalt: string;
+  title: string;
+  text: string;
+}
+
+export interface IPropsServiceSeo {
+  id: number;
+  img: string;
+  alt: string;
+  title: string;
+  text: string;
+}
+
+export interface IPropsHowItWorks {
+  headline: string;
+  subtitle: string;
+  text: string;
+  dopClass: string;
+}

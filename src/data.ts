@@ -1398,3 +1398,80 @@ export const tags = [
     name: "targeting",
   },
 ];
+
+//ServiceItemPage
+export const serviceInfo = [
+  {
+    id: 1,
+    img: "./image/services-item/info-first.png",
+    imgalt: "graphics on a tablet",
+    title: "We go above and beyond to ensure successful SEO",
+    text: "Lacus ac mollis vitae viverra. Tincidunt est, feugiat montes, viverra ullamcorper mi dui, nulla pharetra. Sapien urna nullam elit diam mauris orci. Volutpat quam tempus justo, aliquam. Tortor ultrices mattis eget orci eu nisi sed augue odio. Et senectus risus, pharetra, tristique libero. Dolor risus ac quam dictum mattis ultrices laoreet sapien. Feugiat lacus, suscipit eu sociis et quis  hendrerit. Cras at ac magna ultricies orci.",
+  },
+  {
+    id: 2,
+    img: "./image/blog/latest-post1.png",
+    imgalt: "someone is writing something in a notebook",
+    title: "Search Engine Optimization",
+    text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, molestiae odio? Repellendus aspernatur ducimus, reprehenderit quo aut soluta architecto dolorem odit minus quidem nemo modi earum at maxime, voluptas quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, molestiae odio? Repellendus aspernatur ducimus, reprehenderit quo aut soluta architecto dolorem odit minus quidem nemo modi earum at maxime.",
+  },
+  {
+    id: 3,
+    img: "./image/blog/latest-post2.png",
+    imgalt: "a hand with a pen on a diagram",
+    title: "Research Service",
+    text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut obcaecati dignissimos similique iste! Maiores dolores eaque fugiat fugit a? Aut similique velit unde, incidunt iusto ipsa? Ipsam itaque architecto repellat! Facilis voluptas mollitia error praesentium porro? Soluta beatae, in sapiente ipsum quo molestiae recusandae totam commodi dolores exercitationem odit quibusdam optio cupiditate iusto illo qui? Eius voluptas aspernatur dolore quas.",
+  },
+  {
+    id: 4,
+    img: "./image/blog/post1.png",
+    imgalt: "three-dimensional multi-colored parts of a pie chart",
+    title: "Content & PR Service",
+    text: "Nisi quibusdam facilis aperiam eveniet similique nobis voluptatem, consectetur ipsum porro repudiandae neque, quae inventore officia perferendis. Necessitatibus laboriosam dolorem enim quod fugiat at, velit eligendi eum!         Quibusdam natus quo ea laboriosam porro fuga explicabo suscipit adipisci dolorum, voluptatum velit eaque in dolores inventore id corporis blanditiis ullam fugiat aperiam quidem, laborum ducimus laudantium repudiandae? Earum, excepturi!          Animi eum laborum laboriosam quidem ex expedita perferendis.",
+  },
+];
+
+export const seoCards = [
+  {
+    id: 1,
+    img: "./image/services-item/ic-options.svg",
+    alt: "options icon",
+    title: "SEO Strategy",
+    text: "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.",
+  },
+  {
+    id: 2,
+    img: "./image/services-item/ic-analytics.svg",
+    alt: "analysis icon",
+    title: "Competitor Analysis",
+    text: "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.",
+  },
+  {
+    id: 3,
+    img: "./image/services-item/ic-target.svg",
+    alt: "target icon",
+    title: "Technical Audit",
+    text: "Congue viverra in quis urna lectus proin massa. Aliquam, justo nisl sed diam nibh vehicula.",
+  },
+  {
+    id: 4,
+    img: "./image/services-item/ic-chart.svg",
+    alt: "chart icon",
+    title: "Content Strategy",
+    text: "Posuere sed quam etiam semper id id euismod. Feugiat cras donec elementum interdum in.",
+  },
+  {
+    id: 5,
+    img: "./image/services-item/ic-speaker.svg",
+    alt: "speaker icon",
+    title: "Media Promotion",
+    text: "Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa neque.",
+  },
+  {
+    id: 6,
+    img: "./image/services-item/ic-analysis.svg",
+    alt: "analisys icon",
+    title: "SEO Reports",
+    text: "Congue phasellus est, amet sem bibendum sollicitudin arcu scelerisque senectus. Mauris, mus tincidunt a, nisi.",
+  },
+];
