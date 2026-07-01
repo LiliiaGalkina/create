@@ -16,50 +16,19 @@ const ServicesPage = () => {
       <ServicesHero />
       <div className="container">
         <div className={style.blocks}>
-          <ServicesBlockWrapper>
-            {
-              <div className={style.items}>
-                <ServiceBlockInfo {...servicesBlockInfo[0]} />
+          {servicesBlockInfo.map((item) => (
+            <ServicesBlockWrapper>
+              <div
+                className={item.id % 2 != 0 ? style.items : style.itemsrevers}
+              >
+                <ServiceBlockInfo {...item} />
                 <ServiceBlockImage
-                  mainImage="./image/services/marketing-mainimg.png"
-                  classDop="marketing"
+                  mainImage={item.image}
+                  classDop={item.classDop}
                 />
               </div>
-            }
-          </ServicesBlockWrapper>
-          <ServicesBlockWrapper>
-            {
-              <div className={style.itemsrevers}>
-                <ServiceBlockImage
-                  mainImage="./image/services/optimization-mainimg.png"
-                  classDop="optimization"
-                />
-                <ServiceBlockInfo {...servicesBlockInfo[1]} />
-              </div>
-            }
-          </ServicesBlockWrapper>
-          <ServicesBlockWrapper>
-            {
-              <div className={style.items}>
-                <ServiceBlockInfo {...servicesBlockInfo[2]} />
-                <ServiceBlockImage
-                  mainImage="./image/services/research-mainimg.png"
-                  classDop="research"
-                />
-              </div>
-            }
-          </ServicesBlockWrapper>
-          <ServicesBlockWrapper>
-            {
-              <div className={style.itemsrevers}>
-                <ServiceBlockImage
-                  mainImage="./image/services/content-mainimg.png"
-                  classDop="content"
-                />
-                <ServiceBlockInfo {...servicesBlockInfo[3]} />
-              </div>
-            }
-          </ServicesBlockWrapper>
+            </ServicesBlockWrapper>
+          ))}
         </div>
       </div>
       <GetFreeSeo />
