@@ -7,6 +7,9 @@ import AboutFreeAnalysisForm from "../AboutFreeAnalysisForm/AboutFreeAnalisysFor
 import PricingPlans from "../PricingPlans/PrisingPlans";
 import ClientsCase from "../ClientsCase/ClientsCase";
 import HowItWorks from "./HowItWorks/HowItWorks";
+import ServiceItemThird from "./ServiceItemThird/ServiceItemThird";
+import ServiceItemForth from "./ServiceItemForth";
+
 
 const ServiceItemPage = () => {
   const match = useMatch("/service/:id");
@@ -22,6 +25,10 @@ const ServiceItemPage = () => {
             <ServiceItemFirst />
           ) : serviceItem.id === 2 ? (
             <ServiceItemSecond />
+          ) : serviceItem.id === 3 ? (
+            <ServiceItemThird />
+          ) : serviceItem.id === 4 ? (
+            <ServiceItemForth />
           ) : (
             <p>Детальный просмотр для этого сервиса еще не разработан.</p>
           )
@@ -31,7 +38,7 @@ const ServiceItemPage = () => {
       </ServiceItemWrapper>
       <div className="container">
         <AboutFreeAnalysisForm />
-        <HowItWorks/>
+        <HowItWorks />
         <PricingPlans />
       </div>
       <ClientsCase />

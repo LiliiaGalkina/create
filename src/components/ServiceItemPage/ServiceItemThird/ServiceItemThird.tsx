@@ -1,12 +1,12 @@
 import { serviceInfo } from "../../../data";
 import ServiceItemInfo from "../ServiceItemInfo/ServiceItemInfo";
 
-const ServiceItemSecond = () => {
+const ServiceItemThird = () => {
     return (
       <div>
-        <ServiceItemInfo {...serviceInfo[1]} />
+        <ServiceItemInfo {...serviceInfo[2]} />
       </div>
     );
 }
  
-export default ServiceItemSecond;
+export default ServiceItemThird;

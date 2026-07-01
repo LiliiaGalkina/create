@@ -10,7 +10,7 @@ const CrumbsItem:React.FC<TPropsCrumbsItem> = ({parent, name}) => {
           <img src="./image/crumbs-home.png" alt="home icon" />
         </Link>
         <img src="./image/crumbs-chevron.svg" alt="chevron icon" />
-        <Link to={"/service"} className={style.parent}>
+        <Link to={"/services"} className={style.parent}>
           {parent}
         </Link>
         <img src="./image/crumbs-chevron.svg" alt="chevron icon" />

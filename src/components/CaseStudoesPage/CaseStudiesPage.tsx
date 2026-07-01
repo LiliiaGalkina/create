@@ -45,9 +45,9 @@ const CaseStudiesPage = () => {
       </div>
       <div className={style.greyZone}>
         <div className="container">
-          <Clients />
-          <Feedback/>
-          <HomeNews/>
+          <Clients clientsCount={6} />
+          <Feedback />
+          <HomeNews />
         </div>
       </div>
     </main>
