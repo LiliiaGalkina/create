@@ -1,6 +1,6 @@
-import { serviceInfo } from "../../../data";
-import ServiceItemInfo from "../ServiceItemInfo/ServiceItemInfo";
-import ServiceItemSeo from "../ServiceItemSeo/ServiceItemSeo";
+import { serviceInfo } from "../../data";
+import ServiceItemInfo from "./ServiceItemInfo/ServiceItemInfo";
+import ServiceItemSeo from "./ServiceItemSeo/ServiceItemSeo";
 
 const ServiceItemFirst = () => {
   return (
@@ -10,6 +10,5 @@ const ServiceItemFirst = () => {
     </div>
   );
 }
-
 
 export default ServiceItemFirst;

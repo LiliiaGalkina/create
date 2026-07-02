@@ -19,12 +19,11 @@
 }
 
 @media (max-width: 1024px) {
-  .items {
+  .items,
+  .itemsrevers {
     flex-direction: column;
   }
-  .itemsrevers {
-    flex-direction: column-reverse;
-  }
+
   .blocks {
     margin-bottom: 10rem;
   }
@@ -40,3 +39,4 @@
 .itemsrevers {
   gap: 5rem;
 }
+

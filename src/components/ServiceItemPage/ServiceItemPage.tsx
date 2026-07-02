@@ -1,8 +1,8 @@
 import { useMatch } from "react-router-dom";
 import { servicesBlockInfo } from "../../data";
 import ServiceItemWrapper from "./ServiceItemWrapper";
-import ServiceItemFirst from "./ServiceItemFirst/ServiceItemFirst";
-import ServiceItemSecond from "./ServiceItemSecond/ServiceItemSecond";
+import ServiceItemFirst from "./ServiceItemFirst";
+import ServiceItemSecond from "./ServiceItemSecond";
 import AboutFreeAnalysisForm from "../AboutFreeAnalysisForm/AboutFreeAnalisysForm";
 import PricingPlans from "../PricingPlans/PrisingPlans";
 import ClientsCase from "../ClientsCase/ClientsCase";

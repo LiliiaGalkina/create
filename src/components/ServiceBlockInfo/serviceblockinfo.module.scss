@@ -24,3 +24,9 @@
         width: 100%;
     }
 }
+
+@media (max-width: 375px) {
+    .buttons {
+        flex-direction: column;
+    }
+}

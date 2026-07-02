@@ -1,5 +1,5 @@
-import { serviceInfo } from "../../../data";
-import ServiceItemInfo from "../ServiceItemInfo/ServiceItemInfo";
+import { serviceInfo } from "../../data";
+import ServiceItemInfo from "./ServiceItemInfo/ServiceItemInfo";
 
 const ServiceItemSecond = () => {
     return (
