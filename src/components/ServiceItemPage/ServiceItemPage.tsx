@@ -9,7 +9,7 @@ import ClientsCase from "../ClientsCase/ClientsCase";
 import HowItWorks from "./HowItWorks/HowItWorks";
 import ServiceItemThird from "./ServiceItemThird/ServiceItemThird";
 import ServiceItemForth from "./ServiceItemForth";
-
+import ServiceItemFifth from "./ServiceItemFifth";
 
 const ServiceItemPage = () => {
   const match = useMatch("/service/:id");
@@ -17,24 +17,23 @@ const ServiceItemPage = () => {
   const numericId = serviceId ? parseInt(serviceId, 10) : NaN;
   const serviceItem = servicesBlockInfo.find((item) => item.id == numericId);
 
+const SERVICE_COMPONENTS: { [key: number]: React.ComponentType } = {
+  1: ServiceItemFirst,
+  2: ServiceItemSecond,
+  3: ServiceItemThird,
+  4: ServiceItemForth,
+  5: ServiceItemFifth,
+};
+const SelectedComponent = SERVICE_COMPONENTS[numericId];
+
+if (!SelectedComponent) {
+  throw new Error("Service not found");
+}
+
   return (
     <main>
       <ServiceItemWrapper serviceItem={serviceItem}>
-        {serviceItem ? (
-          serviceItem.id === 1 ? (
-            <ServiceItemFirst />
-          ) : serviceItem.id === 2 ? (
-            <ServiceItemSecond />
-          ) : serviceItem.id === 3 ? (
-            <ServiceItemThird />
-          ) : serviceItem.id === 4 ? (
-            <ServiceItemForth />
-          ) : (
-            <p>Детальный просмотр для этого сервиса еще не разработан.</p>
-          )
-        ) : (
-          <p>Сервис не найден. Проверьте правильность ID.</p>
-        )}
+        <SelectedComponent />
       </ServiceItemWrapper>
       <div className="container">
         <AboutFreeAnalysisForm />
