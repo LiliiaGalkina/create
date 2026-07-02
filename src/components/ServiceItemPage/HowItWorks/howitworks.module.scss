@@ -1,61 +1,102 @@
 @use "../../../variables" as *;
 
 .howItWorks {
-    padding: 12rem 0 9rem;
+  padding: 12rem 0 9rem;
 }
 
 .title {
-    @include sectionTitle;
+  @include sectionTitle;
 }
 
 .items {
-    margin: 0 auto;
-    max-width: 81rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    justify-items: center;
+  margin: 0 auto;
+  max-width: 81rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: center;
 }
 
 .item {
-    position: relative;
-    padding: 0 4rem;
-    width: 100%;
+  position: relative;
+  padding: 0 4rem;
+  width: 100%;
 }
 
 .left {
-    text-align: right;
-    border-right: 0.1rem solid $colorLightGrey;
-    &::after {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 0.8rem;
-        height: 0.8rem;
-        border-radius: 50%;
-        background-color: $colorBlue;
-        top: 0;
-        right: 0;
-        transform: translate(50%);
-        z-index: 2;
-    }
+  text-align: right;
+  border-right: 0.1rem solid $colorLightGrey;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: $colorBlue;
+    top: 0;
+    right: 0;
+    transform: translate(50%);
+    z-index: 2;
+  }
 }
 
 .right {
-    text-align-last: left;
+  text-align-last: left;
 }
 
 .headline {
-    @include title(1.2rem, $colorMiddleGrey);
-    margin-bottom: 0.2rem;
-    text-transform: uppercase;
+  @include title(1.2rem, $colorMiddleGrey);
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
 }
 
 .subtitle {
-    @include subtitle(2rem);
-    margin-bottom: 0.8rem;
+  @include subtitle(2rem);
+  margin-bottom: 0.8rem;
 }
 
 .text {
- color: $colorMiddleGrey;
+  color: $colorMiddleGrey;
+}
+
+@media (max-width: 1024px) {
+  .howItWorks {
+    padding: 12rem 0 2rem;
+  }
+  .items {
+    max-width: 71rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .items {
+    max-width: 59rem;
+  }
+  .item {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+      .howItWorks {
+    padding: 6rem 0 2rem;
+  }
+  .title {
+    margin-bottom: 3rem;
+  }
+    .items {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .left {
+        text-align: left;
+        border-right: none;
+        &::after {
+            display: none;
+        }
+    }
+    .empty {
+        display: none;
+    }
 }

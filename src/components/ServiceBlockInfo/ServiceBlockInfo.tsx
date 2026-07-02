@@ -13,7 +13,7 @@ const ServiceBlockInfo:React.FC<IPropsServicesBlockInfo> = ({id, title, text}) =
           <Link to={`/service/${id}`}>
             <Button textButton="Learn more" classDop="serviceBlockBtnWhite" />
           </Link>
-          <Button textButton="Try SEO toolkit" classDop="serviceBlockBtn" />
+          <Button textButton="Try SEO toolkit" classDop="serviceBlockBtn"/>
         </div>
       </div>
     );

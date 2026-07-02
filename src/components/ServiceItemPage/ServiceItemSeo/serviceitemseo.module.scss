@@ -32,3 +32,15 @@
 .cardText {
     color: $colorMiddleGrey;
 }
+
+@media (max-width: 376px) {
+    .seo {
+        padding: 5rem 0;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        padding: 2rem;
+    }
+}

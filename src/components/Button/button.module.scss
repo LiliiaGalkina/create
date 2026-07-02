@@ -65,7 +65,25 @@
 }
 
 .serviceBlockBtn {
+  position: relative;
   width: 16.5rem;
+  &::after {
+    content: "Не реализовано";
+    position: absolute;
+    bottom: -60%;
+    color: $colorMiddleGrey;
+    display: none;
+    transition: display 0.5s ease;
+  }
+  &:hover {
+    opacity: 0.5;
+    transform: none;
+    cursor: not-allowed;
+
+    &::after {
+      display: inline-block;
+    }
+  }
 }
 
 .aboutFormBtn {

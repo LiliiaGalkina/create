@@ -32,3 +32,9 @@
   font-size: 1.4rem;
   opacity: 0.6;
 }
+
+@media (max-width: 350px) {
+  .crumbs {
+    flex-wrap: wrap;
+  }
+}

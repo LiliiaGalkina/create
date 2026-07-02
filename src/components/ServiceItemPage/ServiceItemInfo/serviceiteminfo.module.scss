@@ -27,3 +27,28 @@
 .infoText {
     color: $colorMiddleGrey;
 }
+
+@media (max-width: 1024px) {
+    .info {
+        padding: 4rem 0;
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+    .infoContent {
+        flex: 0 1 auto;
+    }
+    .infoImg {
+        flex: 0 1 auto;
+        align-self: center;
+    }
+    .infoTitle {
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 376px) {
+    .info {
+        padding: 3rem 0;
+    }
+}

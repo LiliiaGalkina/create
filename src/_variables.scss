@@ -97,7 +97,7 @@ $cardsGradientSeparator: linear-gradient(
   color: $colorWhite;
   transition: all 0.5s ease;
   &:hover {
-    transform: scale(1.05);
+    transform: translateY(0.2rem);
   }
 }
 
