@@ -3,6 +3,7 @@ import style from "./casecard.module.scss";
 import type { IPropsCaseCards } from "../../types";
 import CaseCardDigits from "../CaseCardDigits/CaseCardDigits";
 import CaseCardLabel from "../CaseCardLabel/CaseCardLabel";
+import { Link } from "react-router-dom";
 
 const CaseCard: React.FC<IPropsCaseCards> = ({
   id,
@@ -41,10 +42,10 @@ const CaseCard: React.FC<IPropsCaseCards> = ({
         </div>
         <div className={style.down}>
           <p className={style.text}>{text}</p>
-          <a href="#" className={style.link}>
+          <Link to={`/casestudies/${id}`} className={style.link}>
             <span>View case</span>
             <img src="./image/casestudies/arrow-right.svg" alt="arrow right" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

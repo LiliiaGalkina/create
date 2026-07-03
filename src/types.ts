@@ -78,6 +78,7 @@ export type TPropsCrumbs = {
 export type TPropsCrumbsItem = {
   parent: string;
   name: string;
+  link: string;
 };
 
 export type TPropsHeroTitle = {
@@ -290,3 +291,5 @@ export interface IPropsHowItWorks {
   text: string;
   dopClass: string;
 }
+
+//casestudies

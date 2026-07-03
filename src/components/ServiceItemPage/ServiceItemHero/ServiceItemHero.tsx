@@ -21,7 +21,7 @@ const ServiceItemHero:React.FC<TPropsServiceItemPage> = ({title, text}) => {
         />
         <div className="container">
           <HeroTitleblock>
-            <CrumbsItem parent="Services" name={title} />
+            <CrumbsItem parent="Services" name={title} link="/services"/>
             <HeroTitle title={title} />
             <HeroText text={text} />
           </HeroTitleblock>
