@@ -1,0 +1,86 @@
+@use "../../variables" as *;
+
+//Digits
+.digits {
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 10rem 0 6.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
+
+.digitsItem {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.digitImg {
+  width: 8rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.digit {
+  @include title(3.2rem);
+}
+
+.description {
+    font-size: 2rem;
+   line-height: 150%;
+}
+
+//blocks
+.dinamicBlocks {
+  padding-bottom: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem
+}
+
+//Rich Text
+.boldText {
+    @include subtitle(2rem);
+}
+
+.simpleText {
+    color: $colorGrey;
+}
+
+//Gallery
+.gallery {
+  padding: 5.6rem 0;
+}
+
+.galleryImg {
+  width: 100%;
+}
+
+//List
+.listBlock {
+  padding: 2rem 0;
+}
+
+.listTitle {
+  @include title(3.2rem);
+  margin-bottom: 2.4rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.listItem {
+  padding-left: 3.2rem;
+  background-image: url("./image/casestudies/list-item-mark.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1.6rem;
+}

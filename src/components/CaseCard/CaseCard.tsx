@@ -39,6 +39,7 @@ const CaseCard: React.FC<IPropsCaseCards> = ({
             digit2={digit2}
             description2={description2}
           />
+          
         </div>
         <div className={style.down}>
           <p className={style.text}>{text}</p>

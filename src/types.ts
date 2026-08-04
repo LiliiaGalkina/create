@@ -120,6 +120,24 @@ export interface IPropsHeroDecor {
   linesrightClass?: string;
 }
 
+//NEW
+export interface IPropsGallery {
+  type: string;
+  img?: string;
+  altImg?: string;
+}
+
+export interface IPropsRichText {
+  type: string;
+  text?: string;
+}
+
+export interface IPropsListBlockData {
+  type: string;
+  title?: string;
+  listItems: string[] | undefined; // Массив пунктов списка
+}
+
 export interface IPropsCaseCards {
   id: number;
   imgmain: string;
@@ -134,7 +152,14 @@ export interface IPropsCaseCards {
   description1: string;
   description2: string;
   text: string;
+  blocks?: (
+    | IPropsRichText
+    | IPropsGallery
+    | IPropsListBlockData
+  )[];
 }
+
+//ENDNEW
 
 export interface IPropsCaseCardInfo {
   circle1: string;
