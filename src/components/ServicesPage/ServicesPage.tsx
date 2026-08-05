@@ -38,7 +38,7 @@ const ServicesPage = () => {
         <Clients clientsCount={6} />
         <HomeNews />
       </div>
-      *
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime ipsum modi blanditiis aspernatur explicabo eveniet, possimus quae tempora molestias, incidunt corporis dicta sequi quo dolorem, accusantium praesentium? Vel, tenetur cum!</p>
     </main>
   );
 };
