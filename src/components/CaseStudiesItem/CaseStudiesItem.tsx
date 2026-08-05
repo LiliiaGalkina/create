@@ -9,6 +9,7 @@ import DigitsPart from "./DigitsPart";
 import RichText from "./Richtext";
 import GalleryPart from "./GalleryPart";
 import ListData from "./ListData";
+import DopInfo from "./DopInfo";
 
 const CaseStudiesItem = () => {
   const match = useMatch("/casestudies/:id");
@@ -34,49 +35,54 @@ const CaseStudiesItem = () => {
         altLogo={caseItem.altlogo}
         title={caseItem.title}
       />
-      <div className="container">
-        <DigitsPart
-          img1={caseItem.circle1}
-          img2={caseItem.circle2}
-          digit1={caseItem.digit1}
-          digit2={caseItem.digit2}
-          description1={caseItem.description1}
-          description2={caseItem.description2}
-        />
-        <div className={style.dinamicBlocks}>
-          {caseItem.blocks?.map((item) => {
-            if (item.type === "rich_text" || item.type === "simple_text") {
-              return (
-                <RichText key={item.id} text={item.text} type={item.type} />
-              );
-            }
+      <div className={`container ${style.contentContainer}`}>
+        <div className={style.mainContent}>
+          <DigitsPart
+            img1={caseItem.circle1}
+            img2={caseItem.circle2}
+            digit1={caseItem.digit1}
+            digit2={caseItem.digit2}
+            description1={caseItem.description1}
+            description2={caseItem.description2}
+          />
+          <div className={style.dinamicBlocks}>
+            {caseItem.blocks?.map((item) => {
+              if (item.type === "rich_text" || item.type === "simple_text") {
+                return (
+                  <RichText key={item.id} text={item.text} type={item.type} />
+                );
+              }
 
-            if (item.type === "gallery") {
-              return (
-                <GalleryPart
-                  key={item.id}
-                  type={item.type}
-                  img={item.img}
-                  altImg={item.altImg}
-                />
-              );
-            }
+              if (item.type === "gallery") {
+                return (
+                  <GalleryPart
+                    key={item.id}
+                    type={item.type}
+                    img={item.img}
+                    altImg={item.altImg}
+                  />
+                );
+              }
 
-            if (item.type === "list") {
-              return (
-                <ListData
-                  key={item.id}
-                  type={item.type}
-                  title={item.title}
-                  listItems={item.listItems}
-                />
-              );
-            }
+              if (item.type === "list") {
+                return (
+                  <ListData
+                    key={item.id}
+                    type={item.type}
+                    title={item.title}
+                    listItems={item.listItems}
+                  />
+                );
+              }
 
-            // Возвращаем null для неизвестных типов, чтобы ничего не рендерить
-            return null;
-          })}
+              // Возвращаем null для неизвестных типов, чтобы ничего не рендерить
+              return null;
+            })}
+          </div>
         </div>
+        <aside className={style.dopContent}>
+          <DopInfo/>
+        </aside>
       </div>
       <GetFreeSeo />
       <div className={style.greyZone}>
