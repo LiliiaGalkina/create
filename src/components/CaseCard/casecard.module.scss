@@ -45,12 +45,19 @@
 
 .link {
   @include subtitle(1.6rem);
+  width: fit-content;
   display: flex;
   align-items: center;
   gap: 0.8rem;
+   .arrowRight {
+      fill: $colorBlack;
+    }
   transition: all 0.5s ease;
   &:hover {
     color: $colorBlue;
+    .arrowRight {
+      fill: $colorBlue;
+    }
   }
 }
 
