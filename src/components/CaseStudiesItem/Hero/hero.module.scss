@@ -7,3 +7,17 @@
 .logo {
     margin-bottom: 2.4rem;
 }
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 15.2rem 0 5rem;
+    min-height: 35rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 30rem;
+     padding: 15.2rem 0 2rem;
+  }
+}

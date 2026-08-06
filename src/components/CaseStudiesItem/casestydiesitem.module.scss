@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 
 .contentContainer {
+  padding-bottom: 18rem;
   display: flex;
   gap: 8rem;
 }
@@ -26,8 +27,8 @@
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .digit {
@@ -35,25 +36,24 @@
 }
 
 .description {
-    font-size: 2rem;
-   line-height: 150%;
+  font-size: 2rem;
+  line-height: 150%;
 }
 
 //blocks
 .dinamicBlocks {
-  padding-bottom: 18rem;
   display: flex;
   flex-direction: column;
-  gap: 2.4rem
+  gap: 2.4rem;
 }
 
 //Rich Text
 .boldText {
-    @include subtitle(2rem);
+  @include subtitle(2rem);
 }
 
 .simpleText {
-    color: $colorGrey;
+  color: $colorGrey;
 }
 
 //Gallery
@@ -155,3 +155,75 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .contentContainer {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .dopContent {
+    padding-top: 0;
+    max-width: 100%;
+  }
+  .dopBlock {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .dopBlockInfo {
+    width: 100%;
+  }
+  .dopBlockTags {
+    margin-bottom: 0;
+  }
+  .dinamicBlocks {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .digitImg {
+    width: 6rem;
+  }
+  .digit {
+    @include title(2.8rem);
+  }
+  .description {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contentContainer {
+    padding-bottom: 10rem;
+  }
+  .digits {
+    align-items: flex-end;
+  }
+  .digitsItem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .dopBlock {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+  .dopBlockInfo {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .digits {
+    flex-direction: column;
+    align-items: center;
+  }
+  .digitsItem {
+    flex-direction: row;
+  }
+  .tag {
+      @include subtitle(1.2rem);
+        padding: 0.55rem;
+  }
+}
