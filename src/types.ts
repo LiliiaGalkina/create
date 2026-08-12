@@ -3,6 +3,7 @@ import type { JSX } from "react";
 export interface IPropsButton {
   textButton: string;
   classDop: string;
+  title?: string;
 }
 
 export interface IPropsMenu {

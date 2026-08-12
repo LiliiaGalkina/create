@@ -100,7 +100,7 @@ const PricingPlansItem:React.FC<IPropsPrisingPlans> = ({tarif, price}) => {
             Information Technology
           </li>
         </ul>
-        <Button textButton="Choose plan" classDop="pricingButton" />
+        <Button textButton="Choose plan" classDop={tarif === "Optimal" ? "pricingOptimalButton" :"pricingButton"} />
       </div>
     );
 }

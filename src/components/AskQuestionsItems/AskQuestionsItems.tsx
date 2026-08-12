@@ -14,6 +14,7 @@ const AskQuestionsItems = () => {
       <Button
         textButton="Discover more &#8594;"
         classDop="askQuestionsButton"
+        title="not implemented"
       />
     </>
   );

@@ -20,6 +20,18 @@
   left: -10rem;
 }
 
+.heroButton {
+  @include button;
+  width: 21.9rem;
+  background-color: transparent;
+  border: 0.1rem solid $colorWhite;
+  &:hover {
+    background-color: $colorBlue;
+    transform: none;
+  }
+}
+
+
 @media (max-width: 1500px) {
   .title {
     @include title(6rem, $colorWhite);

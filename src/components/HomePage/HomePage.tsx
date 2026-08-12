@@ -11,19 +11,38 @@ import Benefits from "../Benefits/Benefits";
 import PricingPlans from "../PricingPlans/PrisingPlans";
 import Feedback from "../Feedback/Feedback";
 import HomeNews from "../HomeNews/HomeNews";
+import { useRef } from "react";
 
 const HomePage = () => {
+  // 1. Создаем "якорь" для DOM-элемента формы
+  const getFreeSeoRef = useRef<HTMLDivElement>(null);
+
+  // 2. Функция, которая выполнит плавный скролл
+  const scrollToForm = () => {
+    if (getFreeSeoRef.current) {
+      getFreeSeoRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+      // Фокус на поле ввода для доступности (a11y)
+      const firstInput = getFreeSeoRef.current.querySelector("input");
+      (firstInput as HTMLElement)?.focus();
+    }
+  };
   return (
     <main>
-      <HomeHero />
+      <HomeHero onCtaClick={scrollToForm} />
       <div className="container">
         <AwardsBlock />
-        <Clients clientsCount={6}/>
+        <Clients clientsCount={6} />
       </div>
       <Agency />
       <Achievements />
       <OurServices />
-      <GetFreeSeo />
+      <div id="get-free-seo" ref={getFreeSeoRef}>
+        <GetFreeSeo />
+      </div>
       <AskQuestions />
       <ClientsCase />
       <Benefits />
@@ -34,6 +53,6 @@ const HomePage = () => {
       </div>
     </main>
   );
-};
+};;
 
 export default HomePage;

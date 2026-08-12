@@ -81,9 +81,10 @@
   letter-spacing: 0.05rem;
   background-color: $colorBlue;
   color: $colorWhite;
+  border: 0.1rem solid $colorBlue;
   transition: all 0.5s ease;
   &:hover {
-    transform: scale(1.05);
+   background-color: transparent;
   }
 }
 

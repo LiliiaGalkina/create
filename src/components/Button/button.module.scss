@@ -8,18 +8,12 @@
   width: 19.9rem;
 }
 
-.heroButton {
-  width: 21.9rem;
-  background-color: transparent;
-  border: 0.1rem solid $colorWhite;
-  &:hover {
-    background-color: $colorBlue;
-    transform: none;
-  }
-}
 
 .agencyButton {
   width: 16.1rem;
+  &:hover {
+    color: $colorBlue;
+  }
 }
 
 .ourServicesButtonWhite {
@@ -28,27 +22,55 @@
   background-color: $colorWhite;
   color: $colorBlue;
   border: 0.1rem solid $colorBlue;
+  &:hover {
+    background-color: $colorBlue;
+    color: $colorWhite;
+  }
 }
 
 .ourServicesButtonBlue {
   width: 16.5rem;
   height: 4.4rem;
+  cursor: not-allowed;
+  &:hover {
+    background-color: $colorBlue;
+  }
 }
 
 .askQuestionsButton {
   width: 18.4rem;
+  cursor: not-allowed;
+  &:hover {
+    background-color: $colorBlue;
+  }
 }
 
 .clientsButton {
   width: 23.7rem;
+  &:hover {
+    color: $colorBlue;
+  }
 }
 
 .pricingButton {
   width: 14.6rem;
+  &:hover {
+    color: $colorBlue;
+  }
+}
+
+.pricingOptimalButton {
+  width: 14.6rem;
+ &:hover {
+  border-color: $colorWhite;
+ }
 }
 
 .homeNewsButton {
   width: 18rem;
+  &:hover {
+    color: $colorBlue;
+  }
 }
 
 .servicesHeroBtn {

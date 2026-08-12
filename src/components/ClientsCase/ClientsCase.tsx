@@ -1,23 +1,26 @@
 import style from "./clientscase.module.scss";
 import ClientsCaseSlider from "../ClientsCaseSlider/ClientsCaseSlider";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 
 const ClientsCase = () => {
-    return (
-      <section className={style.clientscase}>
-        <div className="container">
-          <h2 className={style.title}>Read our clients' case studies</h2>
-          <ClientsCaseSlider />
-          <div className={style.buttonBlock}>
-            <h3 className={style.subtitle}>Explore more case studies</h3>
+  return (
+    <section className={style.clientscase}>
+      <div className="container">
+        <h2 className={style.title}>Read our clients' case studies</h2>
+        <ClientsCaseSlider />
+        <div className={style.buttonBlock}>
+          <h3 className={style.subtitle}>Explore more case studies</h3>
+          <Link to={"/casestudies"}>
             <Button
               textButton="View all case studies"
               classDop="clientsButton"
             />
-          </div>
+          </Link>
         </div>
-      </section>
-    );
-}
- 
+      </div>
+    </section>
+  );
+};
+
 export default ClientsCase;

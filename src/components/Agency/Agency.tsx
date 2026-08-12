@@ -1,5 +1,6 @@
 import style from "./agency.module.scss";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 
 const Agency = () => {
   return (
@@ -17,7 +18,9 @@ const Agency = () => {
               mattis ultrices laoreet sapien. Feugiat lacus, suscipit eu sociis
               et quis hendrerit. Cras at ac magna ultricies orci.
             </p>
-            <Button textButton="More about us" classDop="agencyButton" />
+            <Link to={"/about"}>
+              <Button textButton="More about us" classDop="agencyButton" />
+            </Link>
           </div>
           <div className={style.image}>
             <img src="./image/home/agency.png" alt="agency employees" />

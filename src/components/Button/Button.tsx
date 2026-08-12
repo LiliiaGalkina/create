@@ -3,9 +3,9 @@ import style from "./button.module.scss";
 import type {IPropsButton} from "../../types";
 
 
-const Button: React.FC<IPropsButton> = ({textButton, classDop}) => {
+const Button: React.FC<IPropsButton> = ({textButton, classDop, title}) => {
     return (
-        <button  className={`${style.button} ${classDop ? style[classDop] : ''}`} >{textButton}</button>
+        <button title={title} className={`${style.button} ${classDop ? style[classDop] : ''}`} >{textButton}</button>
     )
 }
 
