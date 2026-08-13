@@ -21,6 +21,7 @@ const GetFreeSeoForm = () => {
             placeholder="Your name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
           />
         </div>
         <div className={style.inputBlock}>
@@ -34,6 +35,7 @@ const GetFreeSeoForm = () => {
             placeholder="Your working email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </div>
         <div className={style.inputBlockBig}>
@@ -47,6 +49,7 @@ const GetFreeSeoForm = () => {
             placeholder="http://yoursite.com"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
+            required
           />
         </div>
       </div>
@@ -64,7 +67,7 @@ const GetFreeSeoForm = () => {
             I agree to receive communications from Createx SEO Agency
           </label>
         </div>
-        <button type="submit" className={style.button}>
+        <button type="submit" className={style.button} title="not implemented">
           Get a free analysis
         </button>
       </div>

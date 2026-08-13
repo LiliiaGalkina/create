@@ -23,6 +23,10 @@
   width: 13.2rem;
   height: 100%;
   border-radius: 0;
+  cursor: not-allowed;
+  &:hover {
+    background-color: $colorBlue;
+  }
 }
 
 @media (max-width: 768px) {

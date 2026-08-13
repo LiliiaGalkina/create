@@ -60,6 +60,10 @@
   width: 13rem;
   border-radius: 0 0.4rem 0.4rem 0;
   height: 4.4rem;
+  cursor: not-allowed;
+  &:hover {
+    background-color: $colorBlue;
+  }
 }
 
 .checkBlock {

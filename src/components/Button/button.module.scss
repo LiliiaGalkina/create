@@ -6,6 +6,10 @@
 
 .headerButton {
   width: 19.9rem;
+  cursor: not-allowed;
+  &:hover {
+    background-color: $colorBlue;
+  }
 }
 
 
@@ -77,6 +81,7 @@
   width: 15.4rem;
   background-color: transparent;
   border: 0.1rem solid $colorWhite;
+  cursor: not-allowed;
 }
 
 .serviceBlockBtnWhite {
@@ -84,21 +89,19 @@
   background-color: $colorWhite;
   border: 0.1rem solid $colorBlue;
   color: $colorBlue;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: $colorBlue;
+    color: $colorWhite;
+  }
 }
 
 .serviceBlockBtn {
   position: relative;
   width: 16.5rem;
-  &::after {
-    content: "Не реализовано";
-    position: absolute;
-    bottom: -60%;
-    color: $colorMiddleGrey;
-    display: none;
-    transition: display 0.5s ease;
-  }
+ 
   &:hover {
-    opacity: 0.5;
+    background-color: $colorBlue;
     transform: none;
     cursor: not-allowed;
 
@@ -113,10 +116,17 @@
   width: 17.8rem;
   font-size: 1.4rem;
   height: auto;
+  cursor: not-allowed;
+  &:hover {
+    background-color: $colorBlack;
+  }
 }
 
 .careersBtn {
   width: 19.9rem;
+  &:hover {
+    color: $colorBlue;
+  }
 }
 
 @media (max-width: 1024px) {

@@ -484,6 +484,14 @@ export const servicesBlockInfo = [
     text: "Eleifend orci massa et facilisis orci feugiat ac. Congue in ut lacus, turpis accumsan gravida. Aliquet mattis dignissim massa sociis a, id bibendum. Egestas lorem eros, mi cras amet, vel eget molestie. Turpis enim arcu, amet donec massa pellentesque nulla duis. Arcu dictum metus sed purus senectus faucibus eget elementum pretium. ",
     image: "./image/services/marketing-mainimg.png",
     classDop: "marketing",
+    listItems: [
+      "Aenean enim tellus morbi nisl vulputate dictumst.",
+      "Nibh sapien volutpat lacus augue.",
+      "Vel in amet, placerat adipiscing est pharetra.",
+      "Gravida ornare sit in et ut sit sem id.",
+      "Ultrices pellentesque dictum enim egestas ac diam.",
+      "Sit semper enim senectus integer ut turpis et.",
+    ],
   },
   {
     id: 2,
@@ -491,6 +499,14 @@ export const servicesBlockInfo = [
     text: "Elementum ipsum lorem tortor morbi quis turpis pellentesque ultrices aenean. Lacus sit viverra et egestas nisl vitae lacus, eget. Eu pulvinar duis in posuere non adipiscing. Nunc, tristique viverra tincidunt nec proin tempus egestas massa. Quis velit nunc nisl sem in tristique.",
     image: "./image/services/optimization-mainimg.png",
     classDop: "optimization",
+    listItems: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing.",
+      "Quo qui praesentium quas quasi earum facere",
+      "Qui veniam molestias modi minus corporis",
+      "Sit semper enim senectus integer ut turpis et.",
+      "Ultrices pellentesque dictum enim egestas ac diam.",
+      "Vel in amet, placerat adipiscing est pharetra.",
+    ],
   },
   {
     id: 3,
@@ -498,6 +514,14 @@ export const servicesBlockInfo = [
     text: "Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in. Est nulla lectus purus tincidunt massa tortor. Hendrerit vulputate elementum blandit massa vitae amet felis eget.",
     image: "./image/services/research-mainimg.png",
     classDop: "research",
+    listItems: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing.",
+      "Quo qui praesentium quas quasi earum facere.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing.",
+      "Sit semper enim senectus integer ut turpis et.",
+      "Ultrices pellentesque dictum enim egestas ac diam.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing.",
+    ],
   },
   {
     id: 4,
@@ -505,6 +529,14 @@ export const servicesBlockInfo = [
     text: "Consequat pharetra elit posuere fringilla luctus sit. Curabitur accumsan fermentum magna amet. Sed nec amet posuere tellus pellentesque vitae. Pulvinar nulla sem risus diam volutpat. Amet, sit aliquet magna in viverra at elit nullam.",
     image: "./image/services/content-mainimg.png",
     classDop: "content",
+    listItems: [
+      "Quo qui praesentium quas quasi earum facere.",
+      "Sit semper enim senectus integer ut turpis et.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing.",
+      "Sit semper enim senectus integer ut turpis et.",
+      "Ultrices pellentesque dictum enim egestas ac diam.",
+      "Vel in amet, placerat adipiscing est pharetra.",
+    ],
   },
   {
     id: 5,
@@ -512,6 +544,14 @@ export const servicesBlockInfo = [
     text: "Tortor vitae orci hendrerit lobortis eu. Metus aliquam sem tellus ut fringilla purus nisl, consectetur netus. Velit ac feugiat ut mattis dis nullam ultrices amet. Lacus eu neque arcu arcu curabitur at sapien. Id sed aliquet id sit nibh ornare massa scelerisque.",
     image: "./image/services/management-mainimg.png",
     classDop: "management",
+    listItems: [
+      "Aenean enim tellus morbi nisl vulputate dictumst.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing.",
+      "Vel in amet, placerat adipiscing est pharetra.",
+      "Gravida ornare sit in et ut sit sem id.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing.",
+      "Sit semper enim senectus integer ut turpis et.",
+    ],
   },
 ];
 
@@ -1978,6 +2018,31 @@ export const caseCards = [
       },
     ],
   },
+];
+
+export const serviceTags = [
+  {
+    id: 1,
+    name: "#SEO",
+  },
+  {
+    id: 2,
+    name: "#research",
+  },
+  {
+    id: 3,
+    name: "#payed_traffic",
+  },
+];
+
+export const serviceSocial = [
+  {
+    id: 1,
+    img: "./image/casestudies/facebook.svg",
+    alt: "facebook icon",
+  },
+  { id: 2, img: "./image/casestudies/twitter.svg", alt: "twitter icon" },
+  { id: 3, img: "./image/casestudies/linkedin.svg", alt: "linkedin icon" },
 ];
 
 //About Us

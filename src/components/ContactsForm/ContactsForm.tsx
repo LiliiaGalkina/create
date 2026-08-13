@@ -20,7 +20,7 @@ const ContactsForm = () => {
             <ContactsFormBigField />
             <div className={style.buttons}>
               <ContactsFormCheckbox />
-              <button type="submit" className={style.button}>Request a proposal</button>
+              <button type="submit" title="not implemented" className={style.button}>Request a proposal</button>
             </div>
           </form>
         </div>

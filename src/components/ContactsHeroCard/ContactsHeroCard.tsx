@@ -20,7 +20,7 @@ const ContactsHeroCard: React.FC<IPropsContactsHeroCards> = ({
           <span className={style.text}>{text1}</span>
           {text2 && <span className={style.text}>{text2}</span>}
           {link && (
-            <a href="#" className={style.link}>
+            <a href="#" title="not implemented" className={style.link}>
               {link}
             </a>
           )}

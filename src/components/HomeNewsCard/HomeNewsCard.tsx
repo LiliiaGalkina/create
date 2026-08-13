@@ -24,7 +24,7 @@ const HomeNewsCard: React.FC<IPropsHomeNews> = ({image, alt, category, date, aut
         <p className={style.text}>{text}</p>
       </div>
       <a href="#" className={style.link}>
-        <span>Read more</span> <img src="./image/home/home-news-arrow-right.svg" alt="arrow right" />
+        <span>Read more</span> <span className={style.arrow}> &rarr;</span>
       </a>
     </div>
   );

@@ -32,6 +32,10 @@
 .button {
   @include button;
   width: 22.4rem;
+  cursor: not-allowed;
+  &:hover {
+    background-color: $colorBlue;
+  }
 }
 
 .imgItem {

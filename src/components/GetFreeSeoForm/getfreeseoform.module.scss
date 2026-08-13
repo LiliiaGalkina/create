@@ -83,8 +83,9 @@
   color: $colorWhite;
   border: 0.1rem solid $colorBlue;
   transition: all 0.5s ease;
+  cursor: not-allowed;
   &:hover {
-   background-color: transparent;
+   background-color: $colorBlue;
   }
 }
 

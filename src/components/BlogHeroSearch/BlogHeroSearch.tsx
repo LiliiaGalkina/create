@@ -12,8 +12,9 @@ const BlogHeroSearch = () => {
           onChange={(e) => setSearchValue(e.target.value)}
           placeholder="Search the blog"
           className={style.input}
+          required
         />
-        <button className={style.btn}>Search</button>
+        <button className={style.btn} title="not implemented">Search</button>
       </div>
     );
 }

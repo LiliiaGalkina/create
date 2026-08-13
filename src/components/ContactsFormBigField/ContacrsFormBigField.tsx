@@ -15,6 +15,7 @@ const ContactsFormBigField = () => {
           value={value}
           onChange={(e) => setValue(e.target.value)}
           className={style.field}
+          required
         ></textarea>
       </div>
     );

@@ -2,7 +2,7 @@ import { useState } from "react";
 import style from "./contactsformcheckbox.module.scss";
 
 const ContactsFormCheckbox = () => {
-    const [isChecked, setIsChecked] = useState(false);
+    const [isChecked, setIsChecked] = useState(true);
 
     const handleChange = () => {
       setIsChecked(!isChecked);

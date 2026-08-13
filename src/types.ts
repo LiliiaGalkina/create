@@ -17,6 +17,27 @@ export interface IPropsMenuFooter {
   max: number;
 }
 
+export interface ButtonItem {
+  id: number; 
+  label: string;
+}
+
+export interface OurServicesButtonsProps {
+  items: ButtonItem[];
+  activeId: number; 
+  onTabChange: (id: number) => void; 
+}
+
+export interface OurServicesInfoProps {
+  id: number;
+  title: string;
+  items: string[];
+}
+
+export interface OurServicesImagesProps {
+  mainImgSrc: string;
+}
+
 export interface IPropsAskQuestions {
   id: number;
   title: string;

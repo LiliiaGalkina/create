@@ -1,3 +1,4 @@
+import { serviceSocial, serviceTags } from "../../data";
 import style from "./casestydiesitem.module.scss";
 
 const DopInfo = () => {
@@ -23,27 +24,19 @@ const DopInfo = () => {
         </ul>
       </div>
       <div className={style.dopBlockTags}>
-        <span className={style.tag} title="логика не реализована">
-          #SEO
-        </span>
-        <span className={style.tag} title="логика не реализована">
-          #research
-        </span>
-        <span className={style.tag} title="логика не реализована">
-          #payed_traffic
-        </span>
+        {serviceTags.map((tag) => (
+          <span key={tag.id} className={style.tag} title="not implemented">
+            {tag.name}
+          </span>
+        ))}
       </div>
       <div className={style.dopBlockSocial}>
         <h4 className={style.socialTitle}>Share:</h4>
-        <a href="#" className={style.socialImg}>
-          <img src="./image/casestudies/facebook.svg" alt="facebook icon" />
-        </a>
-        <a href="#" className={style.socialImg}>
-          <img src="./image/casestudies/twitter.svg" alt="twitter icon" />
-        </a>
-        <a href="#" className={style.socialImg}>
-          <img src="./image/casestudies/linkedin.svg" alt="linkedin icon" />
-        </a>
+        {serviceSocial.map((item) => (
+          <a href="#" key={item.id} className={style.socialImg}>
+            <img src={item.img} alt={item.alt} />
+          </a>
+        ))}
       </div>
     </div>
   );
