@@ -1,0 +1,23 @@
+@use "../../variables" as *;
+
+.form {
+  width: 60rem;
+
+  .fields {
+    margin-bottom: 2.4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 3rem 2.4rem;
+  }
+}
+
+.button {
+  @include button;
+  margin-top: 4rem;
+  width: 18.1rem;
+  cursor: not-allowed;
+  &:hover {
+    background-color: $colorBlue;
+  }
+}
+

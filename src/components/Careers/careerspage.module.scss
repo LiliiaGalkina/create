@@ -1,0 +1,22 @@
+@use "../../variables" as *;
+
+.careersFormItems {
+    padding: 10rem 0 18rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.info {
+    max-width: 49.5rem;
+}
+
+.title {
+    @include sectionTitle;
+    text-align: left;
+}
+
+.text {
+    font-size: 2rem;
+    color: $colorGrey;
+}

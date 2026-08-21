@@ -7,7 +7,7 @@
 
 .label {
   display: block;
-  max-width: 28.7rem;
+  max-width: 100%;
   font-size: 1.4rem;
   color: $colorGrey;
 }
@@ -26,9 +26,5 @@
   }
   .check {
     top: 0;
-
-  }
-  .label {
-    max-width: 100%;
   }
 }

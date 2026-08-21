@@ -1,0 +1,66 @@
+@use "../../variables" as *;
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  color: $colorGrey;
+  &:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+}
+
+.title {
+  @include subtitle(2.8rem);
+  margin-bottom: 1.2rem;
+}
+
+.button {
+  border-radius: 50%;
+  background-color: $bgWhiteGrey;
+  transform: translateY(1rem);
+  transition: all 0.5s ease;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 1rem $colorLightGrey;
+  }
+}
+
+.text {
+  margin-bottom: 2rem;
+}
+
+.listtitle {
+    margin-bottom: 2.4rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    &:not(:last-child) {
+        margin-bottom: 2.4rem;
+    }
+}
+
+.listitem {
+    position: relative;
+    padding-left: 1.6rem;
+    &::before {
+        content: "";
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 50%;
+        background-color: $colorBlue;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-0.2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+}

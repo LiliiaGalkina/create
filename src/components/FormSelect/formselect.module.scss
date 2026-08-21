@@ -1,0 +1,7 @@
+@use "../../variables" as *;
+
+.fieldBlock {
+    @include formFieldBlock;
+   flex: 0 1 50%;
+}
+

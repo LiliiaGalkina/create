@@ -21,7 +21,7 @@
         padding: 4rem 0 7rem;
     }
     .items {
-        flex-direction: column;
-        gap: 4rem;
+        display: block;
+        text-align: left; 
     }
 }

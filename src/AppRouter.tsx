@@ -7,6 +7,7 @@ import ContactsPage from "./components/ContactsPage/ContactsPage";
 import BlogPage from "./components/BlogPage/BlogPage";
 import ServiceItemPage from "./components/ServiceItemPage/ServiceItemPage";
 import CaseStudiesItem from "./components/CaseStudiesItem/CaseStudiesItem";
+import CareersPage from "./components/Careers/CareersPage";
 
 
 const AppRouter = () => {
@@ -20,6 +21,7 @@ const AppRouter = () => {
       <Route path={"/blog"} element={<BlogPage />} />
       <Route path={`/service/:elemId`} element={<ServiceItemPage />} />
       <Route path={`/casestudies/:elemId`} element={<CaseStudiesItem/>} />
+      <Route path={`/careers`} element={<CareersPage/>}/>
     </Routes>
   );
 }

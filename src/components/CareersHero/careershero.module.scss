@@ -1,0 +1,6 @@
+@use "../../variables" as *;
+
+.hero {
+  @include heroPages;
+  margin-bottom: 0;
+}

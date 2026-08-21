@@ -119,7 +119,7 @@ $cardsGradientSeparator: linear-gradient(
   margin-bottom: 10rem;
   position: relative;
   min-height: 65.3rem;
-  padding: 15.2rem 0 12rem;
+  padding: 15.2rem 1.5rem 12rem;
   text-align: center;
   background-color: $colorBlack;
   background-image: url("./image/heropages/hero-decor-dots.png");
@@ -128,7 +128,7 @@ $cardsGradientSeparator: linear-gradient(
   overflow: hidden;
 
   @media (max-width: 600px) {
-    padding: 15.2rem 0 10rem;
+    padding: 15.2rem 1.5rem 10rem;
     background-position: right;
   }
 

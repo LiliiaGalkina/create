@@ -1,0 +1,41 @@
+.fieldBlock {
+  margin-top: -2.4rem;
+  margin-bottom: 3.2rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fileField {
+  margin-right: 1.2rem;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url("./image/careers/attach.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+  cursor: pointer;
+  display: inline-block; 
+  vertical-align: middle;
+  text-indent: -9999px; overflow: hidden;
+  &::-webkit-file-upload-button { 
+    visibility: hidden; 
+    width: 0; 
+    height: 0; 
+    margin: 0; 
+    padding: 0; 
+    border: none;
+}
+}
+
+
+.label {
+  font-size: 14px;
+  color: #333;
+  user-select: none;
+}

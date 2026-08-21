@@ -1,7 +1,10 @@
-import { useState } from "react";
-import style from "./contactsformcheckbox.module.scss";
+import React, { useState } from "react";
+import style from "./formcheckbox.module.scss";
+import type { TPropsFormCheckBox } from "../../types";
 
-const ContactsFormCheckbox = () => {
+
+
+const FormCheckbox:React.FC<TPropsFormCheckBox> = ({label}) => {
     const [isChecked, setIsChecked] = useState(true);
 
     const handleChange = () => {
@@ -18,10 +21,10 @@ const ContactsFormCheckbox = () => {
           onChange={handleChange}
         />
         <label htmlFor="check" className={style.label}>
-          I agree to receive communications from Createx SEO Agency
+         {label}
         </label>
       </div>
     );
 }
  
-export default ContactsFormCheckbox;
+export default FormCheckbox;

@@ -2666,3 +2666,97 @@ export const seoCards = [
     text: "Congue phasellus est, amet sem bibendum sollicitudin arcu scelerisque senectus. Mauris, mus tincidunt a, nisi.",
   },
 ];
+
+//careers
+export const careersAkkordeon = [
+  {
+    id: 1,
+    title: "Digital Marketing Strategist",
+    blockText:
+      "Blandit quam eget fames nisl. Vel vestibulum dictum morbi risus. Mauris dictumst vitae convallis aliquam ullamcorper. Quis non non ac massa augue id scelerisque. Egestas eget cursus egestas habitant orci. In posuere tempus, vulputate est, diam arcu.",
+    regListItems: [
+      "Vitae luctus et arcu vitae eu tellus orci.",
+      "Vel morbi nunc ullamcorper nisl, quis varius ultricies blandit.",
+      "Purus cursus nascetur leo diam.",
+      "Nascetur id turpis facilisis faucibus vel, iaculis etiam.",
+    ],
+    respListItems: [
+      "Dui, lectus at dui magna vitae vitae egestas sed.",
+      "Vulputate placerat amet pulvinar lorem nisl.",
+      "Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.",
+      "Nascetur id turpis facilisis faucibus vel, iaculis etiam.",
+    ],
+  },
+  {
+    id: 2,
+    title: "Sales Executive",
+    blockText:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ullam, sapiente cumque similique molestias assumenda perspiciatis rem cupiditate dolor itaque explicabo voluptas culpa.",
+    regListItems: [
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    ],
+    respListItems: [
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    ],
+  },
+  {
+    id: 3,
+    title: "Social Media Content Manager",
+    blockText:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ullam, sapiente cumque similique molestias assumenda perspiciatis rem cupiditate dolor itaque explicabo voluptas culpa.",
+    regListItems: [
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    ],
+    respListItems: [
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    ],
+  },
+  {
+    id: 4,
+    title: " Digital Marketing Account Manager",
+    blockText:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ullam, sapiente cumque similique molestias assumenda perspiciatis rem cupiditate dolor itaque explicabo voluptas culpa.",
+    regListItems: [
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    ],
+    respListItems: [
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    ],
+  },
+  {
+    id: 5,
+    title: "SEO Strategist",
+    blockText:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ullam, sapiente cumque similique molestias assumenda perspiciatis rem cupiditate dolor itaque explicabo voluptas culpa.",
+    regListItems: [
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    ],
+    respListItems: [
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    ],
+  },
+];

@@ -1,0 +1,26 @@
+@use "../../variables" as *;
+
+.phoneBlock {
+  margin: 6rem auto 0;
+  max-width: 45.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.line {
+  width: 0.1rem;
+  height: 4.8rem;
+  background: $cardsGradientSeparator;
+}
+
+@media (max-width: 600px) {
+  .phoneBlock {
+    max-width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .line {
+    display: none;
+  }
+}

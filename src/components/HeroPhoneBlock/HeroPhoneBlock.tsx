@@ -1,14 +1,16 @@
+import type React from "react";
 import style from "./herophoneblock.module.scss";
+import type { IPropsPhoneBlock } from "../../types";
 
-const HeroPhoneBlock = () => {
+const HeroPhoneBlock:React.FC<IPropsPhoneBlock> = ({img, alt, text1, text2}) => {
     return (
       <div className={style.phoneBlock}>
         <div className={style.phoneimg}>
-          <img src="./image/services/hero-phone.svg" alt="phone icon" />
+          <img src={img} alt={alt} />
         </div>
         <div className={style.info}>
-          <span className={style.text}>Call us</span>
-          <span className={style.phone}>(405) 555-0128</span>
+          <span className={style.text}>{text1}</span>
+          <span className={style.phone}>{text2}</span>
         </div>
       </div>
     );

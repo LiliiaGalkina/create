@@ -107,6 +107,13 @@ export type TPropsHeroTitle = {
   title: string;
 };
 
+export interface IPropsPhoneBlock {
+  img: string;
+  alt: string;
+  text1: string;
+  text2: string;
+}
+
 export interface IPropsServicesBlockInfo {
   id: number;
   title: string;
@@ -251,12 +258,27 @@ export interface IPropsContactsFormService {
   onSelect: () => void;
 }
 
-export interface IPropsContactsFormField {
+export interface IPropsFormField {
   label: string;
-  fieldType: string;
+  fieldType?: string;
   text: string;
   isRequired: boolean;
 }
+
+export interface IPropsFormSelect {
+  label: string;
+  options: string[];
+  isRequired: boolean;
+}
+
+export type TPropsFormCheckBox = {
+  label: string;
+};
+
+export type IPropsFormAddFiles = {
+  label: string;
+  isRequired: boolean;
+};
 
 //blog
 // Базовый интерфейс для любого объекта, у которого есть дата и id 
@@ -339,4 +361,12 @@ export interface IPropsHowItWorks {
   dopClass: string;
 }
 
-//casestudies
+//career
+
+export interface IPropsCareerItem {
+  id: number;
+  title: string;
+  blockText: string;
+  regListItems: string[];
+  respListItems: string[];
+}

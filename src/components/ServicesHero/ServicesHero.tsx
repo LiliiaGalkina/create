@@ -23,8 +23,17 @@ const ServicesHero = () => {
         <HeroText text=" We offer more than services. Our agency provides solution to your top-priority concerns, involving customer targeting, email performance and sales growth. If there is no existing solution readily available, we create one, specifically to suit your business." />
       </HeroTitleblock>
       <div className={style.info}>
-        <Button textButton="Start now" classDop="servicesHeroBtn" title="not implemented"/>
-        <HeroPhoneBlock />
+        <Button
+          textButton="Start now"
+          classDop="servicesHeroBtn"
+          title="not implemented"
+        />
+        <HeroPhoneBlock
+          img="./image/services/hero-phone.svg"
+          alt="phone icon"
+          text1="Call us"
+          text2="(405) 555-0128"
+        />
       </div>
     </section>
   );

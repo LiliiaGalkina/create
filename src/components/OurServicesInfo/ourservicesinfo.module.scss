@@ -30,12 +30,18 @@
 
 @media (max-width: 1024px) {
   .info {
-    max-width: 100%;
+    margin: 0 auto 4rem;
   }
 }
 
 @media (max-width: 600px) {
   .title {
     @include subtitle(2.4rem);
+  }
+}
+
+@media (max-width: 376px) {
+  .buttons {
+    flex-direction: column;
   }
 }

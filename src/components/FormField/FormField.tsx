@@ -1,9 +1,9 @@
 import type React from "react";
-import style from "./contactsformfield.module.scss";
-import type { IPropsContactsFormField } from "../../types";
+import style from "./formfield.module.scss";
+import type { IPropsFormField } from "../../types";
 import { useState } from "react";
 
-const ContactsFormField: React.FC<IPropsContactsFormField> = ({
+const FormField: React.FC<IPropsFormField> = ({
   label,
   fieldType,
   text,
@@ -29,4 +29,4 @@ const ContactsFormField: React.FC<IPropsContactsFormField> = ({
   );
 };
 
-export default ContactsFormField;
+export default FormField;
