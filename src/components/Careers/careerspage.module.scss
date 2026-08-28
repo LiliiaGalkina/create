@@ -8,7 +8,11 @@
 }
 
 .info {
-    max-width: 49.5rem;
+    max-width: 40%;
+}
+
+.formContainer {
+    width: 50%;
 }
 
 .title {
@@ -19,4 +23,30 @@
 .text {
     font-size: 2rem;
     color: $colorGrey;
+}
+
+@media (max-width: 1023px) {
+    .careersFormItems {
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .info {
+        max-width: 100%;
+    }
+    .formContainer {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 376px) {
+    .careersFormItems {
+         padding: 8rem 0 10rem;
+    }
+    .title {
+        text-align: center;margin-bottom: 4rem;
+    }
+    .text {
+        text-align: center;
+    }
 }

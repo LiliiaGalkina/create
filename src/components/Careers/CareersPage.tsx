@@ -19,7 +19,7 @@ const CareersPage = () => {
               about new vacancies.
             </p>
           </div>
-          <div className={style.form}>
+          <div className={style.formContainer}>
             <CareersForm/>
           </div>
         </section>

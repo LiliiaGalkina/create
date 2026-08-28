@@ -28,14 +28,14 @@ const CareersAkkordeonItem: React.FC<IPropsCareerItem> = ({
           <p className={style.text}>{blockText}</p>
           <h4 className={style.listtitle}>Requirements:</h4>
           <ul className={style.list}>
-            {regListItems.map((listitem) => (
-              <li className={style.listitem}>{listitem}</li>
+            {regListItems.map((listitem, index) => (
+              <li key={index} className={style.listitem}>{listitem}</li>
             ))}
           </ul>
           <h4 className={style.listtitle}>Responsibilities:</h4>
           <ul className={style.list}>
-            {respListItems.map((listitem) => (
-              <li className={style.listitem}>{listitem}</li>
+            {respListItems.map((listitem, index) => (
+              <li key={index} className={style.listitem}>{listitem}</li>
             ))}
           </ul>
         </div>
