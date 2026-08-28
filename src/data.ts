@@ -169,32 +169,32 @@ export const clients = [
     alt: "sunset realty icon",
   },
   {
-    id: 7,
+    id: 8,
     image: "./image/home/client-logo7.png",
     alt: "Atlantis Health icon",
   },
   {
-    id: 8,
+    id: 9,
     image: "./image/home/client-logo8.png",
     alt: "del Mar icon",
   },
   {
-    id: 9,
+    id: 10,
     image: "./image/home/client-logo9.png",
     alt: "CompleteHealth icon",
   },
   {
-    id: 10,
+    id: 11,
     image: "./image/home/client-logo10.png",
     alt: "National icon",
   },
   {
-    id: 11,
+    id: 12,
     image: "./image/home/client-logo11.png",
     alt: "Ultimate gym icon",
   },
   {
-    id: 12,
+    id: 13,
     image: "./image/home/client-logo12.png",
     alt: "United strategy icon",
   },
