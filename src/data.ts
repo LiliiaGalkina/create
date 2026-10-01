@@ -2620,6 +2620,13 @@ export const serviceInfo = [
     title: "Content & PR Service",
     text: "Nisi quibusdam facilis aperiam eveniet similique nobis voluptatem, consectetur ipsum porro repudiandae neque, quae inventore officia perferendis. Necessitatibus laboriosam dolorem enim quod fugiat at, velit eligendi eum!         Quibusdam natus quo ea laboriosam porro fuga explicabo suscipit adipisci dolorum, voluptatum velit eaque in dolores inventore id corporis blanditiis ullam fugiat aperiam quidem, laborum ducimus laudantium repudiandae? Earum, excepturi!          Animi eum laborum laboriosam quidem ex expedita perferendis.",
   },
+  {
+    id: 5,
+    img: "./image/blog/latest-post1.png",
+    imgalt: "someone is writing something in a notebook",
+    title: "Payed Traffic Management",
+    text: "Nisi quibusdam facilis aperiam eveniet similique nobis voluptatem, consectetur ipsum porro repudiandae neque, quae inventore officia perferendis. Necessitatibus laboriosam dolorem enim quod fugiat at, velit eligendi eum!         Quibusdam natus quo ea laboriosam porro fuga explicabo suscipit adipisci dolorum, voluptatum velit eaque in dolores inventore id corporis blanditiis ullam fugiat aperiam quidem, laborum ducimus laudantium repudiandae? Earum, excepturi!          Animi eum laborum laboriosam quidem ex expedita perferendis.",
+  },
 ];
 
 export const seoCards = [

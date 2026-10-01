@@ -4,7 +4,7 @@ import ServiceItemInfo from "./ServiceItemInfo/ServiceItemInfo";
 const ServiceItemForth = () => {
     return (
       <div>
-        <ServiceItemInfo {...serviceInfo[2]} />
+        <ServiceItemInfo {...serviceInfo[3]} />
       </div>
     );
 }

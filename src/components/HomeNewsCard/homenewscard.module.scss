@@ -61,6 +61,7 @@
     align-items: flex-end;
     gap: 0.8rem;
     transition: all 0.5s ease;
+	cursor: not-allowed;
     span {
         font-weight: 700;
         color: $colorBlack;

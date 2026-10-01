@@ -1,12 +1,12 @@
 import style from "./askquestionsitem.module.scss";
 import React, { useState } from "react";
-import type { IPropsAskQuestions} from "../../types";
+import type { IPropsAskQuestions } from "../../types";
 
 const AskQuestionsItem: React.FC<IPropsAskQuestions> = ({ title, text }) => {
   const [isActive, setIsActive] = useState(false);
 
-  const minus = "./image/home/minus.svg"
-  const plus = "./image/home/plus.svg"
+  const minus = "/image/home/minus.svg";
+  const plus = "/image/home/plus.svg";
 
   return (
     <div className={style.item}>

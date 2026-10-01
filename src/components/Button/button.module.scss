@@ -12,7 +12,6 @@
   }
 }
 
-
 .agencyButton {
   width: 16.1rem;
   &:hover {
@@ -58,6 +57,7 @@
 
 .pricingButton {
   width: 14.6rem;
+  cursor: not-allowed;
   &:hover {
     color: $colorBlue;
   }
@@ -65,9 +65,10 @@
 
 .pricingOptimalButton {
   width: 14.6rem;
- &:hover {
-  border-color: $colorWhite;
- }
+    cursor: not-allowed;
+  &:hover {
+    border-color: $colorWhite;
+  }
 }
 
 .homeNewsButton {
@@ -99,7 +100,7 @@
 .serviceBlockBtn {
   position: relative;
   width: 16.5rem;
- 
+
   &:hover {
     background-color: $colorBlue;
     transform: none;
