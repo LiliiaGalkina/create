@@ -4,14 +4,16 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import AppRouter from "./AppRouter";
 import { HashRouter as Router } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
       <Header />
-      <AppRouter/>
+      <ScrollToTop />
+      <AppRouter />
       <Footer />
-      </Router>
+    </Router>
   );
 }
 
