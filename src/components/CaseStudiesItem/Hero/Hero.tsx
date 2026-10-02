@@ -3,13 +3,9 @@ import style from "./hero.module.scss";
 import CrumbsItem from "../../CrumbsItem/CrumbsItem";
 import HeroTitleblock from "../../HeroTitleBlock/HeroTitleblock";
 import HeroTitle from "../../HeroTitle/HeroTitle";
+import type { IPropsCaseStudiesItemPage } from "../../../types";
 
-interface IPropsCaseStudiesItemPage {
-    imgmain: string;
-    imgLogo: string;
-    altLogo: string;
-    title: string;
-}
+
 
 const Hero:React.FC<IPropsCaseStudiesItemPage> = ({imgmain, imgLogo, altLogo, title}) => {
     return (

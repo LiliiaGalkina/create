@@ -8,10 +8,10 @@ import BlogPage from "./components/BlogPage/BlogPage";
 import ServiceItemPage from "./components/ServiceItemPage/ServiceItemPage";
 import CaseStudiesItem from "./components/CaseStudiesItem/CaseStudiesItem";
 import CareersPage from "./components/Careers/CareersPage";
-
+import BlogPostPage from "./components/BlogPostPage/BlogPostPage";
 
 const AppRouter = () => {
-	return (
+  return (
     <Routes>
       <Route path={"/"} element={<HomePage />} />
       <Route path={"/services"} element={<ServicesPage />} />
@@ -20,10 +20,11 @@ const AppRouter = () => {
       <Route path={"/contacts"} element={<ContactsPage />} />
       <Route path={"/blog"} element={<BlogPage />} />
       <Route path={`/service/:elemId`} element={<ServiceItemPage />} />
-      <Route path={`/casestudies/:elemId`} element={<CaseStudiesItem/>} />
-      <Route path={`/careers`} element={<CareersPage/>}/>
+      <Route path={`/casestudies/:elemId`} element={<CaseStudiesItem />} />
+      <Route path={`/blog/:elemId`} element={<BlogPostPage />} />
+      <Route path={`/careers`} element={<CareersPage />} />
     </Routes>
   );
-}
+};
 
 export default AppRouter;

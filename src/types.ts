@@ -188,7 +188,6 @@ export interface IPropsCaseCards {
   )[];
 }
 
-//ENDNEW
 
 export interface IPropsCaseCardInfo {
   circle1: string;
@@ -203,6 +202,13 @@ export interface IPropsCaseCardLabel {
   imglogo: string;
   altlogo: string;
   title: string;
+}
+
+export interface IPropsCaseStudiesItemPage {
+	imgmain: string;
+	imgLogo: string;
+	altLogo: string;
+	title: string;
 }
 
 export type TPropsCards = {
