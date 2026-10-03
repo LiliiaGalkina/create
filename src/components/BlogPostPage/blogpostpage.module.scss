@@ -1,0 +1,42 @@
+@use "../../variables" as *;
+
+.info {
+	padding-bottom: 8rem;
+}
+.title {
+	@include sectionTitle;
+}
+
+.mainimg {
+	margin-bottom: 4rem;
+	width: 100%;
+	text-align: center;
+	img {
+		width: 90%;
+	}
+}
+
+.text {
+	font-size: 2.4rem;
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.text {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.mainimg {
+		img {
+			width: 100%;
+		}
+	}
+
+	.text {
+		font-size: 1.8rem;
+	}
+}

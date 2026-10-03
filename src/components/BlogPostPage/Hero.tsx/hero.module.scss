@@ -1,9 +1,10 @@
 @use "../../../variables" as *;
 
 .hero {
-  padding: 15.2rem 0 12rem;
-  text-align: center;
-  background-color: $colorBlack;
+  @include heroPages;
+  background-image: url("./image/heropages/hero-decor-dots-right.png");
+  background-position: right;
+  background-size: auto 100%;
 }
 
 .info {
@@ -24,4 +25,13 @@
 .date {
 	padding-right: 1rem;
 	border-right: 0.1rem solid $borderColorGrey;
+}
+
+@media (max-width: 480px) {
+	.info {
+		flex-wrap: wrap;
+	}
+	.date {
+		border-right: none;
+	}
 }
