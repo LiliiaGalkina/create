@@ -477,6 +477,8 @@ export const homeNews = [
   },
 ];
 
+
+//services
 export const servicesBlockInfo = [
   {
     id: 1,

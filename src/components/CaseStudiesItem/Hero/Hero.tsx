@@ -16,7 +16,7 @@ const Hero:React.FC<IPropsCaseStudiesItemPage> = ({imgmain, imgLogo, altLogo, ti
         }}
       >
         <HeroTitleblock>
-          <CrumbsItem parent="Case Studies" name={title} link="casestudies" />
+          <CrumbsItem parent="Case Studies" name={title} link="/casestudies" />
           <img src={imgLogo} alt={altLogo}  className={style.logo}/>
           <HeroTitle title={title}/>
         </HeroTitleblock>
