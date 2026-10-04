@@ -18,7 +18,7 @@ const OurServicesImages: React.FC<OurServicesImagesProps> = ({
         alt="grey abstractive"
         className={style.fon}
       />
-      <a href="#" className={style.subscribe}>
+      <a href="#/" className={style.subscribe} title="not implemented">
         <img src="./image/home/services-subscribe.png" alt="subscribe button" />
       </a>
       <img
