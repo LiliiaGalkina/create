@@ -33,7 +33,7 @@ const Hero: React.FC<IPropsBlogItemPage> = ({
       />
       <div className={style.container}>
         <HeroTitleblock>
-          <CrumbsItem parent="Blog" name={title} link="blog" />
+          <CrumbsItem parent="Blog" name={title} link="/blog" />
           <HeroTitle title={title} />
           <div className={style.info}>
             <span className={style.category}>{postCategory}</span>
