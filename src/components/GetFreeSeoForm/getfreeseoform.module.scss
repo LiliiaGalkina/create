@@ -28,6 +28,7 @@
   padding: 1.3rem 1.6rem;
   border: 0.1rem solid $colorLightGrey;
   border-radius: 0.4rem;
+  color: $colorWhite;
   background-color: $colorGrey;
 }
 
@@ -60,7 +61,7 @@
   transition: all 0.5s ease;
   &:checked {
     background-color: $colorBlue;
-    background-image: url("../../../image/home/free-seo-form-check.png");
+    background-image: url("./image/home/free-seo-form-check.png");
     background-repeat: no-repeat;
     background-position: center;
   }
