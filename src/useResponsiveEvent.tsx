@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useResponsiveEvent = (breakpoint) => {
+const useResponsiveEvent = (breakpoint:number) => {
   const [isMobileScreen, setIsMobileScreen] = useState(false);
 
   useEffect(() => {
