@@ -5,7 +5,7 @@ import ContactsHeroCard from "../ContactsHeroCard/ContactsHeroCard";
 const ContactsHeroCards = () => {
   return (
     <div className={style.cards}>
-      {contactsHeroCards.map((card) => <ContactsHeroCard {...card} />)}
+		  {contactsHeroCards.map((card, index) => <ContactsHeroCard {...card} key={index} />)}
     </div>
   );
 };

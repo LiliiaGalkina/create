@@ -8,7 +8,7 @@ const ListData:React.FC<IPropsListBlockData> = ({title, listItems}) => {
             <h3 className={style.listTitle}>{title}</h3>
             <ul className={style.list}>
                 {
-                  listItems && listItems.map((item) => (<li className={style.listItem}>{item}</li>))
+                  listItems && listItems.map((item, index) => (<li key={index} className={style.listItem}>{item}</li>))
                 }
             </ul>
         </div>

@@ -16,8 +16,8 @@ const ServicesPage = () => {
       <ServicesHero />
       <div className="container">
         <div className={style.blocks}>
-          {servicesBlockInfo.map((item) => (
-            <ServicesBlockWrapper>
+          {servicesBlockInfo.map((item, index) => (
+            <ServicesBlockWrapper key={index}>
               <div
                 className={item.id % 2 != 0 ? style.items : style.itemsrevers}
               >
