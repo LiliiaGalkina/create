@@ -14,8 +14,6 @@ const OurServices = () => {
     (service) => service.id === activeTabId,
   );
 
-  console.log(currentService);
-
   if (!currentService) return null;
 
   return (
