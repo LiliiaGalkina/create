@@ -78,25 +78,28 @@
   }
 }
 
-@media (max-width: 375px) {
-      .howItWorks {
+@media (max-width: 480px) {
+  .howItWorks {
     padding: 6rem 0 2rem;
   }
+}
+
+@media (max-width: 375px) {
   .title {
     margin-bottom: 3rem;
   }
-    .items {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+  .items {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .left {
+    text-align: left;
+    border-right: none;
+    &::after {
+      display: none;
     }
-    .left {
-        text-align: left;
-        border-right: none;
-        &::after {
-            display: none;
-        }
-    }
-    .empty {
-        display: none;
-    }
+  }
+  .empty {
+    display: none;
+  }
 }

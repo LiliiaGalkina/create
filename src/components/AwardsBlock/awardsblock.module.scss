@@ -45,3 +45,10 @@
     @include subtitle(2rem);
   }
 }
+
+@media (max-width: 480px) {
+	.awardsblock {
+		margin-bottom: 0;
+		padding: 8rem 0 6rem;
+	}
+}

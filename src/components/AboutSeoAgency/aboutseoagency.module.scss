@@ -42,7 +42,7 @@
     .imgwrapper {
       flex: 0 1 47%;
       overflow: hidden;
-     text-align: center;
+      text-align: center;
     }
   }
   .upImage {
@@ -55,6 +55,9 @@
 }
 
 @media (max-width: 480px) {
+  .items {
+    margin-bottom: 8rem;
+  }
   .upImage,
   .oneImage {
     flex: 0 1 45%;

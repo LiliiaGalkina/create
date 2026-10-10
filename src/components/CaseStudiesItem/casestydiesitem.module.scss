@@ -62,7 +62,9 @@
 }
 
 .galleryImg {
-  width: 100%;
+  max-width: 100%;
+  height: 35rem;
+  object-fit: cover;
 }
 
 //List
@@ -208,26 +210,40 @@
   .dopBlockInfo {
     margin-bottom: 0;
   }
+  .gallery {
+    padding: 3rem 0;
+  }
+  .galleryImg {
+    height: 30rem;
+  }
 }
 
 @media (max-width: 480px) {
   .digits {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
     flex-direction: column;
-  align-items: center;
+    align-items: flex-start;
   }
   .digitsItem {
-	width: 50%;
     flex-direction: row;
-	justify-content: left;
+    justify-content: flex-start;
   }
   .info {
-	align-items: start;
+    align-items: start;
   }
   .digitImgEmpty {
-	width: 6rem;
+    width: 6rem;
   }
   .tag {
-      @include subtitle(1.2rem);
-        padding: 0.55rem;
+    @include subtitle(1.2rem);
+    padding: 0.55rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .galleryImg {
+    height: 25rem;
   }
 }

@@ -63,6 +63,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .agency {
+    padding: 4rem 0 6rem;
+  }
+}
+
 @media (max-width: 375px) {
   .title {
     @include title(3.4rem);
