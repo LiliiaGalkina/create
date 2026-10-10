@@ -47,13 +47,18 @@
   }
   .items {
     flex-direction: column;
+	align-items: stretch;
     gap: 4rem;
   }
   .info {
     max-width: 100%;
   }
+  .imgItem {
+	text-align: center;
+  }
   .img {
     position: static;
     max-width: 100%;
+	width: 90%;
   }
 }

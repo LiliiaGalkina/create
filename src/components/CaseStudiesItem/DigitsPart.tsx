@@ -28,6 +28,7 @@ const DigitsPart:React.FC<IPropsDigits> = ({img1, img2, digit1, digit2, descript
           </div>
         </div>
         <div className={style.digitsItem}>
+          <div className={style.digitImgEmpty}></div>
           <div className={style.info}>
             <span className={style.digit}>8,000</span>
             <span className={style.description}>DAU</span>

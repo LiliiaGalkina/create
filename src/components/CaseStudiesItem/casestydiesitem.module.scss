@@ -213,10 +213,18 @@
 @media (max-width: 480px) {
   .digits {
     flex-direction: column;
-    align-items: center;
+  align-items: center;
   }
   .digitsItem {
+	width: 50%;
     flex-direction: row;
+	justify-content: left;
+  }
+  .info {
+	align-items: start;
+  }
+  .digitImgEmpty {
+	width: 6rem;
   }
   .tag {
       @include subtitle(1.2rem);
