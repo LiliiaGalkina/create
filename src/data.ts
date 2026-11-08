@@ -2083,56 +2083,56 @@ export const coreValuesItems = [
 export const team = [
   {
     id: 1,
-    img: "./image/about/team1.png",
+    img: "./image/about/team1.jpg",
     alt: "Courtney Alexander foto",
     name: "Courtney Alexander",
     position: "Founder and CEO",
   },
   {
     id: 2,
-    img: "./image/about/team2.png",
+    img: "./image/about/team2.jpg",
     alt: "Johnny Lane foto",
     name: "Johnny Lane",
     position: "Director of Client Services",
   },
   {
     id: 3,
-    img: "./image/about/team3.png",
+    img: "./image/about/team3.jpg",
     alt: "Diane Mccoy foto",
     name: "Diane Mccoy",
     position: "Lead Digital PR Strategist",
   },
   {
     id: 4,
-    img: "./image/about/team4.png",
+    img: "./image/about/team4.jpg",
     alt: "Judith Warren foto",
     name: "Judith Warren",
     position: "Cheaf Marketing Officer",
   },
   {
     id: 5,
-    img: "./image/about/team5.png",
+    img: "./image/about/team5.jpg",
     alt: "Floyd Simmmons foto",
     name: "Floyd Simmmons",
     position: "Account Director",
   },
   {
     id: 6,
-    img: "./image/about/team6.png",
+    img: "./image/about/team6.jpg",
     alt: "Shawn Edwards foto",
     name: "Shawn Edwards",
     position: "Director of PPC",
   },
   {
     id: 7,
-    img: "./image/about/team7.png",
+    img: "./image/about/team7.jpg",
     alt: "Jane Cooper foto",
     name: "Jane Cooper",
     position: "Digital Marketing Manager",
   },
   {
     id: 8,
-    img: "./image/about/team8.png",
+    img: "./image/about/team8.jpg",
     alt: "Soham Alexander foto",
     name: "Soham Alexander",
     position: "Director of SEO",
@@ -2253,7 +2253,7 @@ export const contactsFormFields = [
 export const posts = [
   {
     id: 1,
-    img: "./image/blog/latest-post1.png",
+    img: "./image/blog/latest-post1.jpg",
     alt: "someone is writing something in a notebook",
     category: 4,
     date: "07.07.2021",
@@ -2272,7 +2272,7 @@ export const posts = [
   },
   {
     id: 2,
-    img: "./image/blog/latest-post2.png",
+    img: "./image/blog/latest-post2.jpg",
     alt: "a hand with a pen on a diagram",
     category: 3,
     date: "06.07.2021",
@@ -2291,7 +2291,7 @@ export const posts = [
   },
   {
     id: 3,
-    img: "./image/blog/post1.png",
+    img: "./image/blog/post1.jpg",
     alt: "three-dimensional multi-colored parts of a pie chart",
     category: 3,
     date: "12.06.2020",
@@ -2310,7 +2310,7 @@ export const posts = [
   },
   {
     id: 4,
-    img: "./image/blog/post2.png",
+    img: "./image/blog/post2.jpg",
     alt: "colorful cubes with pictures are on the keyboard",
     category: 2,
     date: "06.06.2020",
@@ -2329,7 +2329,7 @@ export const posts = [
   },
   {
     id: 5,
-    img: "./image/blog/post3.png",
+    img: "./image/blog/post3.jpg",
     alt: "cubes with arrows",
     category: 4,
     date: "01.05.2020",
@@ -2348,7 +2348,7 @@ export const posts = [
   },
   {
     id: 6,
-    img: "./image/blog/post4.png",
+    img: "./image/blog/post4.ipg",
     alt: "the index finger points to the search bar",
     category: 5,
     date: "25.04.2020",
@@ -2367,7 +2367,7 @@ export const posts = [
   },
   {
     id: 7,
-    img: "./image/blog/post5.png",
+    img: "./image/blog/post5.jpg",
     alt: "an open book with an inscription -  Content is King",
     category: 1,
     date: "03.06.2020",
@@ -2386,7 +2386,7 @@ export const posts = [
   },
   {
     id: 8,
-    img: "./image/blog/post6.png",
+    img: "./image/blog/post6.jpg",
     alt: "a head from which light bulbs fly up",
     category: 2,
     date: "18.03.2020",
@@ -2405,7 +2405,7 @@ export const posts = [
   },
   {
     id: 9,
-    img: "./image/blog/post1.png",
+    img: "./image/blog/post1.jpg",
     alt: "three-dimensional multi-colored parts of a pie chart",
     category: 3,
     date: "12.06.2019",
@@ -2424,7 +2424,7 @@ export const posts = [
   },
   {
     id: 10,
-    img: "./image/blog/post2.png",
+    img: "./image/blog/post2.jpg",
     alt: "colorful cubes with pictures are on the keyboard",
     category: 2,
     date: "06.06.2019",
@@ -2443,7 +2443,7 @@ export const posts = [
   },
   {
     id: 11,
-    img: "./image/blog/post3.png",
+    img: "./image/blog/post3.jpg",
     alt: "cubes with arrows",
     category: 4,
     date: "01.05.2019",
@@ -2462,7 +2462,7 @@ export const posts = [
   },
   {
     id: 12,
-    img: "./image/blog/post4.png",
+    img: "./image/blog/post4.jpg",
     alt: "the index finger points to the search bar",
     category: 5,
     date: "25.04.2019",
@@ -2481,7 +2481,7 @@ export const posts = [
   },
   {
     id: 13,
-    img: "./image/blog/post5.png",
+    img: "./image/blog/post5.jpg",
     alt: "an open book with an inscription -  Content is King",
     category: 1,
     date: "03.06.2019",
@@ -2500,7 +2500,7 @@ export const posts = [
   },
   {
     id: 14,
-    img: "./image/blog/post6.png",
+    img: "./image/blog/post6.jpg",
     alt: "a head from which light bulbs fly up",
     category: 2,
     date: "18.03.2019",
@@ -2519,7 +2519,7 @@ export const posts = [
   },
   {
     id: 15,
-    img: "./image/blog/post1.png",
+    img: "./image/blog/post1.jpg",
     alt: "three-dimensional multi-colored parts of a pie chart",
     category: 3,
     date: "12.03.2018",
@@ -2538,7 +2538,7 @@ export const posts = [
   },
   {
     id: 16,
-    img: "./image/blog/post2.png",
+    img: "./image/blog/post2.jpg",
     alt: "colorful cubes with pictures are on the keyboard",
     category: 2,
     date: "06.03.2018",
@@ -2557,7 +2557,7 @@ export const posts = [
   },
   {
     id: 17,
-    img: "./image/blog/post3.png",
+    img: "./image/blog/post3.jpg",
     alt: "cubes with arrows",
     category: 4,
     date: "01.03.2018",
@@ -2576,7 +2576,7 @@ export const posts = [
   },
   {
     id: 18,
-    img: "./image/blog/post4.png",
+    img: "./image/blog/post4.jpg",
     alt: "the index finger points to the search bar",
     category: 5,
     date: "25.02.2018",
@@ -2595,7 +2595,7 @@ export const posts = [
   },
   {
     id: 19,
-    img: "./image/blog/post5.png",
+    img: "./image/blog/post5.jpg",
     alt: "an open book with an inscription -  Content is King",
     category: 1,
     date: "23.02.2018",
@@ -2614,7 +2614,7 @@ export const posts = [
   },
   {
     id: 20,
-    img: "./image/blog/post6.png",
+    img: "./image/blog/post6.jpg",
     alt: "a head from which light bulbs fly up",
     category: 2,
     date: "18.02.2018",
@@ -2634,7 +2634,7 @@ export const posts = [
   },
   {
     id: 21,
-    img: "./image/blog/post1.png",
+    img: "./image/blog/post1.jpg",
     alt: "three-dimensional multi-colored parts of a pie chart",
     category: 3,
     date: "12.02.2017",
@@ -2653,7 +2653,7 @@ export const posts = [
   },
   {
     id: 22,
-    img: "./image/blog/post2.png",
+    img: "./image/blog/post2.jpg",
     alt: "colorful cubes with pictures are on the keyboard",
     category: 2,
     date: "06.02.2017",
@@ -2672,7 +2672,7 @@ export const posts = [
   },
   {
     id: 23,
-    img: "./image/blog/post3.png",
+    img: "./image/blog/post3.jpg",
     alt: "cubes with arrows",
     category: 4,
     date: "01.02.2017",
@@ -2691,7 +2691,7 @@ export const posts = [
   },
   {
     id: 24,
-    img: "./image/blog/post4.png",
+    img: "./image/blog/post4.jpg",
     alt: "the index finger points to the search bar",
     category: 5,
     date: "25.01.2017",
@@ -2710,7 +2710,7 @@ export const posts = [
   },
   {
     id: 25,
-    img: "./image/blog/post5.png",
+    img: "./image/blog/post5.jpg",
     alt: "an open book with an inscription -  Content is King",
     category: 1,
     date: "23.01.2017",
@@ -2729,7 +2729,7 @@ export const posts = [
   },
   {
     id: 26,
-    img: "./image/blog/post6.png",
+    img: "./image/blog/post6.jpg",
     alt: "a head from which light bulbs fly up",
     category: 2,
     date: "18.01.2017",

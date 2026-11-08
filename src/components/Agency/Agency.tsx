@@ -23,7 +23,7 @@ const Agency = () => {
             </Link>
           </div>
           <div className={style.image}>
-            <img src="./image/home/agency.png" alt="agency employees" />
+            <img src="./image/home/agency.jpg" alt="agency employees" />
           </div>
         </div>
       </div>

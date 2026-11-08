@@ -37,7 +37,7 @@ const AboutVideo = () => {
         }}
       >
         <img
-          src="./image/about/video.png"
+          src="./image/about/video.jpg"
           alt="постер"
           className={style.poster}
         />
